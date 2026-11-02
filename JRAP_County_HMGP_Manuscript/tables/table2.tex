@@ -1,0 +1,37 @@
+\begin{table}[!htbp]
+\centering
+\small
+\begin{threeparttable}
+\caption{The small-county gap in HMGP participation after tornado and severe-storm declarations}
+\label{tab:baseline}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+ & (1) & (2) & (3) & (4) & (5) \\
+\midrule
+\multicolumn{6}{l}{\textit{Panel A. Any HMGP subapplication filed}} \\
+\quad Small county & $-11.27^{***}$ & $-11.19^{***}$ & $-10.43^{***}$ & $-8.85^{***}$ & $-5.37^{***}$ \\
+ & $(0.88)$ & $(0.88)$ & $(0.88)$ & $(0.93)$ & $(0.98)$ \\
+\quad Mean, larger counties & 26.2 & 26.1 & 26.1 & 26.1 & 26.1 \\
+\multicolumn{6}{l}{\textit{Panel B. Any funded HMGP project}} \\
+\quad Small county & $-11.43^{***}$ & $-11.25^{***}$ & $-10.51^{***}$ & $-8.79^{***}$ & $-4.99^{***}$ \\
+ & $(0.90)$ & $(0.89)$ & $(0.89)$ & $(0.95)$ & $(0.99)$ \\
+\quad Mean, larger counties & 27.1 & 27.1 & 27.1 & 27.1 & 27.1 \\
+\multicolumn{6}{l}{\textit{Panel C. Funded safe room or wind retrofit}} \\
+\quad Small county & $-3.97^{***}$ & $-3.85^{***}$ & $-3.45^{***}$ & $-3.14^{***}$ & $-2.38^{***}$ \\
+ & $(0.53)$ & $(0.53)$ & $(0.52)$ & $(0.53)$ & $(0.54)$ \\
+\quad Mean, larger counties & 6.4 & 6.3 & 6.3 & 6.3 & 6.3 \\
+\midrule
+Observations & 12,057 & 12,038 & 12,038 & 12,038 & 12,038 \\
+Counties (clusters) & 2,763 & 2,762 & 2,762 & 2,762 & 2,762 \\
+Fixed effects & State$\times$year & Decl. & Decl. & Decl. & Decl. \\
+Hazard exposure and damage & & & \checkmark & \checkmark & \checkmark \\
+Income, poverty, race, nonmetro & & & & \checkmark & \checkmark \\
+Counts of local governments & & & & & \checkmark \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Notes:} Linear probability models estimated by OLS. Coefficients and means are multiplied by 100 and read as percentage points. ``Small county'' is an indicator for the bottom third of counties by population. Standard errors clustered by county in parentheses. Declaration fixed effects compare counties designated in the same disaster declaration, which share the same HMGP allocation, state administration, and incident. Hazard controls: populated-place tornado hit, log residents in tornado paths, track length, maximum EF rating, log casualties, log reported damage, and log damage per resident. Declarations with a single designated county drop out of columns (2)--(5) as singletons. $^{*}p<0.1$; $^{**}p<0.05$; $^{***}p<0.01$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

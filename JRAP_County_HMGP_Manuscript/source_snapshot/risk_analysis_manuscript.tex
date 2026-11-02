@@ -1,0 +1,273 @@
+﻿% Risk Analysis -- Original Research Article (anonymized for double-blind review)
+% Compile: latexmk -pdf risk_analysis_manuscript.tex   (pdflatex + biber)
+\documentclass[12pt]{article}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{newtxtext,newtxmath}
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage[style=apa,backend=biber,uniquename=false]{biblatex}
+\addbibresource{references.bib}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{adjustbox}
+\usepackage{graphicx}
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=false}
+\usepackage{float}
+\usepackage{titlesec}
+\usepackage{lineno}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+
+\titleformat{\section}{\normalfont\bfseries}{\thesection}{0.6em}{\MakeUppercase}
+\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}{\normalfont\itshape}{\thesubsubsection}{0.6em}{}
+\titlespacing*{\section}{0pt}{12pt}{4pt}
+\titlespacing*{\subsection}{0pt}{8pt}{2pt}
+\renewcommand{\checkmark}{$\surd$}
+\newcommand{\pp}{\,pp}
+\setlength{\emergencystretch}{3em}
+
+\begin{document}
+
+% ---------------------------------------------------------------- page 1: title only
+\thispagestyle{empty}
+\begin{center}
+\vspace*{2in}
+{\Large\bfseries Declared but Not Applied: County Size and Participation in Post-Disaster Hazard Mitigation after Tornadoes and Severe Storms\par}
+\end{center}
+\clearpage
+
+% ---------------------------------------------------------------- page 2: abstract + keywords
+\doublespacing
+\noindent\textbf{Abstract}
+
+\noindent Federal hazard mitigation grants pay for risk reduction before the next disaster, but the money reaches a community only if a local government applies for it. We examine whether county size shapes participation in the Hazard Mitigation Grant Program (HMGP), the largest U.S. mitigation program, after tornado and severe-storm disaster declarations. We link 12,081 county--declaration observations (2,767 counties, 736 declarations, 1999--2021) to every HMGP subapplication and funded project, including withdrawn and denied requests, and measure exposure from tornado tracks crossing populated places. Comparing counties designated in the same declaration, the smallest third of counties are 8.8 percentage points less likely to obtain any HMGP project (larger-county mean: 27.1\%) and half as likely to obtain a safe room or wind retrofit. The gap arises at the application stage: once small counties apply, their approval and withdrawal rates match those of larger counties. About two-fifths of the gap reflects fewer eligible applicants such as cities, school districts, and special districts, yet a gap of roughly one-fifth remains for applications by the county government itself. Within the same county, a tornado hit raises applications in larger counties but not in small ones. Per-resident fiscal and administrative spending does not account for the gap, and reimbursement of management costs under the 2018 Disaster Recovery Reform Act did not detectably narrow it, whereas the gap is smaller in states whose agencies file applications for localities. Local capacity to apply, rather than need or federal screening, appears to shape where mitigation dollars go.
+
+\vspace{12pt}
+\noindent\textbf{Keywords:} hazard mitigation; Hazard Mitigation Grant Program; local government capacity; rural counties; tornadoes
+\clearpage
+
+% ---------------------------------------------------------------- main text
+\linenumbers
+\setcounter{page}{3}
+
+\section{Introduction}
+
+A tornado that crosses a populated place leaves behind two kinds of decisions. The first concerns recovery: debris, shelter, and repairs. The second concerns the next storm: whether to build a community safe room, harden a school, or retrofit public buildings against wind. In the United States, the second decision is financed largely through the Federal Emergency Management Agency's (FEMA) Hazard Mitigation Grant Program (HMGP). The program is triggered by a presidential disaster declaration and sized as a share of the federal assistance that the disaster generates \parencite{horn2022crs}. Between 1996 and 2019 it awarded \$22.4 billion, far more than FEMA's pre-disaster programs \parencite{horn2022crs}, and studies of FEMA mitigation spending report benefits that exceed costs by a wide margin \parencite{rose2007bca,godschalk2009foresight} and measurable reductions in later losses \parencite{davlasheridze2017adaptation,miao2025loss}.
+
+HMGP money, however, does not flow automatically to the places a disaster struck. Funds go first to the state, which selects among subapplications prepared by counties, cities, school districts, and other eligible entities \parencite{horn2022crs}. Each subapplicant must hold a FEMA-approved local mitigation plan, document that the project is cost-effective, and usually provide a 25\% nonfederal match \parencite{horn2022crs,frimpong2023federal}. The program therefore converts a hazard shock into risk reduction only through a local administrative act: someone in local government has to decide to apply, scope a project, and carry the paperwork. Whether that act happens is a question of risk management in its own right, because the distribution of mitigation investment determines who carries residual risk into the next event. Political incentives already favor spending on relief over spending on preparedness \parencite{healy2009myopic}, and the distributional consequences of FEMA's risk-reduction programs have been a recurring concern in this journal \parencite{noonan2018flood,miao2025equity}.
+
+There are good reasons to expect that small jurisdictions apply less often. Grant applications carry costs that do not scale with population: engineering estimates, benefit--cost analysis, environmental review, and grant administration. Research on intergovernmental grants finds that the localities with the greatest needs are often the least equipped to compete for funds \parencite{collins2006redistributive,hall2008grant}. In hazard mitigation specifically, rural local governments with lower measured capacity secure less competitive federal resilience funding \parencite{smith2025rural}, FEMA programs that are administered through state and local governments tend to favor better-resourced counties \parencite{miao2025equity}, and property buyouts have concentrated in wealthier and more populous counties \parencite{mach2019buyouts}. For HMGP, \textcite{seong2022naturally} document that rural counties receive less assistance per recipient than urban counties over 1989--2018.
+
+Three gaps limit what this literature can say about small counties. First, most studies observe only awards, so a shortfall in funding cannot be attributed to fewer applications, more rejections, or lower need. Second, comparisons across counties hit by different disasters, in different states and years, mix differences in local capacity with differences in hazard severity, state administration, and the size of the HMGP allocation. Third, wind hazards have received less attention than floods, although tornado safe rooms and wind retrofits are a large share of HMGP construction and a long-standing subject of cost-effectiveness analysis in this journal \parencite{simmons2006shelters}.
+
+This article asks whether, and at which stage, small counties fall behind in converting tornado and severe-storm disaster declarations into funded mitigation. We assemble every county designated in a tornado or severe-storm major disaster declaration from 1999 to 2021 and link each county--declaration to the HMGP subapplications and projects filed under that specific declaration, including requests that were later withdrawn or denied. We measure tornado exposure from Storm Prediction Center (SPC) tracks that crossed populated block groups, so that exposure does not depend on damage reports, and we add local-government counts and finances from the Census of Governments. The core comparison is between counties designated in the same declaration, which share the incident, the state administration, and the HMGP allocation.
+
+The evidence points to a large and robust participation gap that originates at the application stage. Within the same declaration, the smallest third of counties are 8.8 percentage points less likely to obtain any HMGP project, against a mean of 27.1\% among larger counties, and about half as likely to obtain a safe room or wind retrofit. The gap declines smoothly across the population distribution rather than appearing only among the very smallest counties. Conditional on applying, small counties are approved and withdraw at the same rates as larger ones. Fewer potential applicants explains about two-fifths of the gap, but the county government itself, of which every county has exactly one, is also less likely to apply. A tornado hit raises applications in larger counties but not in small ones. In contrast, neither per-resident fiscal capacity nor a federal reform that reimbursed subrecipients' management costs accounts for or narrows the gap, while the gap is smaller in states that file applications on behalf of localities.
+
+The article contributes to risk analysis in three ways. It locates a distributional problem in mitigation policy at a specific administrative margin, the decision to apply, using application records that include failures. It separates a mechanical component of the county-size gap, arising from the number of eligible applicants, from a residual that is consistent with limited local capacity to respond to hazard events. And it tests several explanations that the literature has proposed, including fiscal constraints, state delivery, and federal cost reimbursement, within a common design. Section 2 describes the program and the literature, Section 3 the data and empirical strategy, Section 4 the results, and Sections 5 and 6 discuss implications and conclude.
+
+\section{Institutional Background and Related Literature}
+
+\subsection{How HMGP Funding Reaches Counties}
+
+HMGP is authorized by Section 404 of the Stafford Act and becomes available in a state after a major disaster declaration. The amount available for a declaration is set on a sliding scale, up to 15\% of the first \$2 billion of estimated federal disaster assistance, with higher percentages for states with enhanced mitigation plans \parencite{horn2022crs}. Although the declaration designates particular counties for disaster assistance, the mitigation funds are managed by the state as recipient, and decisions about which subapplications to fund are made by the state \parencite{horn2022crs}. Eligible subapplicants include state agencies, local governments, and certain nonprofits; households benefit only through a community application. HMGP accounted for about 80\% of FEMA's Hazard Mitigation Assistance spending between 1989 and 2019 \parencite{frimpong2023federal}.
+
+For tornado and wind hazards, HMGP finances community and school safe rooms, individual residential safe rooms through state-run programs, and wind retrofits of public and private structures. These measures target a hazard whose fatalities are concentrated among residents of mobile homes and of the Southeast \parencite{ashley2007fatalities,sutter2010mobile}, whose cost-effectiveness depends on housing type and local risk \parencite{merrell2005casualties,simmons2006shelters}, and whose geography has been shifting toward the Midwest and Southeast \parencite{gensini2018trends}. FEMA has twice tried to reduce the administrative burden of such projects. Pre-calculated benefits allow residential safe rooms that meet design criteria to forgo a project-specific benefit--cost analysis \parencite{fema2015saferoomprecalc,fema2024bcapolicy}. Section 1215 of the Disaster Recovery Reform Act of 2018 \parencite{drra2018} allows subrecipients to recover management costs of up to 5\% of their subaward, a provision that FEMA applies to disasters declared on or after August 1, 2017 \parencite{fema1215mgmtcosts}. We use the second reform as a test in Section 4.4.
+
+\subsection{Local Capacity and Access to Mitigation Funding}
+
+Research on protective action emphasizes that people and organizations act on a hazard when they judge a response to be feasible and within their resources, not merely when they perceive risk \parencite{lindell2012padm,bubeck2012review}. At the level of local government, the analogous resource is administrative capacity: staff time, technical expertise, fiscal room for a cost share, and experience with federal programs. Planning research shows that the involvement of professional planners changes the content of local mitigation plans \parencite{lyles2014planners} and that federal and state policies shape local mitigation choices through local commitment and capacity \parencite{burby2006katrina,berke2014impacts}. Local governments learn from their own hazard history, and do so faster under some conditions than others \parencite{brody2009policy}; organizational capacity predicts local flood mitigation \parencite{brody2010identifying}, and participation in FEMA's Community Rating System rises with local capacity and tax base \parencite{posey2009determinants,sadiq2015local,li2018flood}. Interviews with coordinators and floodplain managers have examined why communities do or do not take part in that program \parencite{sadiq2020participation}.
+
+A second literature studies who receives federal disaster resources, building on work showing that the capacity to prepare for and recover from hazards is unevenly distributed across places \parencite{cutter2003sovi,cutter2008temporal}. Studies of household assistance report distributive inequities in how aid relates to social vulnerability \parencite{drakes2021social,emrich2022distributive}, and programs that require government applicants tend to favor counties in better socioeconomic condition \parencite{miao2025equity}. Studies of buyouts report disparities by county wealth and race \parencite{mach2019buyouts,elliott2020racial}. Rural and urban counties differ in measured resilience \parencite{cutter2016urbanrural}, and rural HMGP recipients receive less assistance per recipient \parencite{seong2022naturally}. In competitive pre-disaster programs, local capacity predicts success \parencite{smith2025rural}, and small and impoverished communities obtained 29\% of the funding they requested in FEMA's first round of the Building Resilient Infrastructure and Communities program \parencite{headwaters_nd}. State agencies mediate access: a national survey of state hazard mitigation officers found large differences in states' ability to help localities develop applications and little use of funding for pre-application work \parencite{smith2020state,vila2022equity}. Research on other grant programs similarly finds that state design of the application process can widen or narrow local disparities \parencite{collins2006redistributive,collins2008taken}.
+
+What this body of work has not established is where in the grant process small jurisdictions fall behind, and how much of any gap is mechanical. A county with few incorporated places, school districts, and special districts has fewer entities that could apply, so it would receive fewer projects even if each entity were equally likely to apply. Separating this channel from a capacity constraint requires application-level data and a comparison that holds the hazard and the administering state fixed.
+
+\subsection{Hypotheses}
+
+We organize the analysis around four expectations. (H1) Conditional on hazard exposure, damage, and the declaration itself, small counties are less likely to obtain HMGP projects. (H2) If the gap reflects local capacity rather than federal or state screening, it arises at the application stage rather than in approval decisions. (H3) If the gap is not purely mechanical, it persists after accounting for the number of eligible local entities and appears for the county government itself. (H4) If capacity constrains the response to hazard events, a tornado hit raises applications less in small counties than in larger counties, and policies that lower the cost of applying or shift the work to the state narrow the gap.
+
+\section{Data and Empirical Strategy}
+
+\subsection{Unit of Analysis and Sample}
+
+The unit of observation is a county designated in a major disaster declaration (declaration type DR) whose incident type is a tornado or severe storm and whose incident began between 1999 and 2021, from FEMA's Disaster Declarations Summaries \parencite{openfema2026}. The end date leaves at least three years to observe applications and obligations through 2024. The sample contains 12,081 county--declarations covering 2,767 counties and 736 declarations in 49 states (Figure~\ref{fig:map}a). Tornado and severe-storm declarations are frequent across the central and eastern United States, so most counties in those regions appear several times.
+
+\subsection{Outcomes}
+
+We use two OpenFEMA files \parencite{openfema2026}. The Hazard Mitigation Assistance Projects file records funded and unfunded projects with their program, disaster number, project type, subrecipient, and federal share. The HMA Subapplications file records HMGP subapplications with their disaster number, benefiting counties, applicant name and type, requested amount, benefit--cost ratio, and status, including approved, withdrawn, denied, and pending requests. Projects listing several counties are credited to every listed county; statewide projects are kept separate and used in a robustness check.
+
+The primary outcomes are binary indicators, for each county--declaration, of (i) any HMGP subapplication benefiting the county under that declaration, (ii) any funded HMGP project under that declaration, and (iii) a funded tornado safe room or wind retrofit under that declaration, identified from FEMA project-type codes. We also use the number of subapplications, a safe room or retrofit obligated within three or five years of the incident regardless of disaster number, and, among county--declarations with at least one decided subapplication, the shares approved, withdrawn, and denied. Applicant names identify subapplications and projects filed by the county government itself. As a validation, the indicator for any approved subapplication and the indicator for any funded project are correlated at 0.92 across county--declarations.
+
+\subsection{Small Counties, Hazard Exposure, and Controls}
+
+Small counties are the bottom third of U.S. counties by baseline population, which corresponds to at most 15,136 residents; 34.7\% of county--declarations fall in this group (Figure~\ref{fig:map}b). Because a binary cutoff is arbitrary, we also estimate the gap across population deciles and with continuous log population.
+
+Hazard exposure is measured from the SPC tornado database \parencite{spc2025database}. Each track is represented as its reported path from start to end point, widened by the reported path width plus 500 meters, and intersected with 2020 county boundaries and block-group population centroids. A county--declaration is classified as hit if, in the incident year, a tornado path crossed the population centroid of at least one block group in the county; 11.1\% of county--declarations meet this definition. We also record the number of residents in tornado paths, track length within the county, the maximum EF rating, and casualties. Because EF ratings are assigned from observed damage \parencite{doswell2009ef}, exposure is defined from geometry and population rather than from ratings or damage reports; reported property damage from NOAA's Storm Events database enters as a separate control, in levels and per resident. County characteristics are median household income, poverty rate, and non-White share from the 2009 American Community Survey, and nonmetropolitan status. The 2017 Census of Governments provides counts of municipalities and townships, special districts, and school districts in each county, an indicator for whether the county government lists a website, and county-government tax revenue and spending on financial administration and central staff per resident \parencite{census2017cog}.
+
+Table~\ref{tab:summary} summarizes the sample. Small counties filed HMGP subapplications in 14.6\% of their county--declarations, compared with 26.3\% for larger counties, and obtained funded projects in 15.1\% and 27.2\% of cases, respectively. They contain fewer municipalities and townships (8.4 versus 14.0 on average), special districts (6.9 versus 15.1), and school districts (2.2 versus 6.0), and they were less often hit by a tornado crossing a populated place.
+
+\subsection{Empirical Specification}
+
+The baseline model compares counties designated in the same declaration:
+\begin{equation}
+Y_{cd} = \beta\, \mathit{Small}_c + \mathbf{X}_{cd}'\boldsymbol{\gamma} + \mathbf{Z}_c'\boldsymbol{\delta} + \alpha_d + \varepsilon_{cd},
+\label{eq:baseline}
+\end{equation}
+where $Y_{cd}$ is an outcome for county $c$ under declaration $d$, $\mathit{Small}_c$ indicates the bottom population third, $\mathbf{X}_{cd}$ contains the hazard measures for the incident year (populated-place hit, log residents in paths, track length, maximum EF rating, log casualties, log damage, and log damage per resident), $\mathbf{Z}_c$ contains county characteristics, and $\alpha_d$ is a declaration fixed effect. The declaration effect absorbs everything common to counties in the same declaration: the incident, the size of the HMGP allocation, the state's administrative plan and priorities, the year, and any political considerations behind the declaration itself \parencite{garrett2003political,reeves2011political}. We estimate Equation~(\ref{eq:baseline}) as a linear probability model, add controls in steps, and finally add the log counts of local governments to separate the mechanical channel. The coefficient $\beta$ measures how much less likely a small county is to obtain an outcome than a larger county in the same declaration with similar hazard exposure.
+
+To ask whether small counties respond differently to hazard events, we exploit the fact that most counties appear in several declarations, some of which brought a tornado through populated places and some of which did not:
+\begin{equation}
+Y_{cd} = \theta\, H_{cd} + \lambda\, (H_{cd} \times \mathit{Small}_c) + \mu_c + \alpha_d + \varepsilon_{cd},
+\label{eq:shock}
+\end{equation}
+where $H_{cd}$ is the populated-place hit indicator (or log residents in tornado paths), $\mu_c$ is a county fixed effect, and $\alpha_d$ a declaration fixed effect. The county effect absorbs persistent differences in need, capacity, and political orientation, so $\theta$ is the response of larger counties to a hit and $\theta + \lambda$ the response of small counties. Damage controls are omitted from Equation~(\ref{eq:shock}) because damage is the channel through which a hit would raise demand for mitigation.
+
+Finally, we use the management-cost provision of the Disaster Recovery Reform Act to ask whether lowering the cost of administering a subaward narrows the gap:
+\begin{equation}
+Y_{cd} = \pi\, (\mathit{Small}_c \times \mathit{Post}_d) + \mathbf{X}_{cd}'\boldsymbol{\gamma} + \mu_c + \alpha_d + \varepsilon_{cd},
+\label{eq:drra}
+\end{equation}
+for declarations made between 2010 and 2021, where $\mathit{Post}_d$ indicates declarations made on or after August 1, 2017. Because the provision applies from a single date to all declarations, the design does not involve staggered adoption, and a two-way fixed-effects estimator does not suffer from the weighting problems discussed for staggered designs \parencite{roth2023trending}. We report an event-study version with small-county interactions by declaration year and a placebo cutoff in the pre-reform period.
+
+\subsection{Identification and Inference}
+
+Equation~(\ref{eq:baseline}) is descriptive about county size. Population bundles many attributes, including the number of potential applicants, staff, tax base, rurality, and hazard exposure, and the analysis is designed to separate these rather than to estimate a causal effect of population. Three features make the comparison informative. The declaration fixed effect removes differences in incident severity, state administration, and HMGP allocations, which confound cross-disaster comparisons. The hazard controls use track geometry and population rather than damage-based ratings, so that a small county is compared with a larger county facing a similar physical hazard. And the application records allow us to separate the decision to apply from FEMA's and the state's decisions on submitted requests. Equation~(\ref{eq:shock}) adds within-county variation, but hit status within a declaration is not randomly assigned, and the reform in Equation~(\ref{eq:drra}) coincided with other changes in federal mitigation policy. We therefore interpret these estimates as tests of whether the patterns fit a capacity explanation, not as causal effects of capacity.
+
+Standard errors are clustered by county, the level at which the population classification is assigned \parencite{abadie2023cluster,cameron2015practitioner}; we also report state-clustered errors (47 clusters). Declarations with a single designated county drop out as singletons, leaving 12,038 observations in the declaration fixed-effects models. Estimation uses PyFixest \parencite{pyfixest}.
+
+\section{Results}
+
+\subsection{Descriptive Evidence}
+
+Figure~\ref{fig:gradient}a plots raw participation by population decile. The share of county--declarations with any HMGP subapplication rises from 14.3\% in the smallest decile (median population 3,426) to 43.2\% in the largest (median 413,325), and the share with a funded project follows almost exactly the same path. The two lines are close because most subapplications that are decided are approved; the separation between counties occurs before a request reaches the state or FEMA. The rise is steepest in the upper deciles, but participation also increases, with small reversals, across the lower half of the distribution, which already suggests that the gap is not confined to a handful of very small counties.
+
+\subsection{The Small-County Gap}
+
+Table~\ref{tab:baseline} reports Equation~(\ref{eq:baseline}) with controls added across columns. In column (1), which compares counties within the same state and year, small counties are 11.4 percentage points less likely to obtain any funded HMGP project (Panel B). Replacing state-by-year effects with declaration fixed effects (column 2) barely changes the estimate, nor does adding the hazard and damage controls (column 3, $-10.5$ percentage points). Small counties are not less likely to participate because they experienced weaker storms. Adding income, poverty, race, and nonmetropolitan status reduces the gap to 8.8 percentage points (column 4), or 32\% of the larger-county mean of 27.1\%. The gap for subapplications in Panel A is of the same size ($-8.9$ percentage points on a mean of 26.1\%), which anticipates the result that the shortfall occurs before any decision is made.
+
+The gap is proportionally larger for the tornado-specific measures. Small counties are 3.1 percentage points less likely to obtain a safe room or wind retrofit under the declaration (Panel C, column 4), against a larger-county mean of 6.3\%, so their probability is about half that of larger counties. Over a three-year window that includes projects funded under later declarations, the gap is 8.1 percentage points on a mean of 14.6\% (Table~\ref{tab:robust}).
+
+Figure~\ref{fig:gradient}b shows that the gap is a gradient rather than a threshold. Relative to the largest population decile, and within declarations with full controls, the probability of a funded project is 35.5 percentage points lower in the smallest decile, 23.1 points lower in the fifth decile, and 11.5 points lower in the ninth (Appendix Table~S2). Each decile is lower than the one above it. In continuous form, a one-log-point increase in population, roughly a 2.7-fold difference, raises the probability of a funded project by 7.8 percentage points (Table~\ref{tab:robust}).
+
+Column (5) of Table~\ref{tab:baseline} adds the log numbers of municipalities and townships, special districts, and school districts. The gap in funded projects falls from 8.8 to 5.0 percentage points, and the gap in subapplications from 8.9 to 5.4 points. About two-fifths of the small-county gap therefore reflects the number of entities that could apply. The count of school districts is the strongest of the three predictors, consistent with the role of schools as sites for community safe rooms. For safe rooms and wind retrofits, local-government counts account for a smaller share (from 3.1 to 2.4 percentage points), leaving a gap of 38\% of the larger-county mean. Both residual gaps are precisely estimated, with standard errors of at most one percentage point.
+
+\subsection{Where the Gap Arises}
+
+Table~\ref{tab:pipeline} and Figure~\ref{fig:pipeline} decompose the gap using the subapplication records, holding constant the column (5) controls, including local-government counts. Small counties are 5.4 percentage points less likely to file any subapplication and file about 4.7\% fewer. Among county--declarations with at least one decided subapplication (2,515 observations), the approval rate of small counties differs from that of larger counties by $-0.5$ percentage points (95\% confidence interval from $-4.2$ to $3.2$) on a mean of 86.6\%, and the withdrawal rate by $-0.9$ points ($-4.4$ to $2.7$). The denial rate is 1.4 percentage points higher ($p = 0.03$), from a low base of 1.7\%. This difference is statistically detectable but too small to account for a meaningful part of the gap. At the subapplication level, small-county requests are smaller and report lower benefit--cost ratios, but neither difference is statistically distinguishable from zero once local-government counts are controlled (Table~\ref{tab:pipeline}, note). The evidence supports H2: the shortfall occurs at the decision to apply, not in the review of submitted requests.
+
+The county government provides the cleanest check on the mechanical explanation, because every county has exactly one. With the full set of controls, small county governments are 2.4 percentage points less likely to file an HMGP subapplication under a declaration, on a mean of 11.1\% (column 3), and 2.4 points less likely to receive a project, on a mean of 11.4\% (column 7). A gap of about one-fifth at the level of a single, comparable applicant cannot be attributed to the number of entities, which supports H3.
+
+\subsection{Testing Explanations}
+
+Table~\ref{tab:mechanisms} assembles four tests of why small counties apply less. Panel A estimates Equation~(\ref{eq:shock}). In larger counties, a declaration in which a tornado crossed a populated place raises the number of subapplications by 4.3\% ($p = 0.02$) and the probability that the county government applies by 2.4 percentage points ($p = 0.045$) relative to other declarations designating the same county. In small counties the corresponding responses are $-2.9\%$ and $-1.8$ points, and the differences between small and larger counties are $-7.2\%$ ($p = 0.046$) and $-4.2$ points ($p = 0.06$). Figure~\ref{fig:shock} displays these responses. The continuous measure, log residents in tornado paths, gives the same pattern ($0.35$ points per log unit for larger county governments, $p = 0.02$; interaction $-0.60$, $p = 0.05$). For the broader outcomes, any subapplication and any funded project, the interactions have the same sign but are imprecise ($p = 0.23$ and $p = 0.16$). Because the county fixed effects remove persistent differences between places, this pattern is difficult to reconcile with the view that small counties simply need less mitigation. The same county, facing a more damaging event, mobilizes an application response only when it is larger. The evidence for H4 on this margin is suggestive rather than conclusive, given $p$-values near conventional thresholds.
+
+Panel B considers fiscal and administrative capacity measured in per-resident terms. Small county governments raise more tax revenue per resident and spend more per resident on financial administration and central staff than larger ones, which reflects the fixed cost of operating a government spread over fewer residents. Controlling for these measures leaves the gap in subapplications at 5.4 percentage points, and the gap is not larger where per-resident administrative spending is low (interaction $-0.5$ points, standard error 1.6). Holding population constant, absolute administrative spending and tax revenue also do not predict applications. The ability to fund the 25\% match, at least as captured by per-resident fiscal measures, does not explain the gap.
+
+Panel C asks whether states that deliver mitigation on behalf of localities have smaller gaps. Using the share of each state's HMGP subapplications filed by state agencies before 2009 (mean 18.5\%), a one-standard-deviation higher state share is associated with a 2.6 percentage point smaller gap in subapplications ($p = 0.04$) and a 3.0 point smaller gap in funded projects ($p = 0.02$) in 2009--2021. A comparable measure for regional planning and development bodies, which file few subapplications in any state, shows no association. The state-share result is a cross-state association, and states that file more applications may differ in other ways, but it is consistent with the survey evidence that state assistance shapes local access \parencite{smith2020state}.
+
+Panel D and Figure~\ref{fig:drra} test whether reimbursing subrecipients' management costs narrowed the gap. In raw terms, the gap in subapplications was 16.2 percentage points for declarations made from 2010 to July 2017 and 12.4 points afterward. Within counties and declarations, however, the change is $-1.9$ percentage points (standard error 3.6) for subapplications and $-1.7$ points (3.6) for funded projects, and the placebo comparison at August 2014 is likewise null. The event-study coefficients fluctuate around zero before and after the reform without a break (smallest $p = 0.14$). The confidence intervals are wide, so the reform could have narrowed the gap by a few percentage points, but they rule out reductions larger than roughly half of the baseline gap. A smaller exploratory comparison around FEMA's pre-calculated benefits for residential safe rooms, whose start date we cannot date precisely, also shows no differential change for small counties (Appendix S3).
+
+\subsection{Robustness}
+
+Table~\ref{tab:robust} reports the gap in funded projects under alternative choices. Clustering by state increases the standard error only modestly for the main outcome. Restricting the sample to county--declarations in which a tornado crossed a populated place, where demand for wind mitigation should be highest, enlarges the gap to 14.3 percentage points on a mean of 33.8\% and to 9.2 points for safe rooms and retrofits on a mean of 14.5\%. Limiting the sample to declarations that included Individual Assistance leaves the estimates unchanged. Dropping each state in turn yields gaps between 8.4 and 9.4 percentage points for any funded project and between 2.7 and 3.5 points for safe rooms and retrofits. The gap over a five-year window is 10.5 points on a mean of 19.7\%.
+
+Two checks qualify the results. When statewide HMGP projects under the same declaration are credited to every designated county, the gap in any project nearly disappears ($-0.9$ points), but this outcome is close to saturated because about 89\% of larger counties' county--declarations, and 86\% of small counties', are covered by some statewide project, mostly planning and similar activities. For safe rooms and retrofits the gap remains ($-2.8$ points on a mean of 9.9\%), so state-run projects offset only part of the shortfall. Among the 361 county--declarations under declarations whose incident type is recorded as a tornado rather than a severe storm, the estimates are small and imprecise ($-1.5$ points, standard error 4.0); this subsample is too small to distinguish the main estimate from zero.
+
+\section{Discussion}
+
+The central finding is that, after tornado and severe-storm disasters, small counties obtain far fewer HMGP projects than larger counties designated in the same declaration, and that this shortfall arises because they apply less often, not because their applications fare worse. For risk analysis, this matters because the decision to apply is where federal mitigation dollars are converted into lower future losses. A program that responds to disasters can still leave risk concentrated where the capacity to respond is lowest, much as post-disaster assistance has been found to widen rather than narrow wealth differences \parencite{howell2019damages}.
+
+Several explanations for lower participation can be set aside or bounded. Lower need is an unlikely explanation for the full gap, because the comparisons hold the declaration fixed and control for tornado exposure and damage, and because the gap widens rather than narrows in places that were hit. Federal or state screening of applications does not explain it, since approval and withdrawal rates are similar once a request is filed. Income, poverty, race, and nonmetropolitan status account for part of the raw difference but leave most of it unexplained, and per-resident fiscal measures add nothing. A substantial component is mechanical, reflecting fewer cities, school districts, and special districts that could apply, which is a structural feature of small counties rather than a failure of any single government. The remaining gap, visible for county governments themselves and in the muted response to tornado hits, fits the capacity account developed in public administration and planning research \parencite{collins2006redistributive,hall2008grant,lyles2014planners,smith2025rural}: preparing an HMGP application requires expertise and staff time whose cost does not shrink with population.
+
+The null result for management-cost reimbursement adds a qualification. If the binding constraint were the ongoing cost of administering a subaward, reimbursing up to 5\% of it should have helped small counties disproportionately. It did not do so detectably. This is consistent with a constraint that operates before any award exists, in scoping a project, assembling cost estimates, and completing a benefit--cost analysis, for which reimbursement after award offers little help. The state-delivery association points in the same direction: where the state prepares more of the applications, the gap is smaller. These two pieces of evidence are not causal, but together they suggest that the effective policy margin is up-front technical assistance rather than reimbursement.
+
+Our results complement and extend earlier work. \textcite{seong2022naturally} find that rural HMGP recipients receive less per recipient. We show that the more important margin may be whether there is a recipient at all, and that this margin varies continuously with population rather than with a rural label. \textcite{miao2025equity} report that aid programs administered through state and local governments favor better-off counties. Our evidence identifies one channel for that pattern in the decision to apply, and it shows that, for HMGP after tornado and storm declarations, the disadvantage is tied more closely to county size than to income: conditional on size and the other controls, median income is only weakly associated with participation and the poverty rate not at all (Table~\ref{tab:baseline}, column 4; coefficients reported in Appendix S1). \textcite{frimpong2023federal} find that mitigation grants do not raise participation in the Community Rating System. Our findings run the other way around, from local capacity to grant participation, and together the two studies describe a system in which local administrative effort and federal mitigation funding are only loosely coupled.
+
+The findings have implications for how mitigation programs are designed and evaluated. First, evaluations that compare outcomes across counties with and without mitigation projects should recognize that project receipt depends on local capacity, which is likely correlated with other determinants of resilience. Second, programs that distribute funds through local applications will tend to direct mitigation toward larger jurisdictions even when hazard exposure is similar, so equity goals stated in terms of need or vulnerability may not be met without attention to the application stage. Third, the tornado-specific gap is proportionally larger than the overall gap, which matters because small counties in the central and southeastern United States include many places where tornado risk and mobile-home housing are common \parencite{ashley2007fatalities,sutter2010mobile}. Options suggested by the evidence include state-prepared or regional applications on behalf of small jurisdictions, pre-application technical assistance, and simplified cost-effectiveness requirements for standard project types; the present analysis does not evaluate their effects.
+
+The study has limitations. County size is not randomly assigned, and the residual gap could reflect unmeasured attributes correlated with size, such as the presence of an emergency manager, local political preferences for federal programs, or the stock of buildings suitable for retrofit. The capacity proxies available in national data are coarse; per-resident spending measures resources, not expertise. The subapplication records linked to counties contain few older closed or denied requests, so the comparison of approval rates relies mainly on recent records and on the approved, withdrawn, and not-approved categories. The within-county and reform tests have limited power. The analysis covers HMGP after tornado and severe-storm declarations and may not extend to flood programs, competitive pre-disaster grants, or other countries. Finally, we observe applications and awards, not completed projects or avoided losses.
+
+\section{Conclusion}
+
+Federal mitigation grants are designed to turn the aftermath of a disaster into an opportunity to reduce future risk. That opportunity depends on whether a local government applies. Across two decades of tornado and severe-storm declarations, the smallest third of counties obtained HMGP projects in roughly one fewer case out of every ten county--declarations than larger counties hit by the same event, and they were about half as likely to obtain the safe rooms and wind retrofits that address tornado risk directly. The gap opens before any request is reviewed. Part of it reflects the smaller number of local entities in small counties, but a gap remains for county governments themselves, and small counties do not increase their applications after a tornado strikes populated places, whereas larger counties do. Reimbursing management costs did not detectably change this pattern, while state delivery of applications is associated with a smaller gap. For risk managers, the lesson is that the distribution of mitigation investment follows administrative capacity as well as hazard, and that closing the gap is likely to require help in preparing applications rather than additional money after an award.
+
+% ---------------------------------------------------------------- statements
+\section*{Data Availability Statement}
+All data used in this study are publicly available: FEMA's OpenFEMA Hazard Mitigation Assistance Projects, HMA Subapplications, and Disaster Declarations Summaries; the NOAA Storm Prediction Center tornado database; NOAA Storm Events; the U.S. Census Bureau's 2020 block-group centers of population, 2009 American Community Survey, and 2017 Census of Governments. Code that reproduces all tables and figures from these sources will be deposited in a public repository upon acceptance.
+
+\section*{Declaration of Generative AI Use}
+\textit{[Draft for author review.]} The authors used a generative AI assistant (Anthropic's Claude) under their direction to write and run data-assembly and estimation code, to search for and verify literature, and to draft and edit the manuscript text. All data are public administrative records; no data were generated or altered by the assistant other than through documented, reproducible code that the authors have reviewed and rerun. The authors take full responsibility for the content.
+
+\section*{Conflict of Interest Statement}
+\textit{[To be completed by the authors at submission.]}
+
+\clearpage
+\nolinenumbers
+\singlespacing
+\printbibliography[title={REFERENCES}]
+
+% ---------------------------------------------------------------- tables
+\clearpage
+\input{tables/table_1.tex}
+\clearpage
+\input{tables/table_2.tex}
+\clearpage
+\input{tables/table_3.tex}
+\clearpage
+\input{tables/table_4.tex}
+\clearpage
+\input{tables/table_5.tex}
+
+% ---------------------------------------------------------------- figures
+\clearpage
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\linewidth]{figures/figure_1.pdf}
+\caption{Study area. (a) Number of tornado and severe-storm major disaster declarations, 1999--2021, designating each county. (b) Small counties, defined as the bottom third of U.S. counties by baseline population. Alaska, Hawaii, and territories are not shown.}
+\label{fig:map}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\linewidth]{figures/figure_2.pdf}
+\caption{Participation in HMGP by county population decile. (a) Raw share of county--declarations with any HMGP subapplication and with any funded HMGP project under the declaration. (b) Differences from the largest decile, estimated with declaration fixed effects and hazard and demographic controls (Table~\ref{tab:baseline}, column 4); vertical bars are 95\% confidence intervals with county-clustered standard errors.}
+\label{fig:gradient}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.9\linewidth]{figures/figure_3.pdf}
+\caption{Where the small-county gap arises. Estimated differences between small and larger counties designated in the same declaration, with full controls including local-government counts (Table~\ref{tab:pipeline}). Circles: application and award outcomes for all county--declarations. Diamonds: shares of decided subapplications approved, withdrawn, or denied, among county--declarations with at least one decided subapplication. Horizontal bars are 95\% confidence intervals.}
+\label{fig:pipeline}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.9\linewidth]{figures/figure_4.pdf}
+\caption{Within-county response to a tornado hit. Effect of a declaration in which a tornado crossed a populated place in the county, relative to other declarations designating the same county, estimated with county and declaration fixed effects (Equation~\ref{eq:shock}). The small-county response is the sum of the main effect and the interaction, with its standard error computed from the full covariance matrix. Coefficients multiplied by 100; bars are 95\% confidence intervals.}
+\label{fig:shock}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.9\linewidth]{figures/figure_5.pdf}
+\caption{Small-county gap by year of declaration around the Disaster Recovery Reform Act management-cost provision. Interactions of the small-county indicator with declaration-year indicators (2016 omitted), with county and declaration fixed effects and hazard controls, declarations of 2010--2021. The dashed line marks the date from which DRRA \S1215 reimbursement of subrecipient management costs applies. Bars are 95\% confidence intervals.}
+\label{fig:drra}
+\end{figure}
+
+% ---------------------------------------------------------------- supporting information
+\clearpage
+\input{appendix/supplementary_material.tex}
+
+\end{document}
+
+
+
+
+
+

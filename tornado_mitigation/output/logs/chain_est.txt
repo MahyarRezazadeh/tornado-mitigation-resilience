@@ -1,0 +1,58 @@
+﻿=== 27_event_studies 23:41:12
+2026-10-07 23:41:18,423 | 27_event_studies | INFO | ======================================================================
+2026-10-07 23:41:18,425 | 27_event_studies | INFO | START 27_event_studies at 2026-10-07T23:41:18
+2026-10-07 23:41:33,679 | 27_event_studies | INFO | tornado ES log_employment: pretrend p=0.888, mean post diff=0.002018
+2026-10-07 23:42:45,220 | 27_event_studies | INFO | adoption ES log_employment: pre p=0.315
+2026-10-07 23:42:56,359 | 27_event_studies | INFO | tornado ES separation_rate: pretrend p=0.226, mean post diff=-0.0001199
+2026-10-07 23:44:13,184 | 27_event_studies | INFO | adoption ES separation_rate: pre p=0.549
+2026-10-07 23:44:24,322 | 27_event_studies | INFO | tornado ES log_earnings: pretrend p=0.053, mean post diff=-0.00285
+2026-10-07 23:45:41,175 | 27_event_studies | INFO | adoption ES log_earnings: pre p=0.028
+2026-10-07 23:45:52,209 | 27_event_studies | INFO | tornado ES hire_rate: pretrend p=0.604, mean post diff=-0.0002811
+2026-10-07 23:48:28,027 | 27_event_studies | INFO | adoption ES hire_rate: pre p=0.273
+2026-10-07 23:48:50,338 | 27_event_studies | INFO | tornado ES job_destruction_rate_qwi: pretrend p=0.632, mean post diff=0.0002482
+2026-10-07 23:49:08,278 | 27_event_studies | ERROR | adoption ES failed job_destruction_rate_qwi: Unable to allocate 64.8 MiB for an array with shape (31, 273874) and data type int64
+2026-10-07 23:49:38,557 | 27_event_studies | ERROR | tornado ES failed establishment_death_rate: Unable to allocate 104. MiB for an array with shape (122, 111888) and data type float64
+2026-10-07 23:49:40,581 | 27_event_studies | ERROR | adoption ES failed establishment_death_rate: Unable to allocate 102. MiB for an array with shape (119, 111888) and data type float64
+2026-10-07 23:49:41,291 | 27_event_studies | ERROR | tornado ES failed job_destruction_rate: Unable to allocate 102. MiB for an array with shape (119, 111888) and data type float64
+2026-10-07 23:49:42,087 | 27_event_studies | ERROR | adoption ES failed job_destruction_rate: Unable to allocate 102. MiB for an array with shape (119, 111888) and data type float64
+2026-10-07 23:49:44,365 | 27_event_studies | ERROR | tornado ES failed log_qcew_emp: Unable to allocate 18.8 MiB for an array with shape (11, 447552) and data type float32
+2026-10-07 23:49:45,327 | 27_event_studies | ERROR | adoption ES failed log_qcew_emp: Unable to allocate 34.0 MiB for an array with shape (30, 148474) and data type int64
+=== 27_event_studies exit 0 23:49:58
+=== 28_stacked_event_studies 23:49:58
+2026-10-07 23:50:00,107 | 28_stacked_event_studies | INFO | ======================================================================
+2026-10-07 23:50:00,108 | 28_stacked_event_studies | INFO | START 28_stacked_event_studies at 2026-10-07T23:50:00
+2026-10-07 23:50:05,638 | 27_event_studies | INFO | ======================================================================
+2026-10-07 23:50:05,639 | 27_event_studies | INFO | START 27_event_studies at 2026-10-07T23:50:05
+2026-10-07 23:51:05,787 | 28_stacked_event_studies | INFO | log_employment: TWFE 0.001188 | stacked 0.001659 | IW 0.002287 | stackedES post 6.271e-05 (pre p=0.188)
+2026-10-07 23:51:54,246 | 28_stacked_event_studies | INFO | separation_rate: TWFE 0.0004741 | stacked 0.0006581 | IW 0.0003958 | stackedES post 0.001777 (pre p=0.331)
+2026-10-07 23:52:45,810 | 28_stacked_event_studies | INFO | log_earnings: TWFE -0.001685 | stacked -0.0004207 | IW -0.0008722 | stackedES post 0.004925 (pre p=0.253)
+2026-10-07 23:52:57,721 | 28_stacked_event_studies | INFO | establishment_death_rate: TWFE 0.04373 | stacked 0.1038 | IW 0.1216 | stackedES post -0.2235 (pre p=0.470)
+2026-10-07 23:53:06,629 | 28_stacked_event_studies | INFO | job_destruction_rate: TWFE 0.1107 | stacked 0.1202 | IW 0.1572 | stackedES post -0.352 (pre p=0.410)
+2026-10-07 23:53:45,878 | 28_stacked_event_studies | INFO | hire_rate: TWFE -0.00112 | stacked -0.0008339 | IW -0.001306 | stackedES post -0.0002294 (pre p=0.681)
+2026-10-07 23:54:31,579 | 28_stacked_event_studies | INFO | job_destruction_rate_qwi: TWFE 0.0007478 | stacked 0.0004286 | IW 0.0004494 | stackedES post 0.001631 (pre p=0.323)
+2026-10-07 23:54:35,168 | 28_stacked_event_studies | INFO | outmigration_rate: TWFE 0.03174 | stacked 0.04021 | IW 0.03794 | stackedES post -0.007523 (pre p=0.883)
+2026-10-07 23:54:46,963 | 28_stacked_event_studies | INFO | log_establishments: TWFE 0.007439 | stacked 0.004886 | IW 0.004907 | stackedES post 0.003308 (pre p=0.019)
+2026-10-07 23:54:55,918 | 28_stacked_event_studies | INFO | small_estab_death_rate: TWFE 0.1003 | stacked 0.1663 | IW 0.1881 | stackedES post -0.2128 (pre p=0.383)
+2026-10-07 23:55:05,120 | 28_stacked_event_studies | INFO | ihs_units: TWFE -0.02286 | stacked -0.02142 | IW -0.02568 | stackedES post -0.1795 (pre p=0.278)
+=== 28_stacked_event_studies exit 0 23:55:06
+=== 29_mechanisms 23:55:06
+2026-10-07 23:55:09,189 | 29_mechanisms | INFO | ======================================================================
+2026-10-07 23:55:09,191 | 29_mechanisms | INFO | START 29_mechanisms at 2026-10-07T23:55:09
+=== 29_mechanisms exit -1 00:08:03
+=== 30_heterogeneity 00:08:03
+2026-10-08 00:08:10,056 | 30_heterogeneity | INFO | ======================================================================
+2026-10-08 00:08:10,060 | 30_heterogeneity | INFO | START 30_heterogeneity at 2026-10-08T00:08:10
+2026-10-08 00:08:59,847 | 30_heterogeneity | INFO | separation_rate heterogeneity done
+2026-10-08 00:09:28,448 | 30_heterogeneity | INFO | log_employment heterogeneity done
+2026-10-08 00:09:56,863 | 30_heterogeneity | INFO | log_earnings heterogeneity done
+2026-10-08 00:10:05,259 | 30_heterogeneity | INFO | establishment_death_rate heterogeneity done
+2026-10-08 00:10:13,433 | 30_heterogeneity | INFO | job_destruction_rate heterogeneity done
+=== 30_heterogeneity exit -1 00:16:57
+=== 32_robustness 00:16:57
+2026-10-08 00:17:02,137 | 32_robustness | INFO | ======================================================================
+2026-10-08 00:17:02,138 | 32_robustness | INFO | START 32_robustness at 2026-10-08T00:17:02
+2026-10-08 00:19:10,313 | 32_robustness | INFO | separation_rate: 70 specs ok, 0 failed/infeasible
+2026-10-08 00:21:04,120 | 32_robustness | INFO | log_employment: 70 specs ok, 0 failed/infeasible
+2026-10-08 00:22:51,173 | 32_robustness | INFO | log_earnings: 70 specs ok, 0 failed/infeasible
+2026-10-08 00:23:22,125 | 32_robustness | INFO | establishment_death_rate: 69 specs ok, 0 failed/infeasible
+2026-10-08 00:23:50,743 | 32_robustness | INFO | job_destruction_rate: 69 specs ok, 0 failed/infeasible

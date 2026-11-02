@@ -1,0 +1,1543 @@
+DOI: 10.1111/risa.14024
+ORIGINAL ARTICLE
+Does federal ﬂood hazard mitigation assistance affect community
+rating system participation?
+Eugene Frimpong1 Allison C. Reilly2 Deb Niemeier2
+1 Marine Extension and Georgia Sea Grant,
+University of Georgia, Brunswick, Georgia, USA
+2 Department of Civil and Environmental
+Engineering, University of Maryland, College
+Park, Maryland, USA
+Correspondence
+Allison Reilly, Department of Civil and
+Environmental Engineering, 1174 Glenn Martin
+Hall, University of Maryland, College Park, MD
+20742, USA.
+Email: areilly2@umd.edu
+Abstract
+With the inexorable march of climate change, increased ﬂooding is inevitable. Under-
+standing the feedback between federal ﬂood mitigation policies and the ways in which
+local governments build ﬂood resilience is a signiﬁcant gap in the literature. In partic-
+ular, the effect that federal ﬂood mitigation grants have on the intensity of local ﬂood
+mitigation is nonexistent. This work measures ﬂood risk mitigation by using the level
+of participation in FEMA’s Community Rating System (CRS). Communities that par-
+ticipate in the CRS and undertake mitigation are awarded points; more points imply
+a higher level of participation. Since its inception in 1990, CRS communities have
+received considerably more federal pre-disaster ﬂood mitigation grants compared to
+non-CRS communities. This study assesses the effect of federal pre-disaster ﬂood mit-
+igation grants on the level of participation in the CRS program. We use data on Hazard
+Mitigation Assistance programs and CRS participation data between 2010 and 2015.
+We link these data to ﬂood risk and socioeconomic information. Our results indicate (i)
+federal pre-disaster ﬂood mitigation grants do not appear to signiﬁcantly inﬂuence the
+level of CRS participation, (ii) the effect of ﬂood risk and socioeconomic factors on the
+level of CRS participation are mixed, and (iii) the current level of CRS participation
+is inﬂuenced by the previous level of CRS participation, which is not tied to federal
+pre-disaster ﬂood mitigation grant. These ﬁndings add to the growing discussions on
+the drivers and barriers of local ﬂood risk mitigation.
+KEYWORDS
+community rating system, dynamic panel model, federal ﬂood mitigation assistance, ﬂood risk mitigation
+1 INTRODUCTION
+The widespread and disruptive nature of ﬂoods makes
+addressing ﬂood hazards in the United States important. Data
+from the National Centers for Environmental Information
+(NCEI) indicate that ﬂood losses continue to rise at an alarm-
+ing rate (NCEI, 2020), and that the country’s National Flood
+Insurance Program (NFIP), which is the main issuer of ﬂood
+insurance in the United States, is not actuarially sound (U.S.
+Congressional Budget Ofﬁce, 2017).1 Mitigation, from ele-
+vating homes to limiting development in highly ﬂood-prone
+1 As of 2020, after a $16 billion debt cancellation, the NFIP is $25 billion in debt
+(Congressional Research Service, 2020).
+This is an open access article under the terms of the Creative Commons Attribution-NonCommercial License, which permits use, distribution and reproduction in any medium,
+provided the original work is properly cited and is not used for commercial purposes.
+© 2022 The Authors. Risk Analysis published by Wiley Periodicals LLC on behalf of Society for Risk Analysis.
+areas, is key in improving outcomes (Congressional Research
+Service, 2019).
+One of the ways the Federal Emergency Management
+Agency (FEMA) encourages participation in the NFIP while
+encouraging local communities to reduce their ﬂood damage
+is through the Community Rating System (CRS) (Frimpong
+et al., 2020). Communities voluntarily participate in the CRS
+and pursue ﬂood mitigation measures. Each action awards
+the community points which, when summed, indicates the
+community’s overall level of CRS participation. Residents of
+participating communities receive a ﬂood insurance premium
+discount that is, in principle, commensurate with the level
+of CRS participation by their community. The more points a
+community receives, the greater their premium discount. The
+1414 wileyonlinelibrary.com/journal/risa Risk Analysis. 2023;43:1414–1433.
+FEDERAL FLOOD HAZARD MITIGA TION ASSISTANCE 1415
+CRS activities are nonstructural (e.g., land use regulation,
+ﬂood mapping, and ﬂood warning and response) and broadly
+grouped into four categories called series. There are four
+series of activities—Series 300, 400, 500, and 600. Activi-
+ties in higher series typically offer more points to generally
+reﬂect the fact that more ﬂood damage is being reduced. CRS
+communities must certify annually that they are still partic-
+ipating in CRS activities, making the program the only one
+that continuously engages with communities to address ﬂood
+damage (Frimpong et al., 2020; Michel-Kerjan et al., 2016).
+If no CRS activity is undertaken in CRS community over the
+course of a year, its score could fall. A CRS community can
+increase or maintain its CRS score by showing annually that it
+is participating in a CRS activity. The cost of participating in
+CRS activities varies depending on the activities undertaken
+(Frimpong et al., 2020) and, as a result, CRS communities
+might elect to strategically engage in less expensive activities
+to maximize points (Brody et al., 2009; Berke et al., 2014;
+Michel-Kerjan et al., 2016; Sadiq & Noonan, 2015a; Zahran
+et al., 2010).
+Separate from the CRS, FEMA offers grants for com-
+munities to conduct hazard mitigation. Federal funds for
+mitigation mostly, but not exclusively, ﬂow through the Haz-
+ard Mitigation Assistance programs (HMA), which includes
+the Hazard Mitigation Grant Program (HMGP), Pre-Disaster
+Mitigation (PDM), and Flood Mitigation Assistance (FMA).
+The proposed mitigation activities must reduce or eliminate
+future damage to properties and lives, and the community
+can, but does not have to be part of the CRS to receive
+HMA grants. The HMA programs mostly fund nonstructural
+mitigation activities (e.g., planning, warning and awareness
+studies, relocation, acquisition of structures, dams and levees
+infrastructure rehabilitation, and retroﬁtting) (FEMA, 2020a).
+The federal cost share for these grants is usually 75% and so
+local governments’ ﬁnancial support is required. The HMGP ,
+which historically has been the largest among the HMA pro-
+grams, is usually only available to local governments after a
+presidential disaster declaration in their jurisdiction. In 2019,
+FEMA replaced the PDM grant program with the Building
+Resilient Infrastructure and Communities grant program to
+expand the ﬁnancial resources local communities can exploit
+to bolster hazard mitigation. Except for FMA grant money,
+CRS communities can improve their CRS points by imple-
+menting HMA-funded mitigation projects (FEMA, 2017).
+The limitation of using FMA grant money to improve CRS
+points is mandated by the National Flood Insurance Reform
+Act of 1994 (FEMA, 2017). Outside FEMA, there are other
+sources of ﬁnancial assistance including, Community Devel-
+opment Block Grants from the U.S. Department of Housing
+and Urban Development, grants from the U.S. Army Corps
+of Engineers, and the U.S. Department of Agriculture’s Nat-
+ural Resources Conservation Service, that CRS communities
+could use to implement CRS mitigation activities and receive
+points. However, most of these non-FEMA grants are ex-post
+recovery spending which has been shown to be less effective
+compared to pre-disaster grants in reducing property losses
+(Davlasheridze et al., 2017).
+FEMA’s 2020 reporting on HMA funding indicates that
+for ﬂood-related projects, CRS communities have received
+considerably more grant money compared to their non-CRS
+counterparts (FEMA, 2020b). This makes intuitive sense
+because CRS communities (1) hold over 70% of the nation’s
+ﬂood insurance policies (FEMA, 2020c) and (2) may have the
+capacity to provide the 25% match required as cost share for
+HMA grants (Brody et al., 2010; Landry & Li, 2012; Sadiq &
+Noonan, 2015a). Previous research has shown that the level of
+CRS participation is higher among communities with larger
+tax base (Li & Landry, 2018), indicating the importance
+ﬁnancial resources in local governments’ efforts to engage
+in local ﬂood mitigation. While generally, one would expect
+that HMA grant money received by CRS communities would
+bolster ﬂood mitigation efforts (FEMA, 2017), to our knowl-
+edge, there is no empirical evidence to show if and to what
+extent HMA grant money inﬂuences the level of CRS partic-
+ipation (as measured by points) and thus the degree to which
+the community reduces their ﬂood risk.
+The CRS program could deliver substantial beneﬁts to the
+public by reducing ﬂood damages and thus make NFIP sol-
+vent and reduce taxpayer burden of funding ﬂood losses. CRS
+communities hold over 70% of the nation’s ﬂood insurance
+policies (FEMA, 2020c). And so, measuring the effect that
+federal pre-disaster spending (HMA) has on CRS points is
+important to understand the effectiveness of government pre-
+disaster mitigation spending in encouraging communities to
+reduce ﬂood losses, and provide a mechanism to evaluate
+ﬂood mitigation programs and ways the government could
+decrease its post-disaster relief spending.
+In this study, we evaluate the degree to which HMA grants
+inﬂuence the level of CRS participation. Given that HMA
+grants and CRS participation both usually focus on nonstruc-
+tural activities, we would expect that as more HMA grant
+funds are awarded, so would CRS participation (as measured
+by points), all other things equal. However, if these do not
+have a positive and signiﬁcant relationship, it may point to
+two things: (1) local communities use the funds to main-
+tain their status in the CRS as opposed to increasing their
+participation, thus potentially supplanting funds local govern-
+ments would otherwise use to maintain CRS status, and/or
+(2) the CRS, as an instrument for measuring ﬂood damage
+reduction, is simply too blunt to capture ﬁne-scaled mitiga-
+tion strategies. We also assess whether there are differential
+effects of HMA grant money on the level of participation
+in the various CRS activities undertaken (measured by CRS
+series points). We assume, all other things equal, that CRS
+communities increase participation in higher funded CRS
+activities.
+To address this research question, we build a dynamic
+panel model that predicts the level of CRS participation
+as a function of FEMA HMA grants, ﬂood risk indica-
+tors, and socioeconomic information. We do this by building
+ﬁve different models. We ﬁrst measure the effect that HMA
+grants has on the level of CRS participation, and then con-
+sider the role it has in the level of participation in each of
+the four series activities (i.e., Series 300–600). The CRS
+ 15396924, 2023, 7, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/risa.14024 by University Of Maryland, Wiley Online Library on [28/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+1416 FRIMPONG ET AL .
+TABLE 1 Community Rating System (CRS) activities and correspondence between CRS activities and Hazard Mitigation Assistance (HMA)-funded
+projects
+Activity
+Maximum possible
+points Related HMA-funded project type
+Series 300: Public information
+310–Elevation certiﬁcate 166 100.1: Public awareness and education (brochures,
+workshops, videos, etc.)
+320–Map information service 90
+330–Outreach projects 350
+340–Hazard disclosure 80
+350–Flood protection information 125
+360–Flood protection assistance 110
+370–Flood insurance promotion * 110
+Series 400: Mapping and regulations
+410–Floodplain mapping 802
+420–Open space preservation 2020 303.1: Wetland restoration/creation
+430–Higher regulatory standards 2042
+440–Flood data maintenance 222
+450–Stormwater management 755
+Series 500: Flood damage reduction activities
+510–Floodplain management planning 622 91.1: Local Multihazard Mitigation Plan
+520–Acquisition and relocation 1900 200.1: Acquisition of private real property (structures and
+land)–Riverine
+530–Flood protection 1600 202.1: Elevation of private structures–Riverine
+540–Drainage system maintenance 570 218
+Series 600: Warning and response
+610–Flood warning and response 395 600.1: Warning systems (as a component of a planned,
+adopted, and exercised risk reduction plan)
+620–Levees 235 500.2: Flood control–berm, levee, or dike
+630–Dams 160 500.3: Flood control–dam
+Note: Source for CRS activities: FEMA, 2018; Source for HMA funded projects: FEMA, 2020b.
+*Introduced in 2013.
+participation data covers the entire United States for
+2010—2015. Understanding the relationship between HMA
+grants and CRS participation intensity is thus crucial for
+advancing ﬂood hazard mitigation and sharpening relevant
+policy.
+2 COMMUNITY RATING SYSTEM IN
+PRACTICE AND THEORY
+CRS communities are distinct geographic entities that can
+include those incorporated and unincorporated areas of coun-
+ties, cities, towns, villages, and boroughs that participate
+in the National Flood Insurance Program. The CRS is the
+only ﬂood mitigation program that integrates insurance with
+mitigation (Li & Landry, 2018), and participation in the
+program is voluntary. The activities that CRS communities
+can participate in are nonstructural and are categorized into
+four series (Table 1).2 Series 300 activities are informational
+(e.g., providing residents information on ﬂood risk and insur-
+ance), Series 400 activities focus on regulatory enactment and
+enforcement (e.g., ﬂoodplain mapping), Series 500 activities
+include those that reduce ﬂood damage (e.g., acquisition and
+relocation of at-risk homes and structures), and Series 600
+activities include those aimed at minimizing the effects of res-
+idential ﬂooding (e.g., levee and dam maintenance) (FEMA,
+2018). For each activity undertaken, the community receives
+some fraction of the maximum allowed points conditioned
+on the extent of mitigation; in the end, the cumulative num-
+ber of points reﬂects the degree of CRS participation. It is
+worth mentioning that, in some cases, activities under dif-
+ferent series would have to be undertaken simultaneously to
+receive credit. For example, a CRS community participating
+2 “Some CRS activities may be implemented by the state or a regional agency rather
+than by the community. For example, some states have hazard disclosure laws that are
+creditable under Activity 340 (Flood Hazard Disclosure). A community in those states
+will receive those credit points when it applies for CRS credit and demonstrates that the
+law is effectively implemented within its jurisdiction” (FEMA, 2018).
+ 15396924, 2023, 7, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/risa.14024 by University Of Maryland, Wiley Online Library on [28/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FEDERAL FLOOD HAZARD MITIGA TION ASSISTANCE 1417
+TABLE 2 Community Rating System (CRS) class and discounts
+Class Discount for SFHA (%) Discount for non-SFHA (%) Credit points required
+1 45 10 4500 +
+2 40 10 4000–4499
+3 35 10 3500–3999
+4 30 10 3000–3499
+5 25 10 2500–2999
+6 20 10 2000–2499
+7 15 5 1500–1999
+8 10 5 1000–1499
+9 5 5 500–999
+10 0 0 0–499
+Source: FEMA, 2013.
+in Series 500 activity is required to also participate in ﬂood
+protection information activity (Series 300), though they will
+receive credit for both activities (FEMA, 2017). To partici-
+pate in the program, NFIP communities have to submit yearly
+documentation showing active participation in CRS activities.
+State designated Insurance Services Ofﬁce (ISO)/CRS spe-
+cialists review these documents in collaboration with FEMA
+and either approve or deny premium discounts for residents.
+As part of the application review process, ISO visits the NFIP
+community to verify that CRS participation is active. If com-
+munities do not engage in mitigation over the course of a
+year, they could lose points (depending on the types of points
+awarded in the past) or face elimination from the program.
+There are 10 levels of CRS participation; the cumulative
+points awarded to the community determine the level. The
+entry level is Class 9 and the highest level of participation
+is Class 1 (Table 2). NFIP communities that do not partic-
+ipate in CRS activities or do not obtain the minimum CRS
+credit are assigned to Class 10. Premium discounts for resi-
+dents depend on the level of CRS participation. For residents
+in the Special Flood Hazard Area (SFHA) 3, the discount is
+between 0% and 45%, while the discount is between 5% and
+10% for residents outside the SFHA (FEMA, 2018). As of
+2020, Roseville, California is the only CRS community to
+achieve CRS Class 1.
+Past studies suggest that an NFIP community’s decision
+to join the CRS program is driven largely by ﬂood risk and
+socioeconomic factors (Asche, 2013; Landry & Li, 2012;
+Posey, 2009; Sadiq & Noonan, 2015a; Sadiq et al., 2020).
+There are a few papers that also ﬁnd that increased partic-
+ipation in CRS encourages NFIP participation (Borsky &
+Henninghausen, 2022; Frimpong et al., 2020; Petrolia et al.,
+2013; Zahran et al., 2009) and reduces ﬂood losses and dam-
+age claims payment (Frimpong et al., 2020; Gourevitch &
+Pinter, 2022; Highﬁeld & Brody, 2013, 2017; Highﬁeld et al.,
+2014; Michel-Kerjan & Kousky, 2010).
+3 SFHA is an area that has a high risk of ﬂooding. FEMA requires that the NFIP’s ﬂood-
+plain management regulations are enforced in SFHA, and that ﬂood insurance purchase
+be mandatory.
+Related to our study, Brody et al. ( 2009) used CRS data
+spanning 1999–2005, ﬂood risk, and socioeconomic data to
+examine the factors affecting Florida counties’ level of CRS
+participation. Their ﬁndings show that proportion of land
+area in ﬂoodplain, ﬂood frequency, ﬂood property damage,
+population density, nonproﬁt assets per capita, household
+income, and education are important factors. Zahran et al.
+(2010) using the same data found that CRS communities
+are discount-seeking, with mitigation efforts partially driven
+by the nonlinear incentive design of the program. Simi-
+lar to Brody et al. ( 2009), Zahran et al. ( 2010) also found
+the proportion of land area in ﬂoodplain, ﬂood frequency,
+ﬂood property damage, population density, nonproﬁt assets
+per capita, household income, and education to be signiﬁ-
+cant predictors of CRS points. Sadiq and Noonan ( 2015b)
+expanded the analyses by analyzing a national sample of
+CRS communities to determine whether the factors that affect
+communities’ decision to join the CRS program also affect
+the level of CRS participation. Their results indicate that fac-
+tors that predict whether an NFIP community will participate
+in the CRS program differ from factors that predict CRS
+points.
+Focusing on the state of Louisiana, Paille et al. ( 2016)
+also found that higher CRS participation is associated with
+higher median home values. Factors including the number
+of ﬂoods, local government revenue, and elevation, however,
+were not signiﬁcant predictors of CRS participation. Li and
+Landry ( 2018) tested whether the current level of CRS par-
+ticipation is inﬂuenced by the previous level of participation,
+while controlling for ﬂood risk and socioeconomic factors,
+in the State of North Carolina. This indicates the degree
+to which communities actively seek to maintain their CRS
+status. They noted that indeed the current level of CRS par-
+ticipation depends on the previous level. They also noted that
+ﬂood risk and socioeconomic factors including risk index,
+tax revenue, staff, unemployment, crime rate, population den-
+sity, income, and percent of senior citizens determine CRS
+participation. While these studies have contributed to our
+understanding on the factors that inﬂuence the level of par-
+ticipation in the CRS, to the authors’ knowledge, no study
+ 15396924, 2023, 7, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/risa.14024 by University Of Maryland, Wiley Online Library on [28/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+1418 FRIMPONG ET AL .
+has evaluated the role that HMA grants have on CRS status
+and participation. Like Li and Landry ( 2018), we also test
+whether the current level of CRS participation depends on
+previous participation by estimating a dynamic panel model.
+However, unlike Li and Landry, we use a national dataset, in
+addition to other differences.
+3 CORRESPONDENCE BETWEEN CRS
+ACTIVITIES AND HMA-FUNDED PROJECT
+TYPE
+The 19 creditable activities identiﬁed across the four CRS
+series can be mapped partially to one or more project types
+funded under FEMA’s Hazard Mitigation Assistance pro-
+grams (see Table 1)( F E M A , 2013). To illustrate, CRS
+activities under series “300—Public Information” map to the
+HMA project type “100.1: Public Awareness and Education.”
+Likewise, CRS activity “420—Open space preservation,”
+under Series 400, maps to HMA project type “303.1: Wetland
+restoration/creation.” To receive credit for activity 420, CRS
+communities have to visually demonstrate that areas to be
+credited are designated as open space preservation (FEMA,
+2013). CRS communities may also receive larger credits
+for HMA-funded property acquisition projects and structure
+retroﬁts (FEMA, 2013).
+4 DATA
+To evaluate the role that HMA grants have on CRS par-
+ticipation (as measured by a community’s score), we use
+2010–2015 panel data at the CRS community level. We con-
+sider CRS communities that have and have not received HMA
+funding for the timeframe under consideration. CRS data
+for 1108 CRS communities that continuously participated in
+CRS during 2010–2015 and are in United States mainland
+are obtained by professional courtesy. Ninety very small CRS
+communities, however, are not in the FEMA CRS community
+data layer and 49 lack precipitation data. Thus, the ﬁnal data
+analyzed consist of 969 communities (Figure 1), and as might
+be expected, most are in coastal regions. The unit of analy-
+sis is CRS community. CRS communities’ geographic areas
+(incorporated and unincorporated areas of counties, cities,
+towns, villages, and boroughs) do not always cleanly overlay
+with other more common spatial designations, such as census
+areas. As we discuss later, to collect information at the spatial
+scale we need, we overlay CRS community shapeﬁles from
+FEMA with shapeﬁles from other relevant datasets.
+For our dependent variables, we separately consider both
+CRS points (i.e., the total points accrued across all series)
+and CRS series points (Series 300, Series 400, Series 500,
+Series 600). Using boxplots, we see the distribution of total
+CRS points, HMA, and points in each series over the CRS
+communities (Figure 2A,B). Also displayed in the ﬁgures are
+the means (shown as line plot–dashes). It is clear from the
+boxplots in Figure 2A,B that the median total CRS points and
+series points in a given year do not appreciably change within
+any of the series. It is also clear that there are long tailed
+distributions for the total CRS points and for the 400 and 500
+Series. That is, there are signiﬁcant outliers. Overall, our CRS
+data show that 89% (863 out of 969) of CRS communities
+record a change in CRS points.
+Our independent variables are organized into policy vari-
+able, ﬂood risk variables, socioeconomic variables, and year
+ﬁxed-effects (Table 3). The policy variable is the level of
+HMA funding, which we construct using FEMA’s “Hazard
+Mitigation Assistance projects” dataset (FEMA, 2020b). The
+dataset which spans from 1989 to 2021 includes funding in
+each program administered through HMA (HMGP , PDM,
+and FMA). Data for Severe Repetitive Loss (SRL) and Repet-
+itive Flood Claims (RFC) grants are also included in this
+open dataset but excluded from our analysis because SRL and
+RFC were eliminated from the HMA program by the pas-
+sage of the Biggert-Waters Flood Insurance Reform Act of
+2012 and are relatively small in number. 4 We also exclude
+FMA from the analysis because CRS communities do not
+get credit for implementing FMA-funded mitigation activities
+(FEMA, 2017). Spending through the HMGP between 1989
+and 2019 comprises about 80% of FEMA’s HMA dataset;
+PDM accounts for 12%, FMA is 7%, and RFC and SRL com-
+bined is 1%. We exclude all nonﬂood project types. FEMA’s
+HMA raw data are not at the CRS community level, and
+so to obtain yearly HMA grant funding at the CRS com-
+munity level, we ﬁrst match unique project identiﬁers in
+FEMA’s “Hazard Mitigation Assistance projects” dataset to
+project identiﬁers in FEMA’s “Hazard Mitigation Assistance
+Projects by NFIP CRS Communities” dataset. We then aggre-
+gate the federal cost share at the CRS community level over
+all the projects approved in a given year. Finally, we lag HMA
+funding by 2 years since most HMA typically funds buyout
+projects, which can take as long as 18 months to complete
+(Robinson et al., 2018). However, we recognize that different
+mitigation projects could take different time periods to com-
+plete and for CRS communities to receive credit. As such, we
+also consider different lagged periods as a robustness check
+and report the results in the Appendix. That is, in all we use
+HMA data from 2005 to 2014.
+As we discuss later, our econometric model requires that
+only variables that are time variant are included in our anal-
+ysis. This means that our control variables including, ﬂood
+risk and socioeconomic variables should vary across the years
+considered. So, for the ﬂood risk variables, we obtain Pre-
+cipitation data from PRISM Climate Group’s 4-kilometer
+resolution gridded daily precipitation (PRISM, 2020). Specif-
+ically, we measure Precipitation as the maximum daily
+precipitation in millimeters over the course of the year. By
+4 SRL grant program was authorized by the Flood Insurance Reform Act of 2004 to
+provide funding to reduce or eliminate long-term ﬂood risk to severe repetitive loss
+structures insured under NFIP . The RFC grant program is like SRL with the goal of
+reducing or eliminating long-term ﬂood risk to structures and make NFIP solvent. CRS
+communities could use SRL and RFC to buyout or relocate severe repetitive loss struc-
+tures. We also estimated our models considering SRL and RFC and the ﬁndings are not
+signiﬁcantly different.
+ 15396924, 2023, 7, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/risa.14024 by University Of Maryland, Wiley Online Library on [28/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FEDERAL FLOOD HAZARD MITIGA TION ASSISTANCE 1419
+FIGURE 1 Spatial distribution of study Community Rating System (CRS) communities and Hazard Mitigation Assistance (HMA) levels
+TABLE 3 Summary of variables, deﬁnition, and data source
+Variables Deﬁnition Unit Data source
+Dependent variables
+CRS points Total number of CRS points earned
+Series 300 Total number of CRS points earned for undertaking Series 300 activities
+Series 400 Total number of CRS points earned for undertaking Series 400 activities
+Series 500 Total number of CRS points earned for undertaking Series 500 activities
+Series 600 Total number of CRS points earned for undertaking Series 600 activities
+Independent variables
+Policy variable
+HMA Total ﬂood-related grants under FEMA’s Hazard Mitigation Assistance $ FEMA
+Flood risk variables
+Precipitation Millimeters
+NFIP claims rate Ratio of NFIP claims and to coverage for a given year FEMA
+Socioeconomic variables
+Income Estimated median household income in the past 12 months $ ACS
+Population density Number of people per square miles Imputed
+Housing unit Estimated count of housing units ACS
+Age Estimated median age Y ears ACS
+Property tax Estimated median real estate taxes paid $ ACS
+Y ear ﬁxed-effects
+Yr2010 =1 if year is 2010, = 0 otherwise
+Yr2011 =1 if year is 2011, = 0 otherwise
+Yr2012 =1 if year is 2012, = 0 otherwise
+Yr2013 =1 if year is 2013, = 0 otherwise
+Yr2014 =1 if year is 2014, = 0 otherwise
+Yr2015 =1 if year is 2015, = 0 otherwise
+Abbreviations: CRS, Community Rating System; FEMA, Federal Emergency Management Agency; HMA, Hazard Mitigation Assistance; NFIP , National Flood Insurance Program;
+SFHA, Special Flood Hazard Area.
+ 15396924, 2023, 7, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/risa.14024 by University Of Maryland, Wiley Online Library on [28/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+1420 FRIMPONG ET AL .
+FIGURE 2 (A) Box plots showing distribution of Community Rating System (CRS) points (left) and Log(HMA) (right). The line plot (shown in
+dashes) represents the means. (B) Box plots showing distribution of Series 300, 400, 500, and 600. The line plot (shown in dashes) represents the means
+using maximum daily precipitation, we are able to better
+account for abnormal rainfalls in a given year. We expect
+communities that receive more precipitation in the previous
+year or 2 years to increase CRS participation.
+Another metric that we use to capture ﬂood risk is NFIP
+claims rate . This is ratio of NFIP claims payment to the
+coverage amount. Both values come from FEMA’s “FIMA
+NFIP Reduction Claims” dataset (FEMA, 2020d). Because
+the smallest unit of this dataset is the Zone Improvement Plan
+(ZIP) code, we aggregate NFIP claims payments and cover-
+age amount at the CRS community level by overlaying ZIP
+code shapeﬁles on NFIP community shapeﬁles. We include
+ 15396924, 2023, 7, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/risa.14024 by University Of Maryland, Wiley Online Library on [28/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FEDERAL FLOOD HAZARD MITIGA TION ASSISTANCE 1421
+NFIP claims rate to assess the extent to which communities
+respond to prior ﬂood damages; it serves as a proxy for prop-
+erty damage relative to the community’s assets. The NFIP
+claims rate is lagged 1 and 2 years. We assume that commu-
+nities with higher NFIP claims rate in the previous year or 2
+years will increase current CRS participation, all other things
+equal. In previous studies of factors inﬂuencing the level of
+CRS participation, property damage was found to be a sig-
+niﬁcant determinant of CRS participation (Brody et al., 2009;
+Zahran et al., 2010).
+Our socioeconomic variables include data on Income, Pop-
+ulation density, Housing units , Age, and Property tax from
+the American Community Survey (ACS) 5-year data (U.S.
+Census, 2020). Income is the median household income; Pop-
+ulation density is the total number of people per square mile
+of CRS community area; Housing units captures the total
+number of housing units; Age is the median age of the pop-
+ulation, and ﬁnally Property tax is the median real estate
+tax. We overlay ACS data at the census tract level on NFIP
+community shapeﬁles to obtain data at the CRS commu-
+nity level. For Income, Age, and Property tax ,w eu s et h e
+maximum value that intersects the NFIP community shape-
+ﬁles, and for Housing units we aggregate across all census
+tracts that intersect with the NFIP community shapeﬁles. Like
+Housing units ,f o r Population density, we aggregate across
+census tracts, and further divide by CRS community area.
+Income, Population density, Housing units, and Age accounts
+for the effect of community characteristics on local hazard
+mitigation while capturing the inﬂuence of human and social
+capital on local hazard mitigation. Household income and
+population density have been found to be important predic-
+tors of CRS participation (Brody et al., 2009; Li & Landry,
+2018; Zahran et al., 2010). Other studies have also found
+property tax to be an important predictor of CRS partic-
+ipation (Li & Landry, 2018; Paille et al., 2016; Sadiq &
+Noonan, 2015b). Property tax is used as a proxy for local
+capacity to implement mitigation projects. We presume that
+communities with larger income, population density, number
+of housing units, median age of the population, and tax base
+will engage more in local hazard mitigation and increase CRS
+points. Finally, we construct year ﬁxed-effects variables for
+the years under consideration 2010–2015. Table 4 presents
+the summary statistics and expected signs for our variables of
+interest, and all monetary values are nominal. For the study
+period considered, the average CRS points is about 1573.
+The minimum (502) and maximum (5463) CRS points sug-
+gest that our data consist of CRS communities in both the
+entry level (class 9) and the highest level of participation
+(class 1). On average, the number of points earned in public
+information activities ( Series 300 ), mapping and regulation
+(Series 400 ), ﬂood damage reduction activities ( Series 500 ),
+and ﬂood warning and response activities ( Series 600 )a r e
+approximately 361, 714, 297, and 96, respectively, suggest-
+ing that ﬂood warning and response is the least participated
+activity series. Regarding our policy variable, HMA, CRS
+communities in our study period have received an average of
+about $74,511 in HMA grants and maximum of $46,520,404.
+The minimum is $0. The mean Precipitation is 93.74 mm
+and the mean NFIP claims rate is 0.04. The mean value for
+Income is approximately $101,225, and the minimum and
+maximum are $22,385 and $250,001. For Population density,
+the mean value is about 130.36 while the minimum and max-
+imum values are 0.28 and 6735.85 respectively. The mean
+number of Housing unit in the CRS communities in our study
+period is approximately 4742, and the minimum and maxi-
+mum are 135 and 136,041. The average Age (about 52 year)
+in the CRS communities and for the period studied suggest
+the population is in the mature working age group. The min-
+imum age is 30 years, while the maximum age is 83. The
+last of our socioeconomic variables, Property tax, has a mean
+value of about $4,521 and a minimum and maximum of $326
+and $10,001, respectively. Finally, our year ﬁxed-effects vari-
+ables ( Yr2010-Yr2015) which are dummy variables have a
+mean of 0.17 and minimum and maximum values of 0 and
+1, respectively.
+5 EMPIRICAL MODEL AND
+ESTIMATION
+Our interest is in the relationship between HMA and the total
+CRS points and between HMA and each CRS series points. To
+accomplish this, we build a dynamic panel model (Arellano
+& Bond, 1991) and estimate parameters using the Arellano-
+Bover/Blundell-Bond (ABBB) two-step Generalized Method
+of Moments (GMM) estimator (Arellano & Bover, 1995;
+Blundell & Bond, 1998). The dynamic panel model is pre-
+ferred to a host of panel models because it simultaneously
+addresses two issues in our panel data. First, our dependent
+variables, CRS points and the CRS activity series (Series
+300, Series 400, Series 500, Series 600) are presumed to be
+state dependent (autoregressive). That is, the current level
+of CRS participation depends on the previous level of par-
+ticipation (Li & Landry, 2018). The second issue is that
+HMA is potentially endogenous (reverse causality). That is,
+CRS communities may be receiving more HMA grant money
+because they are participating in CRS and the amount of
+HMA grant money a community receives may depend on
+the community’s level of CRS participation. If these issues
+are unaddressed, our estimates will be potentially biased and
+inconsistent.
+We specify our initial dynamic panel model as,
+ln(yit)=𝛾 ln(yi,t−1 )+𝜑 ln(hi,t−2)+𝛿 ln(fi,t−1,2)+𝛽 ln(sit)+ uit,
+(1)
+uit =𝜂 i +𝜆 t +𝜀 it, (2)
+where ln(yit) and ln(yi,t−1) represent log of a CRS points or
+CSR activity series (300-600) and its lag, for CRS commu-
+nity i at year t. Recall that ﬁve models in total are created.
+𝛾,𝜑,𝛿, and 𝛽 are parameters to be estimated. ln(hi,t−2)i st h e
+ 15396924, 2023, 7, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/risa.14024 by University Of Maryland, Wiley Online Library on [28/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+1422 FRIMPONG ET AL .
+TABLE 4 Summary statistics of variables
+Variables Unit Median Mean SD Min Max Exp. Sign
+Dependent variables
+CRS points 1531 1573 623 502 5463
+Series 300 351 361 130 38 795
+Series 400 675 714 335 0 2309
+Series 500 257 297 292 0 3152
+Series 600 71 96 63 0 510
+Independent variables
+Policy variable
+HMA $ 0 74511.78 76,8037.70 0 46,520,404 +
+Flood risk variables
+Precipitation Millimeters 83.95 93.74 53.57 8.73 471.46 +
+NFIP claims
+rate
+0.01 0.04 0.08 0 2.09 +
+Socioeconomic variables
+Income $ 89,850 101,225.50 44,557.82 22,385 250,001 +
+Population
+density
+79.65 130.36 242.98 0.28 6735.85 +
+Housing unit 2435 4742.28 7908.13 135 136,041 +
+Age Y ears 51 52.93 9.24 30 83.60 +
+Property tax $ 3812 4521.79 2852.44 326 10,001 +
+Y ear ﬁxed-effects
+Yr2010–Yr2015 0 0.17 0.37 0 1
+Note: Sample size is 969. In the regression model, variables are log transformed. A constant is added to variables with a minimum value of zero before log tra nsforming.
+log of the level of HMA grants awarded to community i in
+year t− 2. It is endogenous because causality may run in both
+directions as previously explained. We lag the level of HMA
+grants awarded to community i by 2 years because many
+HMA projects (e.g., buyouts) take approximately 2 years to
+complete. As a robustness check, we also lag the level of
+HMA grants by different years (1, 3, 4, and 5 years, see the
+Appendix). ln(fi,t−1,2) is the log of the vector of exogenous
+ﬂood risk variables for community i, again lagged by 1 and 2
+years with the assumption that past levels of ﬂood risk inﬂu-
+ence current CRS participation level, and ln(sit)i st h el o go f
+the vector of exogenous socioeconomic variables for com-
+munity i in year t. uit is the error term and is composed of
+community-speciﬁc effects, 𝜂i, year ﬁxed-effects, 𝜆t, and an
+idiosyncratic error term, 𝜀it.
+The ABBB two-step 5 GMM estimator is one of few
+“advanced” estimators that can estimate our parameters in
+Equation 1 (Arellano & Bond, 1991; Arellano & Bover, 1995;
+Blundell & Bond, 1998). The ABBB is a ﬁrst-difference
+estimator that builds on earlier GMM estimators by expand-
+ing the number of instruments 6 that the estimator uses to
+5 There is also a one-step procedure. However, it is inefﬁcient (Hwang & Sun, 2018).
+6 Instruments are variables that are not part of the explanatory variables in the main
+equation but are correlated with the endogenous independent variables. They are used
+to estimate causal relationship.
+address the issue of endogeneity in the dynamic panel model
+(Arellano & Bover, 1995; Blundell & Bond, 1998). This
+increases the efﬁciency of our parameter estimates (Arel-
+lano & Bover, 1995; Blundell & Bond, 1998). Similar to the
+Arellano and Bond ( 1991), GMM estimator, the ABBB is
+designed for panel datasets with large panels and small time
+periods like ours; we have 969 CRS communities and six 1-
+year periods (2010–2015). Because the GMM estimator is a
+ﬁrst-difference estimator, community-speciﬁc effects, 𝜂i,i n
+Equation 2 are removed, and Equations 1 and 2 are combined
+to yield a single equation of the form,
+ln(Δyit)=𝛾 ln(Δyi,t−1)+𝜑 ln
+(
+Δhi,t−2
+)
++𝛿 ln
+(
+Δfi,t−1,2
+)
++𝛽 ln(Δsit)+𝜆 t +𝜀 it, (3)
+where Δyit (i.e., yit − yi,t−1) is the ﬁrst difference of CRS
+points or CRS activity series, yit,Δyi,t−1 is the ﬁrst-difference
+of the lagged levels of CRS points or CRS activity
+series, yi,t−1, Δhi,t−2 is the ﬁrst-difference of the level of
+HMA grant money, Δfi,t−1,2, and Δsit is the ﬁrst-difference
+of the levels of socioeconomic variables. The ABBB uses
+a variety of instruments from the model to address endo-
+geneity. First, it uses the lags, except for the ﬁrst one,
+of the levels of the dependent ( CRS points or CRS activ-
+ity series) and endogenous independent variable ( HMA)a s
+ 15396924, 2023, 7, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/risa.14024 by University Of Maryland, Wiley Online Library on [28/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FEDERAL FLOOD HAZARD MITIGA TION ASSISTANCE 1423
+instruments (Arellano & Bond, 1991). In addition, it uses the
+ﬁrst differences of the exogenous variables (ﬂood risk and
+socioeconomic variables) as instruments (Arellano & Bover,
+1995; Blundell & Bond, 1998). We specify ﬁve models—
+one for CRS participation overall, and one for each of the
+300–600 Series degree of participation, and perform the
+speciﬁcation tests, including Sargan test for overidentifying
+restrictions and Arellano and Bond ( 1991) test for serial cor-
+relation. Although not obvious here, each model uses 40
+instruments to address endogeneity. Standard errors are esti-
+mated using WC-Robust estimators (Windmeijer, 2005)t o
+address potential downward bias of standard errors that may
+arise because of the two-step estimation.
+6 RESULTS
+6.1 Effects of HMA, ﬂood risk, and
+socioeconomic information on total CRS points
+We present our model speciﬁcations in Tables 5 and 6 and
+include our model diagnostics. The diagnostics include the
+Wald Test for joint signiﬁcance of the independent variables,
+the Sargan test for overidentifying restrictions, and the Arel-
+lano and Bond Test ( 1991) for serial correlation. Based on
+these diagnostics, we can reject the null hypothesis of no
+valid instruments at the 1% signiﬁcance level for all models.
+We can also reject the null hypothesis of no ﬁrst-order serial
+correlation, but fail to reject the null hypothesis of no second-
+order serial correlation at 1% signiﬁcance level. This supports
+our model speciﬁcation; a second-order serial correlation
+would have implied that the lagged endogenous variables
+used as instruments are invalid and thus, the dynamic panel
+model speciﬁcation would be wrong (Arrelano & Bond,
+1991).
+Our ﬁrst model (Table 5) presents the model speciﬁca-
+tion for total CRS points . The estimated coefﬁcients for this
+model represent the percent change in the level of CRS par-
+ticipation (as measured by total CSR points) for a one percent
+change in the independent variable. Note that this interpreta-
+tion does not apply to the constant and the year ﬁxed-effects
+coefﬁcients. Notably, our primary variable of interest, HMA,
+is positive as hypothesized but not signiﬁcant. This suggests
+that HMA funding has no signiﬁcant effect on the level of
+CRS participation. In fact, only the lagged dependent vari-
+able (CRS pointsone year prior ), Precipitation lagged one year,
+NFIP claims rate lagged one year , Yr2014, and Yr2015 coefﬁ-
+cients are signiﬁcant. Consistent with Li and Landry ( 2018),
+the estimated coefﬁcient on the lagged total CRS points is
+positive and signiﬁcant. This suggests that the current level
+of CRS participation depends on the previous level of partici-
+pation. Speciﬁcally, a 1% increase in the previous year’s CRS
+points results in a 0.96% increase in current year CRS points.
+The fact that the magnitude on the lagged CRS points is less
+than one implies that after some initial number of points has
+been achieved, additional improvements are more difﬁcult to
+achieve (i.e., diminishing returns) (Li & Landry, 2018). Our
+TABLE 5 This table presents the dynamic panel regression results for
+Hazard Mitigation Assistance (HMA) effect on Community Rating System
+(CRS) points, controlling for ﬂood risk, socioeconomic factors, and year
+ﬁxed-effects. The results indicate a positive but insigniﬁcant correlation
+between HMA and CRS points. Except for socioeconomic variables, ﬂood
+risk variables and year ﬁxed-effects are signiﬁcant predictors of CRS points
+Variables Coefﬁcients
+Log(CRS pointsone year prior ) 0.962 ***
+(0.024)
+Log(HMAtwo years prior ) 0.003
+(0.002)
+Log(Precipitationone year prior ) −0.012**
+(0.005)
+Log(Precipitationtwo years prior )0 . 0 0 1
+(0.006)
+Log(NFIP claims rate one year prior ) 0.070 *
+(0.037)
+Log(NFIP claims ratetwo years prior ) 0.012
+(0.035)
+Log(Income) −0.025
+(0.032)
+Log(Population density) −0.002
+(0.014)
+Log(Housing units) 0.015
+(0.020)
+Log(Age) 0.023
+(0.057)
+Log(Property tax) 0.012
+(0.021)
+Yr2012 −0.001
+(0.004)
+Yr2013 −0.001
+(0.005)
+Yr2014 −0.016***
+(0.005)
+Yr2015 −0.013**
+(0.006)
+Constant 0.337
+(0.431)
+Wald test (χ2) 4883.430 ***
+Sargan test (χ2) 31.988 *
+First-order autocorrelation −9.647***
+Second-order autocorrelation 1.561
+Observations 4845
+Number of CRS communities 969
+Note: Windmeijer ( 2005) robust standard errors are in parentheses. Note that because
+ABBB is a ﬁrst-difference estimator, the ﬁrst year, 2010 is sacriﬁced, and 2011 is the
+reference category.
+***p< 0.01;
+**p< 0.05;
+*p< 0.1.
+ 15396924, 2023, 7, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/risa.14024 by University Of Maryland, Wiley Online Library on [28/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+1424 FRIMPONG ET AL .
+TABLE 6 Presented in this table are the dynamic panel regression results looking at the differential effects of Hazard Mitigation Assistance (HMA) on
+Community Rating System (CRS) series. Except for Series 300, the results indicate a positive but insigniﬁcant correlation between HMA and the activi ty
+series. HMA has a positive and signiﬁcant effect on public information on ﬂood risk and insurance activities (Series 300). The effect of ﬂood risk,
+socioeconomic variables, and year ﬁxed-effects on the series are mixed
+V ariables X = 300 X = 400 X = 500 X = 600
+Log(Series Xone year prior ) 0.984 *** 0.666*** 0.938*** 0.905***
+(0.038) (0.068) (0.049) (0.081)
+Log(HMAtwo years prior ) 0.013 * 0.002 0.051 0.016
+(0.008) (0.005) (0.032) (0.024)
+Log(Precipitationone year prior ) 0.004 −0.018** −0.019 −0.007
+(0.008) (0.008) (0.035) (0.026)
+Log(Precipitationtwo years prior ) 0.010 −0.011 −0.008 −0.033
+(0.009) (0.010) (0.037) (0.030)
+Log(NFIP claims rate one year prior ) 0.082 0.068 −0.035 0.467 **
+(0.053) (0.078) (0.289) (0.215)
+Log(NFIP claims rate two years prior ) 0.081 0.052 −0.103 0.519 **
+(0.054) (0.077) (0.230) (0.240)
+Log(Income) −0.002 0.023 −0.039 −0.018
+(0.055) (0.054) (0.185) (0.173)
+Log(Population density) 0.037 0.064 * 0.095 0.288
+(0.046) (0.035) (0.153) (0.240)
+Log(Housing units) 0.002 −0.004 0.050 0.027
+(0.041) (0.045) (0.133) (0.125)
+Log(Age) 0.014 0.116 −0.061 −0.296
+(0.086) (0.173) (0.282) (0.304)
+Log(Property tax) 0.020 0.012 0.130 −0.089
+(0.048) (0.049) (0.186) (0.142)
+Yr2012 −0.001 0.007 0.060 * −0.013
+(0.008) (0.007) (0.034) (0.021)
+Yr2013 −0.004 0.017 ** 0.015 −0.008
+(0.008) (0.008) (0.024) (0.021)
+Yr2014 −0.021*** 0.004 −0.007 −0.041
+(0.008) (0.010) (0.027) (0.029)
+Yr2015 −0.091*** 0.042*** −0.039 −0.387***
+(0.012) (0.012) (0.034) (0.058)
+Constant −0.343 1.240 −0.752 1.269
+(0.800) (0.913) (3.201) (2.850)
+Wald test (χ2) 1174.83 *** 421.92*** 624.86*** 552.76***
+Sargan test (χ2) 21.882 38.446 * 36.382* 22.086
+First-order autocorrelation −7.291*** −3.372*** −7.153*** −4.335***
+Second-order autocorrelation −0.492 −0.526 −1.239 2.187 **
+Observations 4,845 4,845 4,845 4,845
+Number of CRS communities 969 969 969 969
+Note: Windmeijer (2005) robust standard errors are in parentheses. Note that because ABBB is a ﬁrst-difference estimator, the ﬁrst year, 2010 is sacriﬁced, and 2011 is the re ference
+category.
+*p< 0.1;
+**p< 0.05;
+***p< 0.01.
+ 15396924, 2023, 7, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/risa.14024 by University Of Maryland, Wiley Online Library on [28/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FEDERAL FLOOD HAZARD MITIGA TION ASSISTANCE 1425
+estimate of this year-to-year effect of participation is larger
+than that found by Li and Landry ( 2018), but their work
+focuses on the State of North Carolina between the years of
+1999 and 2010.
+The negative and signiﬁcant coefﬁcient on Precipitation
+lagged one year suggest that for communities that receive
+greater precipitation in the previous year, CRS points is lower.
+Our model indicates that a 1% increase in precipitation in
+the preceding year reduces current CRS points by 0.012%.
+This effect, however, dissipates in the subsequent preceding
+year as indicated by the coefﬁcient on Precipitation lagged
+two years. Li and Landry ( 2018) interacted precipitation with
+ﬂoodplain (i.e., precipitation × ﬂoodplain) and found a neg-
+ative and signiﬁcant relationship between the product and
+CRS points. 7 A possible argument for this ﬁnding is that as
+the level of risk increases, mitigation becomes more expen-
+sive and so communities abandon mitigation (Li & Landry,
+2018). It could also be possible that as communities engage
+in less costly CRS activities that offer lower CRS points (low
+hanging fruits), the remaining CRS activities that could lead
+to higher CRS points become more expensive to undertake.
+Thus, communities may decide to maintain their current level
+by undertaking the “low hanging fruits” (Frimpong et al.,
+2020). Another interpretation might be that a singular event
+does not prompt further activities; instead, it is seen as an
+unusual occurrence. The positive and signiﬁcant coefﬁcient
+on NFIP claims rat e lagged one year is in line with our
+hypothesis. That is, a 1% increase in NFIP claims rate in
+the preceding year corresponds to a 0.07% increase in CRS
+points. But the effect dissipates in the subsequent preced-
+ing year as indicated by the coefﬁcient on NFIP claims rate
+lagged t wo years . Brody et al. ( 2009), who studied Florida
+counties, also noted that ﬂood property damage is positively
+associated with higher CRS points. This could imply that
+as more individuals personally experience the impacts of
+a ﬂood, there is a greater collective agreement and local
+government momentum to engage in hazard risk reduction.
+Surprisingly, our socioeconomic variables do not signiﬁ-
+cantly inﬂuence CRS points. The negative signs on Income
+and Population density are contrary to our hypotheses, though
+are not signiﬁcant at a 10% level, and contradict the ﬁndings
+of past research (Brody et al., 2009; Li & Landry, 2018). The
+different ﬁndings might partly be explained by the differences
+in the scale of measurement of the variables. As mentioned
+earlier, we analyze data at the CRS community level while
+previous research use county-level data (Brody et al., 2009;
+Li & Landry, 2018). Another possible explanation is the dif-
+ferences in data periods. We studied CRS data from 2010 to
+2015, while previous research studied CRS data from 1999
+to 2005 (Brody et al., 2009) and 1999 to 2010 and 2002 to
+2008 (Li & Landry, 2018). Li and Landry ( 2018) had mixed
+ﬁnding when examining different years and durations, which
+reinforces why differences in time periods considered could
+be inﬂuencing the differences in ﬁndings in our study and
+7 In a separate model, we considered the product of precipitation and ﬂoodplain, and the
+coefﬁcient was negative but insigniﬁcant.
+that of past research. For example, for the periods 1999 to
+2010, Li and Landry ( 2018) found a positive and signiﬁcant
+association between tax per capita and the level of CRS par-
+ticipation. On the contrary, for the data periods 2002 to 2008,
+their estimate for tax per capita is insigniﬁcant.
+The positive signs for Housing unit , Age, and Property
+tax are consistent with our hypotheses, though these are not
+considered signiﬁcant by the model. The results for the year
+ﬁxed-effects (year dummies) are negative and indicate that
+the improvement in the level of CRS participation for 2014
+and 2015 is signiﬁcantly lower compared to 2011. 8 As men-
+tioned earlier, this could be due in part to the 2013 changes
+to the CRS program that resulted in the adjustment of credit
+for some CRS activities and the introduction Flood Insurance
+Promotion activity to Series 300 (FEMA, 2013).
+6.2 Effects of HMA, ﬂood risk, and
+socioeconomic information on the different
+CRS activity series
+Table 6 has our model speciﬁcations for each of the CRS
+series. Our model diagnostics indicate that we can reject
+the null hypothesis of no valid instruments at 1% signiﬁ-
+cance level for all the models. Additionally, we reject the
+null hypothesis of no ﬁrst-order serial correlation, and fail
+to reject the null hypothesis of no second-order serial corre-
+lation at 1% signiﬁcance level, providing conﬁdence in our
+model speciﬁcation.
+Except for Series 300 , we ﬁnd a positive, but statistically
+insigniﬁcant, relationship between HMA and the activity
+series. To the extent that HMGP makes up about 80% of
+HMA grants, the lack of signiﬁcance on HMA for Series 400
+(mapping and regulation activities) and Series 600 (warning
+and response activities) is not surprising. HMGP money
+funds mostly acquisition and relocation projects, which
+is one of the activities with the highest maximum points
+under Series 500 (ﬂood damage reduction activities). Thus,
+to ﬁnd no signiﬁcant relationship between HMA and the
+level of participation in activity Series 500 is unexpected
+and warrants further investigation. The positive and weakly
+signiﬁcant relationship between HMA and Series 300 (public
+information on ﬂood risk and insurance activities) is not
+surprising. We ﬁnd that 1% increase in HMA leads to 0.013%
+increase in Series 300 participation. Public information on
+ﬂood risk and insurance activities is popular among CRS
+communities because they are comparatively less expensive
+to undertake. Another possible explanation could be that CRS
+communities take advantage of HMA-funded activities under
+Series 500 (ﬂood damage reduction activities) to simulta-
+neously undertake Series 300 activities (public information
+on ﬂood risk and insurance activities) and secure points.
+Recall that CRS communities can simultaneously secure
+8 For example, the coefﬁcient on Yr2014 should be interpreted as exp
+(−0.016)= 0.98%.
+ 15396924, 2023, 7, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/risa.14024 by University Of Maryland, Wiley Online Library on [28/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+1426 FRIMPONG ET AL .
+points for Series 300 while undertaking Series 500 activities
+(FEMA, 2017).
+For all of the CRS series models, the lagged series coef-
+ﬁcient is positive and signiﬁcant at 1% signiﬁcance level.
+However, as expected, the effects vary across series. The
+coefﬁcient on the lagged series is lower for Series 400 (0.666)
+compared to that of Series 300 (0.984), Series 500 (0.938),
+and Series 600 (0.905), implying that it is difﬁcult to improve
+participation in Series 400 activities compared to Series 300,
+500, and 600. Series 400 and 500 activities are more expen-
+sive and difﬁcult to implement (Brody et al., 2009;L i&
+Landry, 2018; Sadiq & Noonan, 2015a).
+The ﬂood risk variables do not seem to inﬂuence partici-
+pation in the activity series. Among the series, we ﬁnd that
+Precipitation signiﬁcantly and negatively inﬂuences the level
+of participation in only mapping and regulation activities
+(Series 400), while NFIP claims rate inﬂuences only warning
+and response activities ( Series 600 ). That is, CRS commu-
+nities that receive greater precipitation in the previous year
+participate less in mapping and regulation activities ( Series
+400). A ﬁnding that is unexpected and warrants further inves-
+tigation. Li and Landry ( 2018) who interacted precipitation
+with ﬂoodplain found a negative correlation between the
+product (i.e., precipitation × ﬂoodplain) and Series 300, 400,
+and 500. The positive and signiﬁcant sign on NFIP claims
+rate for the two lagged periods is consistent with our hypoth-
+esis. Generally, we also ﬁnd that socioeconomic variables are
+not important factors inﬂuencing the level of participation
+in the activity series. Past research shows that the effect of
+socioeconomic variables on activity series is mixed (Brody
+et al., 2009; Li & Landry, 2018). We ﬁnd that only Popu-
+lation density inﬂuences mapping and regulation activities
+(Series 400 ), and the positive sign and signiﬁcance on pop-
+ulation density are in line with our hypothesis. Past research
+found a positive relationship between population density and
+the activity series (Brody et al., 2009; Li & Landry, 2018).
+Finally, the year ﬁxed-effects indicate that compared to 2011,
+communities are generally increasing participation in map-
+ping and regulation activities ( Series 400 ) at a higher rate
+compared to participation in public information on ﬂood risk
+and insurance activities ( Series 300), ﬂood damage reduction
+activities ( Series 500 ), and warning and response activities
+(Series 600).
+6.3 Robustness of results
+To check our models’ robustness, we examine whether the
+results on HMA are sensitive to lags. Particularly, we estimate
+our ﬁve models with the level of HMA lagged 1, 3, 4, and 5
+years, and present the results in Tables A1–A5. Overall, the
+results are consistent with those from the presented models.
+HMA grant money received in the previous 1, 3, 4, and 5 years
+does not signiﬁcantly affect the level of CRS participation
+as shown in Table A1. The signs on the HMA coefﬁcient in
+Table A1, however, are mixed. In our presented results, the
+sign is positive but insigniﬁcant.
+7 DISCUSSION AND CONCLUSIONS
+We assess the impact of FEMA’s HMA grant programs on
+FEMA’s CRS. We use 2010 through 2015 data on FEMA’s
+CRS and link these data to ﬂood risk and socioeconomic
+information. Although scholars have assessed the factors that
+affect the level of CRS participation, we present the results
+of what we believe to be an initial empirical study that tests
+the link between FEMA’s HMA and the level of CRS par-
+ticipation. That is, the results in this study speak to local
+communities’ responsiveness to ﬂood risk mitigation due
+to availability of federal and local ﬁnancial resources, and
+changes in ﬂood risk and socioeconomics.
+Our results reveal that, overall, HMA does not appear
+to signiﬁcantly inﬂuence the level of CRS participation,
+although the relationship is positive. Consistent with Li and
+Landry (2018), the dynamic panel model suggests that previ-
+ous level of CRS participation, ﬂood risk and to some extent
+socioeconomic factors inﬂuence the level of CRS partici-
+pation. The lack of signiﬁcant effect of HMA on the level
+of CRS participation suggests a couple of things. First, it
+could be that the CRS program is not designed to capture
+the ﬁne-scaled effects that incremental federal ﬂood mitiga-
+tion funding is likely to produce. Local authorities may also
+be strategically using HMA funding to largely maintain their
+status in the CRS program, rather than to expand mitiga-
+tion efforts. Recall that the CRS program is designed such
+that local authorities have to renew their participation in the
+program annually.
+Our ﬁndings suggest two main recommendations for pol-
+icy. First, federal pre-disaster ﬂood mitigation grant programs
+should be implemented in a way that encourages local
+communities to use HMA grants to expand ﬂood risk miti-
+gation and increase CRS participation in contrast to simply
+maintaining their status in the CRS program. Second, the dis-
+connect between federal pre-disaster ﬂood mitigation grant
+and the level of CRS participation indicates a need for pro-
+grammatic changes to the CRS program that are able to
+capture the effect of incremental ﬂood mitigation grants that
+CRS communities receive. Since FEMA is far and away the
+largest provider of community-level ﬂood mitigation assis-
+tance and manages the CRS at the federal level, FEMA has
+the opportunity to inﬂuence both programs to achieve the
+desired ﬂood resiliency in local communities.
+Overall, this study adds to the growing discussion on
+drivers and barriers of local ﬂood risk mitigation and sheds
+light on the effect of federal ﬁnancial assistance on local
+ﬂood risk mitigation. That is, ﬁndings and discussions in
+this study presents an important subject for further inves-
+tigation and discussions. Some potential avenues for future
+research are to consider extending the dataset to cover a
+broader period (preferably 1999–2021), which should also
+expand the number of CRS communities. As of 2021 about
+1500 (out of 22,000 NFIP communities) participate in the
+CRS program. A follow-up study should consider exploring
+other control variables, especially socioeconomic variables,
+that vary over time. Our control variables were limited by
+ 15396924, 2023, 7, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/risa.14024 by University Of Maryland, Wiley Online Library on [28/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FEDERAL FLOOD HAZARD MITIGA TION ASSISTANCE 1427
+the econometric approach taken and the time frame consid-
+ered. Future research should also consider other non-FEMA
+ﬂood mitigation grants that CRS communities could use to
+implement CRS activities and receive credit, such as grants
+from the USACE. At this point, we have established, to
+some degree, a correlation between HMA spending and CRS
+points. However, further studies are required to provide a
+deeper understanding of the correlation between federal ﬂood
+mitigation spending and the level of CRS participation.
+ACKNOWLEDGMENTS
+This research was supported by the National Academies Gulf
+Research Program Early-Career Research Fellowship. The
+support of the sponsor is gratefully acknowledged. Any opin-
+ions, ﬁndings, conclusions, or recommendations presented in
+this study are those of the authors and do not necessarily
+reﬂect the views of the National Academies. The research
+was conducted during the time when Dr. Eugene Frimpong
+was employed by the University of Maryland. We thank Dr.
+Sam Brody (Texas A&M Galveston) for his insights and for
+providing CRS data. Finally, we gratefully acknowledge and
+thank the three anonymous reviewers for their thoughtful
+comments.
+REFERENCES
+Asche, E. A. (2013). The effect of ﬂood risk on housing choices and
+community hazard mitigation. University of California.
+Arellano, M., & Bover, O. (1995). Another look at the instrumental variable
+estimation of error-components models. Journal of Econometrics , 68(1),
+29–51.
+Arellano, M., & Bond, S. (1991). Some tests of speciﬁcation for panel data:
+Monte Carlo evidence and an application to employment equations. The
+Review of Economic Studies , 58(2), 277–297.
+Borsky, S., & Hennighausen, H. (2022). Public ﬂood risk mitigation and
+the homeowner’s insurance demand response. https://ideas.repec.org/p/
+grz/wpaper/2020-09.html
+Brody, S. D., Kang, J. E., & Bernhardt, S. (2010). Identifying factors inﬂu-
+encing ﬂood mitigation at the local level in Texas and Florida: The role of
+organizational capacity. Natural Hazards, 52(1), 167–184.
+Brody, S. D., Zahran, S., Highﬁeld, W. E., Bernhardt, S. P ., & V edlitz, A.
+(2009). Policy learning for ﬂood mitigation: A longitudinal assessment of
+the community rating system in Florida. Risk Analysis: An International
+Journal, 29(6), 912–929.
+Berke, P . R., Lyles, W., & Smith, G. (2014). Impacts of federal and state
+hazard mitigation policies on local land use policy. Journal of Planning
+Education and Research, 34(1), 60–76.
+Blundell, R., & Bond, S. (1998). Initial conditions and moment restrictions
+in dynamic panel data models. Journal of econometrics, 87(1), 115–143.
+Congressional Research Service (2020). National ﬂood insurance program
+borrowing authority. https://fas.org/sgp/crs/homesec/IN10784.pdf
+Congressional Research Service (2019). Flood resilience and risk reduction:
+Federal assistance and programs. https://fas.org/sgp/crs/misc/R45017.pdf
+Davlasheridze, M., Fisher-V anden, K., & Klaiber, H. A. (2017). The effects
+of adaptation measures on hurricane induced property losses: Which
+FEMA investments have the highest returns? Journal of Environmental
+Economics and Management, 81, 93–114.
+Frimpong, E., Petrolia, D. R., Harri, A., & Cartwright, J. H. (2020). Flood
+insurance and claims: The impact of the Community Rating System.
+Applied Economic Perspectives and Policy, 42(2), 245–262.
+FEMA (2020a). Hazard mitigation assistance guidance. https://www.fema.
+gov/grants/mitigation/hazard-mitigation-assistance-guidance
+FEMA (2020b). OpenFEMA data sets. https://www.fema.gov/about/
+openfema/data-sets#hazard
+FEMA (2020c). Fact sheet: Community rating system. https://Users/eugene/
+Downloads/NFIP_CRS_Fact_Sheet_2020_508OK.pdf
+FEMA (2020d). openFEMA dataset: FIMA NFIP redacted claims-v1.
+https://www.fema.gov/openfema-data-page/ﬁma-nﬁp-redacted-claims-
+v1
+FEMA (2018). National ﬂood insurance program community rat-
+ing system. a local ofﬁcial’s guide to saving lives, preventing
+property damage, and reducing the cost of ﬂood insur-
+ance. https://reduceﬂooding.com/wp-content/uploads/2020/05/
+2018_NFIP_CRS_Brochure_June_2018_508OK_corrected.pdf
+FEMA (2017). National ﬂood insurance program community rat-
+ing system: Coordinator’s manual. https://www.fema.gov/sites/
+default/ﬁles/documents/fema_community-rating-system_coordinators-
+manual_2017.pdf
+FEMA (2013). National Flood Insurance Program Community Rating Sys-
+tem: Coordinator’s manual. https://crsresources.org/ﬁles/2013-manual/
+crs_manual.pdf
+Gourevitch, J., & Pinter, N. (2022). FEMA’s community rating system:
+Worth the effort? https://californiawaterblog.com/2022/02/20/femas-
+community-rating-system-worth-the-effort/
+Highﬁeld, W. E., & Brody, S. D. (2017). Determining the effects of the
+FEMA Community Rating System program on ﬂood losses in the United
+States. International Journal of Disaster Risk Reduction , 21, 396–404.
+Highﬁeld, W. E., Brody, S. D., & Blessing, R. (2014). Measuring the impact
+of mitigation activities on ﬂood loss reduction at the parcel level: The case
+of the clear creek watershed on the upper Texas coast. Natural hazards,
+74(2), 687–704.
+Highﬁeld, W. E., & Brody, S. D. (2013). Evaluating the effectiveness of local
+mitigation activities in reducing ﬂood losses. Natural Hazards Review ,
+14(4), 229–236.
+Hwang, J., & Sun, Y . (2018). Should we go one step further? An accurate
+comparison of one-step and two-step procedures in a generalized method
+of moments framework. Journal of econometrics, 207(2), 381–405.
+Li, J., & Landry, C. E. (2018). Flood risk, local hazard mitigation, and the
+community rating system of the national ﬂood insurance program. Land
+Economics, 94(2), 175–198.
+Landry, C. E., & Li, J. (2012). Participation in the community rating system
+of NFIP: Empirical analysis of North Carolina counties. Natural Hazards
+Review, 13(3), 205–220.
+Michel-Kerjan, E. O., Atreya, A., & Czajkowski, J. (2016). Learning over
+time from FEMA’s Community Rating System (CRS) and its link to
+ﬂood resilience measurement. https://dokumen.tips/documents/learning-
+over-time-from-femaas-community-rating-crs-which-is-managed-by-
+the.html?page=1
+Michel-Kerjan, E. O., & Kousky, C. (2010). Come rain or shine: Evidence
+on ﬂood insurance purchases in Florida. Journal of Risk and Insurance ,
+77(2), 369–397.
+National Center for Environmental Information (2020). Billion-dollar
+weather and climate disasters: Summary stats. https://www.ncdc.noaa.
+gov/billions/summary-stats/US/2010–2020
+PRISM Climate Group (2020). Precipitation. https://prism.oregonstate.edu/
+recent/
+Posey, J. (2009). The determinants of vulnerability and adaptive capacity
+at the municipal level: Evidence from ﬂoodplain management pro-
+grams in the United States. Global Environmental Change , 19(4), 482–
+493.
+Petrolia, D. R., Landry, C. E., & Coble, K. H. (2013). Risk preferences, risk
+perceptions, and ﬂood insurance. Land Economics, 89(2), 227–245.
+Paille, M., Reams, M., Argote, J., Lam, N. S. N., & Kirby, R. (2016). Inﬂu-
+ences on adaptive planning to reduce ﬂood risks among parishes in South
+Louisiana. Water, 8(2), 57.
+Robinson, C. S., Davidson, R. A., Trainor, J. E., Kruse, J. L., & Nozick, L. K.
+(2018). Homeowner acceptance of voluntary property acquisition offers.
+International Journal of Disaster Risk Reduction , 31, 234–242.
+Sadiq, A. A., Tyler, J., & Noonan, D. (2020). Participation and non-
+participation in FEMA’s Community Rating System (CRS) program:
+Insights from CRS coordinators and ﬂoodplain managers. International
+Journal of Disaster Risk Reduction , 48, 101574.
+ 15396924, 2023, 7, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/risa.14024 by University Of Maryland, Wiley Online Library on [28/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+1428 FRIMPONG ET AL .
+Sadiq, A. A., & Noonan, D. (2015a). Local capacity and resilience to
+ﬂooding: Community responsiveness to the community ratings system
+program incentives. Natural Hazards, 78(2), 1413–1428.
+Sadiq, A. A., & Noonan, D. S. (2015b). Flood disaster management policy:
+An analysis of the United States Community Ratings System. Journal of
+Natural Resources Policy Research, 7(1), 5–22.
+U.S. Census Bureau (2020). American community survey. https://www.
+census.gov/programs-surveys/acs
+U.S. Congressional Budget Ofﬁce (2017). The national ﬂood insurance
+program: Financial soundness and affordability. https://www.cbo.gov/
+system/ﬁles/115th-congress-2017–2018/reports/53028-nﬁpreport2.pdf
+Windmeijer, F. (2005). A ﬁnite sample correction for the variance of linear
+efﬁcient two-step GMM estimators. Journal of Econometrics, 126(1), 25–
+51.
+Zahran, S., Weiler, S., Brody, S. D., Lindell, M. K., & Highﬁeld, W.
+E. (2009). Modeling national ﬂood insurance policy holding at the
+county scale in Florida, 1999–2005. Ecological Economics , 68(10),
+2627–2636.
+Zahran, S., Brody, S. D., Highﬁeld, W. E., & V edlitz, A. (2010). Non-linear
+incentives, plan design, and ﬂood mitigation: The case of the Federal
+Emergency Management Agency’s community rating system. Journal of
+Environmental Planning and Management, 53(2), 219–239.
+How to cite this article: Frimpong, E., Reilly, A. C.,
+& Niemeier, D. (2023). Does federal ﬂood hazard
+mitigation assistance affect community rating system
+participation? Risk Analysis, 43, 1414–1433.
+https://doi.org/10.1111/risa.14024
+APPENDIX
+A1-A5
+TABLE A1 In this table, we test for different lag periods of Hazard Mitigation Assistance (HMA) on Community Rating System (CRS) points. The
+results we ﬁnd are generally consistent with what were discussed in the study. Surprisingly HMA lagged 1 and 4 years have a negative but insigniﬁcant ef fect
+on CRS points
+Variables
+X= One year
+prior
+X= Two years
+prior
+X= Three years
+prior
+X= Four years
+prior
+X= Five years
+prior
+Log(CRS pointsone year prior ) 0.954 *** 0.962*** 0.933*** 0.917*** 0.941***
+(0.020) (0.024) (0.032) (0.038) (0.041)
+Log(HMA X) −0.001 0.003 0.002 −0.006 0.001
+(0.003) (0.002) (0.004) (0.004) (0.006)
+Log(Precipitationone year prior ) −0.011** −0.012** −0.011** −0.011** −0.011**
+(0.005) (0.005) (0.005) (0.005) (0.005)
+Log(Precipitationtwo years prior ) 0.002 0.001 −0.001 0.004 −0.001
+(0.006) (0.006) (0.005) (0.006) (0.006)
+Log(NFIP claims rate one year prior ) 0.066 * 0.070* 0.067* 0.070* 0.059
+(0.037) (0.037) (0.038) (0.039) (0.042)
+Log(NFIP claims rate two years prior ) 0.009 0.012 0.001 0 0.008
+(0.035) (0.035) (0.035) (0.035) (0.036)
+Log(Income) −0.003 −0.025 −0.029 −0.029 −0.025
+(0.031) (0.032) (0.032) (0.034) (0.032)
+Log(Population density) −0.001 −0.002 0.026 0.012 0.012
+(0.012) (0.014) (0.020) (0.020) (0.023)
+Log(Housing units) −0.005 0.015 0.007 −0.018 −0.005
+(0.017) (0.020) (0.021) (0.027) (0.033)
+Log(Age) 0.002 0.023 0.005 0.002 0.001
+(0.054) (0.057) (0.057) (0.057) (0.057)
+Log(Property tax) −0.003 0.012 −0.004 0.004 0.004
+(0.022) (0.021) (0.026) (0.026) (0.031)
+Yr2012 0.000 −0.001 −0.002 0.002 −0.001
+(0.005) (0.004) (0.005) (0.005) (0.005)
+Yr2013 0.002 −0.001 0.002 0.006 0.0001
+(0.005) (0.005) (0.005) (0.006) (0.006)
+(Continues)
+ 15396924, 2023, 7, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/risa.14024 by University Of Maryland, Wiley Online Library on [28/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FEDERAL FLOOD HAZARD MITIGA TION ASSISTANCE 1429
+TABLE A1 (Continued)
+Variables
+X= One year
+prior
+X= Two years
+prior
+X= Three years
+prior
+X= Four years
+prior
+X= Five years
+prior
+Yr2014 −0.011** −0.016*** −0.013*** −0.009 −0.012
+(0.005) (0.005) (0.005) (0.006) (0.009)
+Yr2015 −0.010 −0.013** −0.014* −0.005 −0.011
+(0.006) (0.006) (0.007) (0.009) (0.009)
+Constant 0.485 0.337 0.734 1.044 * 0.735
+(0.366) (0.431) (0.498) (0.604) (0.649)
+Wald test (χ2) 6504.810 *** 4883.430*** 2396.52*** 2481.88*** 3524.85***
+Sargan test (χ2) 34.719 31.988 * 34.223 29.501 34.458
+First-order autocorrelation −9.8789*** −9.647*** −9.635*** −9.447*** −9.171***
+Second-order autocorrelation 1.614 1.561 1.614 1.438 1.629
+Observations 4845 4845 4845 4845 4845
+Number of CRS communities 969 969 969 969 969
+Note: Windmeijer (2005) robust standard errors are in parentheses. Note that because ABBB is a ﬁrst-difference estimator, the ﬁrst year, 2010 is sacriﬁced, and 2011 is the re ference
+category.
+*p< 0.1;
+**p< 0.05;
+***p< 0.01.
+ 15396924, 2023, 7, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/risa.14024 by University Of Maryland, Wiley Online Library on [28/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+1430 FRIMPONG ET AL .
+TABLE A2 This table compares the effect of different lagged periods of Hazard Mitigation Assistance (HMA) on Series 300. Except for HMA lagged 2
+years, we ﬁnd an insigniﬁcant relationship between the different HMA lags and Series 300
+Variables
+X= One year
+prior
+X= Two years
+prior
+X= Three years
+prior
+X= Four
+years prior
+X= Five years
+prior
+Log(Series 300one year prior ) 0.986 *** 0.984*** 0.949*** 0.933*** 0.940***
+(0.034) (0.038) (0.051) (0.064) (0.060)
+Log(HMA X) 0.003 0.013 * −0.006 −0.007 −0.007
+(0.006) (0.008) (0.008) (0.008) (0.005)
+Log(Precipitationone year prior ) 0.007 0.004 0.006 0.003 0.009
+(0.008) (0.008) (0.009) (0.008) (0.008)
+Log(Precipitationtwo years prior ) 0.012 0.010 0.010 0.011 0.011
+(0.008) (0.009) (0.009) (0.008) (0.009)
+Log(NFIP claims rateone year prior ) 0.047 0.082 0.078 0.058 0.051
+(0.047) (0.053) (0.050) (0.051) (0.058)
+Log(NFIP claims ratetwo years prior ) 0.082 0.081 0.091 * 0.080 0.083
+(0.052) (0.054) (0.052) (0.049) (0.057)
+Log(Income) 0.005 −0.002 0.012 0.009 −0.003
+(0.046) (0.055) (0.045) (0.049) (0.049)
+Log(Population density) 0.030 0.037 −0.003 −0.023 −0.016
+(0.040) (0.046) (0.046) (0.039) (0.041)
+Log(Housing units) −0.015 0.002 0.026 0.061 0.056
+(0.036) (0.041) (0.035) (0.057) (0.060)
+Log(Age) −0.004 0.014 0.010 0.013 0.014
+(0.076) (0.086) (0.077) (0.079) (0.081)
+Log(Property tax) 0.020 0.020 0.011 0.033 0.0362
+(0.037) (0.048) (0.039) (0.035) (0.035)
+Yr2012 −0.006 −0.001 −0.003 −0.007 −0.006
+(0.006) (0.008) (0.006) (0.006) (0.005)
+Yr2013 −0.012* −0.004 −0.012** −0.009 −0.008
+(0.007) (0.008) (0.005) (0.008) (0.006)
+Yr2014 −0.015** −0.021*** −0.016** −0.021** −0.011
+(0.006) (0.008) (0.006) (0.008) (0.009)
+Yr2015 −0.089*** −0.091*** −0.085*** −0.090*** −0.091***
+(0.014) (0.012) (0.012) (0.013) (0.013)
+Constant −0.213 −0.343 −0.220 −0.455 −0.408
+(0.602) (0.800) (0.587) (0.697) (0.782)
+Wald test (χ2) 2067.2 *** 1174.83*** 421.92*** 624.86*** 896.20***
+Sargan test (χ2) 39.753 ** 21.882 35.213 26.451 28.728
+First-order autocorrelation −7.380*** −7.291*** −7.115*** −6.372*** −6.753***
+Second-order autocorrelation −0.437 −0.492 −1.017 −0.123 −0.499
+Observations 4845 4845 4845 4845 4845
+Number of CRS communities 969 969 969 969 969
+Note: Windmeijer (2005) robust standard errors are in parentheses. Note that because ABBB is a ﬁrst-difference estimator, the ﬁrst year, 2010 is sacriﬁced, and 2011 is the re ference
+category.
+*p< 0.1;
+**p< 0.05;
+***p< 0.01.
+ 15396924, 2023, 7, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/risa.14024 by University Of Maryland, Wiley Online Library on [28/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FEDERAL FLOOD HAZARD MITIGA TION ASSISTANCE 1431
+TABLE A3 This table compares the effect of different lagged periods of Hazard Mitigation Assistance (HMA) on Series 400. We ﬁnd no signiﬁcant
+relationship between the various lagged periods of HMA and Series 400
+Variables
+X= One year
+prior
+X= Two years
+prior
+X= Three
+years prior
+X= Four years
+prior
+X= Five years
+prior
+Log(Series 400one year prior ) 0.658 *** 0.666*** 0.660*** 0.659*** 0.658***
+(0.062) (0.068) (0.069) (0.059) (0.056)
+Log(HMA X) 0 0.002 −0.006 0.004 −0.010
+(0.004) (0.005) (0.005) (0.007) (0.010)
+Log(Precipitationone year prior ) −0.021** −0.018** −0.019** −0.019** −0.017*
+(0.008) (0.008) (0.009) (0.009) (0.010)
+Log(Precipitationtwo years prior ) −0.010 −0.011 −0.013 −0.012 −0.012
+(0.009) (0.010) (0.009) (0.010) (0.010)
+Log(NFIP claims rate one year prior ) 0.084 0.068 0.049 0.106 0.073
+(0.072) (0.078) (0.077) (0.080) (0.080)
+Log(NFIP claims ratetwo years prior ) 0.016 0.052 0.025 0.036 0.0217
+(0.078) (0.077) (0.075) (0.079) (0.083)
+Log(Income) −0.014 0.023 0.009 −0.018 −0.024
+(0.052) (0.054) (0.051) (0.056) (0.059)
+Log(Population density) 0.044 0.064 * 0.040 0.074 ** 0.055
+(0.038) (0.035) (0.033) (0.035) (0.048)
+Log(Housing units) −0.012 −0.004 0.013 −0.003 −0.009
+(0.046) (0.045) (0.043) (0.048) (0.050)
+Log(Age) 0.057 0.116 0.051 0.034 0.018
+(0.159) (0.173) (0.167) (0.157) (0.166)
+Log(Property tax) 0.020 0.012 0.024 0.006 0.011
+(0.050) (0.049) (0.048) (0.048) (0.059)
+Yr2012 0.006 0.007 0.005 0.005 0.009
+(0.006) (0.007) (0.006) (0.008) (0.008)
+Yr2013 0.017 ** 0.017** 0.012* 0.017* 0.025**
+(0.008) (0.008) (0.007) (0.009) (0.010)
+Yr2014 0.008 0.004 0.004 0.006 0.013
+(0.008) (0.010) (0.009) (0.009) (0.012)
+Yr2015 0.049 *** 0.042*** 0.047*** 0.045*** 0.048***
+(0.013) (0.012) (0.011) (0.012) (0.014)
+Constant 2.041 ** 1.240 1.594 * 2.092** 2.322***
+(0.853) (0.913) (0.879) (0.898) (0.883)
+Wald test (χ2) 503.87 *** 421.92*** 488.72*** 494.45*** 527.05**
+Sargan test (χ2) 38.446 ** 38.446* 41.099** 25.360 23.250
+First-order autocorrelation −3.391*** −3.372*** −3.395*** −3.454*** −3.437***
+Second order autocorrelation 0.301 −0.526 0.757 0.340 0.333
+Observations 4845 4845 4845 4845 4845
+Number of CRS communities 969 969 969 969 969
+Note: Windmeijer (2005) robust standard errors are in parentheses. Note that because ABBB is a ﬁrst-difference estimator, the ﬁrst year, 2010 is sacriﬁced, and 2011 is the re ference
+category.
+*p< 0.1;
+**p< 0.05;
+***p< 0.01.
+ 15396924, 2023, 7, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/risa.14024 by University Of Maryland, Wiley Online Library on [28/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+1432 FRIMPONG ET AL .
+TABLE A4 This table compares the effect of different lagged periods of Hazard Mitigation Assistance (HMA) on Series 500. Except for HMA lagged 2
+years, all lagged periods of HMA have a negative but insigniﬁcant relationship with Series 500. HMA lagged 2 years has a positive but insigniﬁcant effe ct on
+Series 500
+Variables
+X= One year
+prior
+X= Two years
+prior
+X= Three years
+prior
+X= Four years
+prior
+X= Five years
+prior
+Log(Series 500one year prior ) 0.948 *** 0.938*** 0.931*** 0.952*** 0.959***
+(0.058) (0.049) (0.044) (0.041) (0.047)
+Log(HMAX) −0.066 0.051 −0.009 −0.012 −0.010
+(0.041) (0.032) (0.012) (0.009) (0.009)
+Log(Precipitationone year prior ) −0.022 −0.019 −0.002 −0.032 −0.033
+(0.040) (0.035) (0.031) (0.033) (0.033)
+Log(Precipitationtwo years prior ) −0.013 −0.008 0.011 −0.009 −0.005
+(0.041) (0.037) (0.031) (0.033) (0.034)
+Log(NFIP claims rate one year prior ) 0.022 −0.035 −0.247 −0.062 −0.004
+(0.321) (0.289) (0.317) (0.314) (0.389)
+Log(NFIP claims rate two years prior ) −0.079 −0.103 −0.107 −0.044 −0.151
+(0.257) (0.230) (0.192) (0.201) (0.219)
+Log(Income) −0.004 −0.039 −0.113 −0.107 −0.080
+(0.191) (0.185) (0.166) (0.159) (0.164)
+Log(Population density) 0.057 0.095 −0.058 −0.025 0.043
+(0.114) (0.153) (0.075) (0.069) (0.079)
+Log(Housing units) 0.116 0.050 0.076 0.129 0.262 *
+(0.155) (0.133) (0.127) (0.124) (0.137)
+Log(Age) −0.047 −0.061 0.028 0.014 0.182
+(0.322) (0.282) (0.266) (0.269) (0.264)
+Log(Property tax) 0.052 0.130 0.177 0.145 0.122
+(0.165) (0.186) (0.141) (0.121) (0.142)
+Yr2012 0.050 0.060 * 0.020 0.011 0.0146
+(0.031) (0.034) (0.018) (0.016) (0.017)
+Yr2013 0.041 0.015 −0.005 0.001 −0.013
+(0.034) (0.024) (0.022) (0.021) (0.022)
+Yr2014 −0.001 −0.007 −0.006 −0.024 −0.037
+(0.029) (0.027) (0.022) (0.021) (0.024)
+Yr2015 −0.008 −0.039 −0.034 −0.061* −0.092***
+(0.052) (0.034) (0.031) (0.031) (0.035)
+Constant −0.777 −0.752 −0.238 −0.422 −2.570
+(2.519) (3.201) (2.786) (2.477) (2.683)
+Wald test (χ2) 466.76 *** 624.86*** 696.41*** 808.06*** 831.52***
+Sargan test (χ2) 28.198 36.382 * 40.896** 29.080 27.549
+First order autocorrelation −6.804*** −7.153*** −7.464*** −7.598*** −7.457***
+Second order autocorrelation 0.163 −1.239 −0.820 −1.036 −0.906
+Observations 4845 4845 4845 4845 4845
+Number of CRS communities 969 969 969 969 969
+Note: Windmeijer (2005) robust standard errors are in parentheses. Note that because ABBB is a ﬁrst-difference estimator, the ﬁrst year, 2010 is sacriﬁced, and 2011 is the re ference
+category.
+*p< 0.1;
+**p< 0.05;
+***p< 0.01.
+ 15396924, 2023, 7, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/risa.14024 by University Of Maryland, Wiley Online Library on [28/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FEDERAL FLOOD HAZARD MITIGA TION ASSISTANCE 1433
+TABLE A5 This table compares the effect of different lagged periods of Hazard Mitigation Assistance (HMA) on Series 600. All but HMA lagged 4
+years have a positive but insigniﬁcant relationship with Series 600. HMA lagged four years has a negative but insigniﬁcant relationship with Series 6 00
+Variables
+X= One year
+prior
+X= Two years
+prior
+X= Three years
+prior
+X= Four years
+prior
+X= Five years
+prior
+Log(Series 600one year prior ) 0.973 *** 0.905*** 0.943*** 1.002*** 1.014***
+(0.088) (0.081) (0.070) (0.043) (0.055)
+Log(HMA X) 0.004 0.016 0.014 −0.004 0.006
+(0.009) (0.024) (0.009) (0.006) (0.007)
+Log(Precipitationone year prior ) −0.022 −0.007 −0.002 0.006 −0.009
+(0.024) (0.026) (0.023) (0.022) (0.023)
+Log(Precipitationtwo years prior ) −0.034 −0.033 −0.022 0.003 −0.014
+(0.029) (0.030) (0.025) (0.024) (0.025)
+Log(NFIP claims rate one year prior ) 0.346 * 0.467** 0.435** 0.349* 0.393**
+(0.191) (0.215) (0.172) (0.179) (0.180)
+Log(NFIP claims rate two years prior ) 0.301 0.519 ** 0.492** 0.358 0.334
+(0.274) (0.240) (0.234) (0.241) (0.229)
+Log(Income) 0.050 −0.018 0.026 0.018 0.095
+(0.156) (0.173) (0.163) (0.154) (0.154)
+Log(Population density) 0.177 0.288 0.252 0.171 0.164
+(0.302) (0.240) (0.185) (0.115) (0.136)
+Log(Housing units) 0.104 0.027 0.034 0.056 0.051
+(0.103) (0.125) (0.096) (0.097) (0.090)
+Log(Age) −0.066 −0.296 −0.349 −0.289 −0.441
+(0.298) (0.304) (0.255) (0.258) (0.276)
+Log(Property tax) −0.070 −0.089 −0.172 −0.156 −0.204*
+(0.120) (0.142) (0.111) (0.100) (0.119)
+Yr2012 −0.015 −0.013 −0.019 −0.012 −0.011
+(0.014) (0.021) (0.012) (0.011) (0.013)
+Yr2013 −0.021 −0.008 −0.017 −0.020* −0.019
+(0.018) (0.021) (0.013) (0.011) (0.015)
+Yr2014 −0.028 −0.041 −0.031 −0.021 −0.022
+(0.025) (0.029) (0.021) (0.014) (0.019)
+Yr2015 −0.385*** −0.387*** −0.390*** −0.360*** −0.368***
+(0.061) (0.058) (0.052) (0.048) (0.051)
+Constant −0.925 1.269 1.515 1.033 1.285
+(2.402) (2.850) (2.530) (2.245) (2.423)
+Wald test (χ2) 1585.95 *** 552.76*** 614.65*** 1268.0*** 875.27***
+Sargan test (χ2) 44.309 ** 22.086 21.810 29.975 29.078
+First order autocorrelation −4.361*** −4.335*** −4.439*** −4.723*** −4.553***
+Second order autocorrelation 1.535 2.187 ** 2.201** 1.811* 1.588
+Observations 4845 4845 4845 4845 4845
+Number of CRS communities 969 969 969 969 969
+Note: Windmeijer (2005) robust standard errors are in parentheses. Note that because ABBB is a ﬁrst-difference estimator, the ﬁrst year, 2010 is sacriﬁced, and 2011 is the re ference
+category.
+*p< 0.1;
+**p< 0.05;
+***p< 0.01.
+ 15396924, 2023, 7, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/risa.14024 by University Of Maryland, Wiley Online Library on [28/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

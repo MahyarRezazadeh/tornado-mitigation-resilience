@@ -1,0 +1,48 @@
+% preamble.tex -- shared settings for the blinded initial-submission PDF.
+% JRAP asks only for an anonymized PDF at initial submission; its Overleaf
+% template is used for production after acceptance. This layout is therefore
+% a clean review format, not the journal's production format.
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage[authordate,backend=biber,doi=true,isbn=false,url=true,noibid]{biblatex-chicago}
+\addbibresource{references.bib}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{array}
+\usepackage{siunitx}
+\sisetup{group-separator={,},group-minimum-digits=4}
+\usepackage{graphicx}
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=false}
+\captionsetup[table]{skip=4pt}
+\usepackage{float}
+\usepackage{titlesec}
+\usepackage{lineno}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+
+% Anonymized PDF metadata (no author, no creator path).
+\hypersetup{pdftitle={Declared but Not Applied: County Size and Access to Federal Hazard Mitigation Grants after Tornadoes and Severe Storms},
+  pdfauthor={}, pdfsubject={}, pdfkeywords={}, pdfcreator={LaTeX}, pdfproducer={}}
+
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{0.5em}{}
+\titleformat{\subsubsection}{\normalfont\itshape}{\thesubsubsection}{0.5em}{}
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt}{4pt}
+
+\providecommand{\checkmark}{}
+\renewcommand{\checkmark}{$\surd$}
+\newcommand{\sym}[1]{\ensuremath{^{#1}}}
+% Visible placeholder for facts only the authors can supply.
+\newcommand{\authorinput}[1]{\textcolor{red!70!black}{[\textit{Author input required: #1}]}}
+
+\setlength{\emergencystretch}{3em}
+\renewcommand{\arraystretch}{1.1}

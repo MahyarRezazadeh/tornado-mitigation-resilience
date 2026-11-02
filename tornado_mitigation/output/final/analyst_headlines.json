@@ -1,0 +1,9 @@
+{
+  "BEST OVERALL OUTCOME": "Worker separation rate: the only primary outcome with a clean design and an informative (precise) null; no outcome shows a credible protective effect",
+  "BEST PAPER": "Redesigned damage-loss paper: Does tornado mitigation reduce losses? (FEMA safe rooms/wind retrofits; damage-independent exposure, sub-county matching, applicant/HMGP-ceiling identification), with the labor-market null as a bounded secondary result",
+  "STRONGEST MECHANISM": "Physical damage reduction (about -42% reported damage per EF step; -58% within-treated), but it fails the pre-treatment placebo (+39% to +50%) and uses a damage-based intensity scale, so it is suggestive, not established. Match preservation, business continuity and small-business mechanisms are not supported.",
+  "MOST ROBUST RESULT": "No protective result is robust. Most statistically stable: separations (precise null). Most consistently signed: small-firm establishment deaths, MODERATELY ROBUST but in the adverse direction (BH q = 0.22)",
+  "BEST JOURNAL TARGET": "After redesign: JEEM (tornado analogue to Davlasheridze et al. 2017) or Land Economics; in current form only Natural Hazards Review / Risk Analysis-type outlets",
+  "BIGGEST IDENTIFICATION THREAT": "Endogenous post-disaster assignment: 94% of strict projects are HMGP grants triggered by disaster declarations; future-treated counties already had ~40-50% higher damage per EF step before treatment",
+  "WHAT WOULD MOST IMPROVE THE PAPER": "Geocoded project sites and true completion dates plus tornado exposure measured independently of damage (SPC track width/length or radar rotation tracks), matched to sub-county outcomes"
+}

@@ -1,0 +1,31 @@
+% Cover letter (DRAFT). JRAP requires a cover letter stating the submission type.
+% Compile: pdflatex cover_letter
+\documentclass[11pt]{letter}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext}
+\usepackage{xcolor}
+\newcommand{\authorinput}[1]{\textcolor{red!70!black}{[\textit{Author input required: #1}]}}
+\signature{\authorinput{corresponding author name, affiliation, email}}
+\address{\authorinput{corresponding author address}}
+\date{\authorinput{date}}
+
+\begin{document}
+\begin{letter}{Editor-in-Chief\\Journal of Regional Analysis \& Policy}
+\opening{Dear Editor,}
+
+Please consider our manuscript, ``Declared but Not Applied: County Size and Access to Federal Hazard Mitigation Grants after Tornadoes and Severe Storms,'' for publication in the \textit{Journal of Regional Analysis \& Policy} as a \textbf{Research Article}.
+
+The paper asks why smaller jurisdictions are less likely to turn federal grant opportunities into funded projects when they face similar hazards and share the same disaster declaration. We study FEMA's Hazard Mitigation Grant Program after tornado and severe-storm declarations from 1999 to 2021, linking 12,081 county--declaration observations to every linked subapplication, including withdrawn and denied requests, and to funded projects. Comparing counties designated in the same declaration, the smallest third of counties are 8.8 percentage points less likely to obtain any project, against a mean of 27.1 percent among larger counties.
+
+The main finding concerns the stage at which this gap arises. Small counties do not fare worse once they apply; they apply less often. About two-fifths of the gap is associated with the smaller number of eligible local governments in small counties, and a gap remains for the county government itself. We present these results as descriptive evidence on county size, not as causal estimates of administrative capacity, and we report the limited precision of the tests of specific explanations.
+
+We believe the paper fits JRAP because it addresses a regional question, the geographic distribution of intergovernmental public investment, and it draws implications for how states and the federal government deliver grants to small and rural places. It should interest readers working on intergovernmental transfers, rural--urban disparities, local public finance, and regional resilience.
+
+The manuscript is not under consideration elsewhere. \authorinput{confirm; also confirm whether an earlier version was submitted to another journal and how to describe it, if at all.} The manuscript includes a generative-AI disclosure describing how an AI assistant was used in preparing the code, literature checks, and text. \authorinput{Because JRAP permits AI use only to improve writing quality, do not send this letter until the editor has answered the eligibility inquiry in submission/editor\_inquiry\_AI\_use.md. Revise this paragraph to reflect the editor's answer.}
+
+\authorinput{optional: names, affiliations, and email addresses of up to two potential reviewers.}
+
+\closing{Sincerely,}
+\end{letter}
+\end{document}

@@ -1,0 +1,168 @@
+﻿=== 09_clean_qwi 23:20:50
+2026-10-07 23:21:06,247 | 09_clean_qwi | INFO | ======================================================================
+2026-10-07 23:21:06,248 | 09_clean_qwi | INFO | START 09_clean_qwi at 2026-10-07T23:21:06
+2026-10-07 23:21:13,498 | 22_build_county_crosswalk | INFO | ======================================================================
+2026-10-07 23:21:13,504 | 22_build_county_crosswalk | INFO | START 22_build_county_crosswalk at 2026-10-07T23:21:13
+2026-10-07 23:21:13,507 | 09_clean_qwi | INFO | 49 state extracts
+2026-10-07 23:23:55,444 | 09_clean_qwi | INFO | county-quarter duplicate keys: 0 (multi-state border recodes; first kept)
+2026-10-07 23:24:01,755 | 09_clean_qwi | INFO | qwi county-quarter: 360325 rows x 43 cols
+2026-10-07 23:24:02,013 | 09_clean_qwi | INFO | qwi county-quarter missingness (top 15): Payroll=1.00; EarnHirNS=0.05; new_hire_earnings=0.05; log_new_hire_earnings=0.05; new_hire_rate=0.04; turnover=0.04; TurnOvrS=0.04; new_hires=0.03; HirN=0.03; HirAS=0.03; SepS=0.03; EarnHirAS=0.03; SepBeg=0.02; retention_rate=0.02; separation_rate=0.02
+2026-10-07 23:24:33,029 | 09_clean_qwi | INFO | qwi county-industry: 6461019 rows x 14 cols
+2026-10-07 23:24:34,291 | 09_clean_qwi | INFO | qwi county-industry missingness (top 15): Payroll=1.00; SepBeg=0.19; HirN=0.15; FrmJbLs=0.12; Sep=0.12; HirA=0.12; EmpS=0.12; EmpEnd=0.11; Emp=0.11; EarnS=0.02
+py : C:\Users\mahya\OneDrive - Simon Fraser University 
+(1sfu)\Desktop\Tornedo\tornado_mitigation\src\09_clean_qwi.py:140: FutureWarning: The behavior of DataFrame 
+concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or 
+all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the 
+concat operation.
+At line:1 char:667
++ ... oding utf8; py -3.13 "$s.py" *>> ..\output\logs\chain_build.txt; "=== ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\mahya\...ncat operation.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  demo = pd.concat([demo, a[[c for c in demo.columns if c in a.columns]]], ignore_index=True)
+2026-10-07 23:29:04,771 | 09_clean_qwi | INFO | qwi demo: 8246495 rows x 45 cols
+2026-10-07 23:29:47,622 | 09_clean_qwi | INFO | qwi demo missingness (top 15): Payroll=1.00; TurnOvrS=0.59; turnover=0.59; HirAS=0.58; SepS=0.58; EarnHirAS=0.58; retention_rate=0.58; SepBeg=0.58; job_creation_rate_qwi=0.57; EmpS=0.57; FrmJbGn=0.57; FrmJbC=0.57; EarnBeg=0.57; EarnHirNS=0.07; new_hire_earnings=0.07
+2026-10-07 23:29:47,878 | 09_clean_qwi | INFO | county-total missing shares: {'EmpEnd': 0.009, 'Sep': 0.009, 'EarnS': 0.017, 'HirA': 0.009, 'EarnHirNS': 0.052, 'FrmJbLs': 0.017}
+=== 09_clean_qwi exit 0
+=== 23_build_master_panels 23:29:52
+2026-10-07 23:29:55,252 | 23_build_master_panels | INFO | ======================================================================
+2026-10-07 23:29:55,256 | 23_build_master_panels | INFO | START 23_build_master_panels at 2026-10-07T23:29:55
+2026-10-07 23:30:04,592 | 23_build_master_panels | INFO | county_quarter_panel: 447552 rows x 104 cols
+2026-10-07 23:30:04,924 | 23_build_master_panels | INFO | county_quarter_panel missingness (top 15): Payroll=1.00; max_tornado_intensity=0.93; min_confidence=0.72; ft_strict_primary=0.72; ft_moderate_primary=0.72; qcew_wages=0.67; qcew_emp_m3=0.67; qcew_avg_wkly_wage=0.67; qcew_estabs=0.67; log_qcew_wkly_wage=0.67; log_qcew_emp=0.67; qcew_emp=0.67; log_qcew_estabs=0.67; ft_broad_primary=0.65; pop_year=0.31
+2026-10-07 23:30:11,530 | 23_build_master_panels | INFO | county_year_panel: 111888 rows x 141 cols
+2026-10-07 23:30:11,623 | 23_build_master_panels | INFO | county_year_panel missingness (top 15): mar_max_tornado_intensity=0.76; max_tornado_intensity=0.76; ft_strict_primary=0.72; min_confidence=0.72; ft_moderate_primary=0.72; net_AGI_migration=0.67; net_migration_rate=0.67; net_migration_returns=0.67; net_migration_people=0.67; inmigration_rate=0.67; inflow_AGI=0.67; mean_AGI_inmigrant=0.67; inflow_returns=0.67; inflow_exemptions=0.67; outflow_AGI=0.67
+2026-10-07 23:30:48,892 | 23_build_master_panels | INFO | county_industry_quarter_panel: 4207165 rows x 28 cols
+2026-10-07 23:30:49,881 | 23_build_master_panels | INFO | county_industry_quarter_panel missingness (top 15): Payroll=1.00; log_qcew_wkly_wage=0.70; log_qcew_emp=0.70; log_qcew_estabs=0.70; qcew_estabs=0.70; qcew_wages=0.70; qcew_emp_m3=0.70; qcew_emp=0.70; qcew_avg_wkly_wage=0.70; SepBeg=0.12; hire_rate=0.11; separation_rate=0.11; HirN=0.10; Sep=0.08; HirA=0.07
+2026-10-07 23:30:51,527 | 23_build_master_panels | INFO | county_industry_year_panel: 932857 rows x 10 cols
+2026-10-07 23:30:51,795 | 23_build_master_panels | INFO | county_industry_year_panel missingness (top 15): cbp_employment=0.12; annual_payroll=0.12
+2026-10-07 23:34:35,109 | 23_build_master_panels | INFO | county_demographic_quarter_panel: 8221700 rows x 47 cols
+2026-10-07 23:34:46,799 | 23_build_master_panels | INFO | county_demographic_quarter_panel missingness (top 15): Payroll=1.00; turnover=0.59; TurnOvrS=0.59; HirAS=0.58; SepS=0.58; EarnHirAS=0.58; retention_rate=0.58; SepBeg=0.58; job_creation_rate_qwi=0.57; EmpS=0.57; FrmJbC=0.57; FrmJbGn=0.57; EarnBeg=0.57; EarnHirNS=0.07; new_hire_earnings=0.07
+2026-10-07 23:34:48,479 | 23_build_master_panels | INFO | validation: cq negative EmpEnd = 0
+2026-10-07 23:34:48,479 | 23_build_master_panels | INFO | validation: cy negative estabs = 0
+2026-10-07 23:34:48,479 | 23_build_master_panels | INFO | validation: cq missing state = 0
+2026-10-07 23:34:48,480 | 23_build_master_panels | INFO | validation: treated strict counties = 869
+2026-10-07 23:34:48,480 | 23_build_master_panels | INFO | validation: treatment yq outside panel = 40
+2026-10-07 23:34:48,480 | 23_build_master_panels | INFO | validation: population 2000 total = 280320929.0
+2026-10-07 23:34:48,481 | 23_build_master_panels | INFO | validation: QWI county-quarters non-missing EmpEnd = 356130
+=== 23_build_master_panels exit 0
+=== 31_matching_weighting 23:34:55
+2026-10-07 23:35:13,746 | 31_matching_weighting | INFO | ======================================================================
+2026-10-07 23:35:13,747 | 31_matching_weighting | INFO | START 31_matching_weighting at 2026-10-07T23:35:13
+py : C:\Users\mahya\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\arraylike.py:399: 
+RuntimeWarning: divide by zero encountered in log
+At line:1 char:667
++ ... oding utf8; py -3.13 "$s.py" *>> ..\output\logs\chain_build.txt; "=== ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\mahya\...ountered in log:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  result = getattr(ufunc, method)(*inputs, **kwargs)
+2026-10-07 23:35:14,803 | 31_matching_weighting | INFO | matching sample: 3018 counties (862 treated); dropped 90 with missing covariates
+2026-10-07 23:35:15,300 | 31_matching_weighting | INFO | max |SMD| raw 0.908, ebal 0.000, ipw 0.045, nn 0.083, maha 0.145
+=== 31_matching_weighting exit 0
+=== 24_feasibility_analysis 23:35:16
+2026-10-07 23:35:17,682 | 24_feasibility_analysis | INFO | ======================================================================
+2026-10-07 23:35:17,682 | 24_feasibility_analysis | INFO | START 24_feasibility_analysis at 2026-10-07T23:35:17
+py : Traceback (most recent call last):
+At line:1 char:667
++ ... oding utf8; py -3.13 "$s.py" *>> ..\output\logs\chain_build.txt; "=== ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File [35m"C:\Users\mahya\OneDrive - Simon Fraser University 
+(1sfu)\Desktop\Tornedo\tornado_mitigation\src\24_feasibility_analysis.py"[0m, line [35m148[0m, in [35m<module>[0m
+    [31mmain[0m[1;31m()[0m
+    [31m~~~~[0m[1;31m^^[0m
+  File [35m"C:\Users\mahya\OneDrive - Simon Fraser University 
+(1sfu)\Desktop\Tornedo\tornado_mitigation\src\24_feasibility_analysis.py"[0m, line [35m86[0m, in [35mmain[0m
+    st = stats_for(row.variable, row.freq, row.align if isinstance(row.align, str) else "mar")
+  File [35m"C:\Users\mahya\OneDrive - Simon Fraser University 
+(1sfu)\Desktop\Tornedo\tornado_mitigation\src\24_feasibility_analysis.py"[0m, line [35m28[0m, in [35mstats_for[0m
+    post_t = d[(d.M == 1) & ([1;31md.T > 0[0m)]
+                             [1;31m^^^^^^^[0m
+  File [35m"C:\Users\mahya\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\ops\common.py"[0m, 
+line [35m76[0m, in [35mnew_method[0m
+    return method(self, other)
+  File [35m"C:\Users\mahya\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\arraylike.py"[0m, 
+line [35m56[0m, in [35m__gt__[0m
+    return [31mself._cmp_method[0m[1;31m(other, operator.gt)[0m
+           [31m~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"C:\Users\mahya\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py"[0m, line 
+[35m7922[0m, in [35m_cmp_method[0m
+    new_data = self._dispatch_frame_op(other, op, axis=axis)
+  File [35m"C:\Users\mahya\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py"[0m, line 
+[35m7967[0m, in [35m_dispatch_frame_op[0m
+    bm = self._mgr.apply(array_op, right=right)
+  File 
+[35m"C:\Users\mahya\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\internals\managers.py"[0m, 
+line [35m361[0m, in [35mapply[0m
+    applied = b.apply(f, **kwargs)
+  File 
+[35m"C:\Users\mahya\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\internals\blocks.py"[0m, 
+line [35m395[0m, in [35mapply[0m
+    result = func(self.values, **kwargs)
+  File 
+[35m"C:\Users\mahya\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\ops\array_ops.py"[0m, line 
+[35m344[0m, in [35mcomparison_op[0m
+    res_values = comp_method_OBJECT_ARRAY(op, lvalues, rvalues)
+  File 
+[35m"C:\Users\mahya\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\ops\array_ops.py"[0m, line 
+[35m129[0m, in [35mcomp_method_OBJECT_ARRAY[0m
+    result = libops.scalar_compare(x.ravel(), y, op)
+  File [35m"pandas/_libs/ops.pyx"[0m, line [35m107[0m, in [35mpandas._libs.ops.scalar_compare[0m
+[1;35mTypeError[0m: [35m'>' not supported between instances of 'str' and 'int'[0m
+=== 24_feasibility_analysis exit 1
+=== 25_descriptive_analysis 23:35:23
+2026-10-07 23:35:26,087 | 25_descriptive_analysis | INFO | ======================================================================
+2026-10-07 23:35:26,088 | 25_descriptive_analysis | INFO | START 25_descriptive_analysis at 2026-10-07T23:35:26
+py : C:\Users\mahya\OneDrive - Simon Fraser University 
+(1sfu)\Desktop\Tornedo\tornado_mitigation\src\25_descriptive_analysis.py:131: FutureWarning: The default of 
+observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain 
+current behavior or observed=True to adopt the future default and silence this warning.
+At line:1 char:667
++ ... oding utf8; py -3.13 "$s.py" *>> ..\output\logs\chain_build.txt; "=== ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\mahya\...e this warning.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  .groupby(["year", "b"]).size().unstack(fill_value=0)
+2026-10-07 23:35:38,929 | 25_descriptive_analysis | INFO | descriptives done:
+  Definition  Projects  Counties  States  Federal share ($M)  Total cost ($M)  Safe-room projects  Wind-retrofit projects  HIGH confidence share  Median primary-timing year  Timing = obligation+2y  HMGP share  Post tornado/severe-storm declaration share
+0     strict      5056       869      37              2653.7           4032.3                3180                    1876                  0.991                        2014                   0.833       0.942                                        0.435
+1   moderate      5144       880      37              2785.2           4226.6                3180                    1876                  0.974                        2014                   0.834       0.943                                        0.427
+2      broad      5818      1094      45              3433.1           5184.1                3180                    1876                  0.861                        2014                   0.810       0.948                                        0.441
+=== 25_descriptive_analysis exit 0
+=== 26_primary_models 23:35:39
+2026-10-07 23:35:40,449 | 26_primary_models | INFO | ======================================================================
+2026-10-07 23:35:40,450 | 26_primary_models | INFO | START 26_primary_models at 2026-10-07T23:35:40
+2026-10-07 23:35:53,299 | 26_primary_models | INFO | Worker separations (rate)                     b=0.0004741 se=0.000777 p=0.542 gT=3.596e-05 N=352841
+2026-10-07 23:35:56,213 | 26_primary_models | INFO | Employment retention                          b=-0.0003045 se=0.000408 p=0.455 gT=-0.0001392 N=352761
+2026-10-07 23:35:58,693 | 26_primary_models | INFO | Establishment deaths (exit rate)              b=0.04373 se=0.0468 p=0.350 gT=0.0175 N=103769
+2026-10-07 23:35:59,463 | 26_primary_models | INFO | Establishment deaths (log count)              b=0.01961 se=0.00641 p=0.002 gT=0.0003521 N=103782
+2026-10-07 23:36:00,367 | 26_primary_models | INFO | Job destruction rate (BDS)                    b=0.1107 se=0.107 p=0.300 gT=0.03809 N=105307
+2026-10-07 23:36:01,348 | 26_primary_models | INFO | Job creation rate (BDS)                       b=0.1595 se=0.09 p=0.077 gT=-0.01006 N=105312
+2026-10-07 23:36:04,313 | 26_primary_models | INFO | Job destruction rate (QWI firm job loss)      b=0.0007478 se=0.000418 p=0.073 gT=0.0001062 N=352949
+2026-10-07 23:36:08,003 | 26_primary_models | INFO | Employment (log end-of-quarter)               b=0.001188 se=0.00345 p=0.731 gT=0.0008858 N=356048
+2026-10-07 23:36:09,696 | 26_primary_models | INFO | Employment (QCEW log; 2014+)                  b=-0.0002533 se=0.00209 p=0.904 gT=-0.0002125 N=148426
+2026-10-07 23:36:12,663 | 26_primary_models | INFO | Earnings (log avg monthly; stable)            b=-0.001685 se=0.00177 p=0.342 gT=-0.0009498 N=352963
+2026-10-07 23:36:15,773 | 26_primary_models | INFO | New-hire earnings (log)                       b=-0.004486 se=0.00287 p=0.118 gT=0.001096 N=340437
+2026-10-07 23:36:18,719 | 26_primary_models | INFO | Hire rate                                     b=-0.00112 se=0.000865 p=0.195 gT=-0.0002753 N=352851
+2026-10-07 23:36:22,410 | 26_primary_models | INFO | New-hire rate                                 b=-0.0007344 se=0.00068 p=0.280 gT=-0.0003865 N=343498
+2026-10-07 23:36:31,159 | 26_primary_models | INFO | Turnover (stable)                             b=-0.0003679 se=0.000303 p=0.224 gT=0.0004416 N=346182
+2026-10-07 23:36:32,414 | 26_primary_models | INFO | Small-firm establishment death rate (BDS 1-19) b=0.1003 se=0.0608 p=0.099 gT=0.02765 N=103496
+2026-10-07 23:36:33,283 | 26_primary_models | INFO | Small-establishment share (CBP <20)           b=-0.0002207 se=0.000374 p=0.555 gT=4.884e-05 N=80739
+2026-10-07 23:36:34,062 | 26_primary_models | INFO | Establishment birth rate                      b=-0.02961 se=0.047 p=0.529 gT=0.01225 N=103698
+2026-10-07 23:36:34,853 | 26_primary_models | INFO | Startup rate (age-0 firms' estabs)            b=-0.02593 se=0.0392 p=0.508 gT=-0.003063 N=102087
+2026-10-07 23:36:35,863 | 26_primary_models | INFO | Out-migration rate                            b=0.03174 se=0.0214 p=0.139 gT=0.007085 N=36925
+2026-10-07 23:36:36,282 | 26_primary_models | INFO | Net migration rate                            b=-0.01655 se=0.0325 p=0.610 gT=-0.02825 N=36746
+2026-10-07 23:36:36,745 | 26_primary_models | INFO | In-migration rate                             b=0.01368 se=0.0282 p=0.628 gT=-0.01966 N=36746
+2026-10-07 23:36:37,195 | 26_primary_models | INFO | Out-migrant AGI (log)                         b=-0.001045 se=0.00543 p=0.848 gT=0.007006 N=36907
+2026-10-07 23:36:38,015 | 26_primary_models | INFO | Housing units authorized (IHS)                b=-0.007216 se=0.0244 p=0.767 gT=0.006934 N=107690
+2026-10-07 23:36:38,747 | 26_primary_models | INFO | Single-family units (IHS)                     b=-0.02031 se=0.0233 p=0.383 gT=0.00726 N=107690
+2026-10-07 23:36:39,525 | 26_primary_models | INFO | Multifamily units (IHS)                       b=0.05168 se=0.0407 p=0.204 gT=-0.004133 N=107690
+2026-10-07 23:36:40,143 | 26_primary_models | INFO | Establishments (CBP log)                      b=0.007439 se=0.00325 p=0.022 gT=8.995e-05 N=80739
+2026-10-07 23:36:40,827 | 26_primary_models | INFO | Employment (CBP log)                          b=0.004602 se=0.00443 p=0.299 gT=0.001197 N=80305
+2026-10-07 23:36:41,475 | 26_primary_models | INFO | Payroll (CBP log)                             b=0.001232 se=0.00537 p=0.819 gT=0.001729 N=80305
+=== 26_primary_models exit 0

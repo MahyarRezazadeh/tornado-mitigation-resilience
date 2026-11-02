@@ -1,0 +1,50 @@
+\begin{table}[!htbp]
+\centering
+\caption{Testing explanations for the small-county application gap}
+\label{tab:mechanisms}
+\footnotesize
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{@{}p{0.47\linewidth}cccc@{}}
+\toprule
+ & Applied & \shortstack{Log(1+\\number)} & \shortstack{County gov.\\applied} & Funded \\
+ & (1) & (2) & (3) & (4) \\
+\midrule
+\multicolumn{5}{l}{\textit{Panel A. Same county, different declarations (county and declaration fixed effects)}} \\
+Tornado hit a populated place & $2.40$ & $4.32^{**}$ & $2.41^{**}$ & $2.35$ \\
+ & $(1.64)$ & $(1.80)$ & $(1.20)$ & $(1.61)$ \\
+\quad $\times$ small county & $-4.08$ & $-7.23^{**}$ & $-4.19^{*}$ & $-4.75$ \\
+ & $(3.38)$ & $(3.63)$ & $(2.22)$ & $(3.35)$ \\
+Log residents in tornado paths & $0.33$ & $0.60^{**}$ & $0.35^{**}$ & $0.33$ \\
+ & $(0.21)$ & $(0.24)$ & $(0.15)$ & $(0.21)$ \\
+\quad $\times$ small county & $-0.62$ & $-1.04^{**}$ & $-0.60^{**}$ & $-0.72$ \\
+ & $(0.47)$ & $(0.50)$ & $(0.31)$ & $(0.46)$ \\
+\quad Observations & 11,491 & 11,491 & 11,491 & 11,491 \\
+\addlinespace
+\multicolumn{5}{l}{\textit{Panel B. Fiscal and administrative capacity (declaration fixed effects, full controls)}} \\
+Small county, controlling for taxes and administrative spending per resident & $-5.38^{***}$ & $-4.71^{***}$ & $-2.52^{***}$ & $-4.98^{***}$ \\
+ & $(0.98)$ & $(1.02)$ & $(0.73)$ & $(0.99)$ \\
+Small $\times$ low administrative spending & $-0.47$ & $0.03$ & $1.40$ & $-0.31$ \\
+ & $(1.62)$ & $(1.58)$ & $(1.21)$ & $(1.66)$ \\
+\quad Observations & 12,038 & 12,038 & 12,038 & 12,038 \\
+\addlinespace
+\multicolumn{5}{l}{\textit{Panel C. State delivery (declarations 2009--2021; declaration fixed effects, full controls)}} \\
+Small $\times$ state-filed share (SD), pre-2009 & $2.63^{**}$ & $1.73$ & $0.81$ & $3.03^{**}$ \\
+ & $(1.28)$ & $(1.27)$ & $(0.93)$ & $(1.28)$ \\
+Small $\times$ regional-body share (SD), pre-2009 & $-0.95$ & $-0.56$ & $-0.43$ & $-1.23$ \\
+ & $(1.02)$ & $(0.91)$ & $(0.74)$ & $(1.04)$ \\
+\quad Observations & 5,805 & 5,805 & 5,805 & 5,805 \\
+\addlinespace
+\multicolumn{5}{l}{\textit{Panel D. Management-cost reimbursement, DRRA \S1215 (county and declaration fixed effects)}} \\
+Small $\times$ declared on/after 1 Aug 2017 & $-1.92$ & $1.39$ & $-0.80$ & $-1.74$ \\
+ & $(3.61)$ & $(3.61)$ & $(2.48)$ & $(3.62)$ \\
+Placebo: small $\times$ declared on/after 1 Aug 2014 (pre-2017 sample) & $-4.14$ & $-0.50$ & $-1.46$ & $-4.43$ \\
+ & $(3.92)$ & $(3.68)$ & $(2.83)$ & $(3.96)$ \\
+\quad Observations & 2,898 & 2,898 & 2,898 & 2,898 \\
+\addlinespace
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\begin{minipage}{0.95\linewidth}\vspace{4pt}\scriptsize
+\textit{Note:} Coefficients multiplied by 100. Outcomes: (1) any HMGP subapplication; (2) log one plus the number of subapplications; (3) a subapplication by the county government; (4) any funded HMGP project. Panel A omits damage controls because damage is the channel through which a hit operates. Panel B uses Census of Governments 2017 finance data; ``low'' is the bottom third of county-government administrative spending (financial administration and central staff) per resident. Panel C interacts the small-county indicator with the standardized share of each state's FY1989--2008 HMGP subapplications filed by state agencies or by regional planning and development bodies; the main effects are absorbed by declaration fixed effects. Panel D compares declarations made before and after 1 August 2017, the date from which DRRA \S1215 reimbursement of subrecipient management costs applies; the placebo repeats the comparison at a false date within the pre-reform period. Standard errors clustered by county. $^{*}p<0.1$; $^{**}p<0.05$; $^{***}p<0.01$.
+\end{minipage}
+\end{table}

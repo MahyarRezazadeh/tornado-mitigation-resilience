@@ -1,0 +1,11 @@
+﻿2026-10-07 14:12:49,920 | 27_event_studies | INFO | ======================================================================
+2026-10-07 14:12:49,920 | 27_event_studies | INFO | START 27_event_studies at 2026-10-07T14:12:49
+2026-10-07 14:13:00,077 | 27_event_studies | INFO | tornado ES log_employment: pretrend p=0.466, mean post diff=0.004956
+2026-10-07 14:14:32,689 | 27_event_studies | WARNING | did2s failed for log_employment: operands could not be broadcast together with shapes (133047,) (136730,) (133047,) 
+2026-10-07 14:14:32,929 | 27_event_studies | INFO | adoption ES log_employment: pre p=0.434
+2026-10-07 14:14:44,556 | 27_event_studies | INFO | tornado ES separation_rate: pretrend p=0.523, mean post diff=4.923e-05
+2026-10-07 14:17:01,583 | 27_event_studies | WARNING | did2s failed for separation_rate: operands could not be broadcast together with shapes (131868,) (135538,) (131868,) 
+2026-10-07 14:17:02,598 | 27_event_studies | INFO | adoption ES separation_rate: pre p=0.744
+2026-10-07 14:17:19,547 | 27_event_studies | INFO | tornado ES log_earnings: pretrend p=0.455, mean post diff=-5.689e-05
+2026-10-07 14:19:47,025 | 27_event_studies | WARNING | did2s failed for log_earnings: operands could not be broadcast together with shapes (131871,) (135541,) (131871,) 
+2026-10-07 14:19:47,326 | 27_event_studies | INFO | adoption ES log_earnings: pre p=0.838

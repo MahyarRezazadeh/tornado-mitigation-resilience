@@ -1,0 +1,7 @@
+﻿2026-10-07 20:28:48,882 | 30_heterogeneity | INFO | ======================================================================
+2026-10-07 20:28:49,017 | 30_heterogeneity | INFO | START 30_heterogeneity at 2026-10-07T20:28:49
+2026-10-07 20:29:45,602 | 30_heterogeneity | INFO | separation_rate heterogeneity done
+2026-10-07 20:30:11,394 | 30_heterogeneity | INFO | log_employment heterogeneity done
+2026-10-07 20:30:37,472 | 30_heterogeneity | INFO | log_earnings heterogeneity done
+2026-10-07 20:30:48,831 | 30_heterogeneity | INFO | establishment_death_rate heterogeneity done
+2026-10-07 20:30:59,611 | 30_heterogeneity | INFO | job_destruction_rate heterogeneity done

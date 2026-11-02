@@ -1,0 +1,7 @@
+﻿2026-10-07 13:13:14,674 | 08b_download_qwi_api_cells | INFO | ======================================================================
+2026-10-07 13:13:14,675 | 08b_download_qwi_api_cells | INFO | START 08b_download_qwi_api_cells at 2026-10-07T13:13:14
+2026-10-07 13:20:42,298 | 08b_download_qwi_api_cells | INFO | family education done
+2026-10-07 13:28:00,730 | 08b_download_qwi_api_cells | INFO | family race done
+2026-10-07 13:34:28,023 | 08b_download_qwi_api_cells | INFO | family ethnicity done
+2026-10-07 13:47:20,340 | 08b_download_qwi_api_cells | INFO | family firmsize done
+2026-10-07 14:05:03,333 | 08b_download_qwi_api_cells | INFO | api cells rows: 4643245

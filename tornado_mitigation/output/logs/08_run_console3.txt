@@ -1,0 +1,45 @@
+﻿2026-10-07 21:36:56,206 | 08_download_qwi | INFO | ======================================================================
+2026-10-07 21:36:56,208 | 08_download_qwi | INFO | START 08_download_qwi at 2026-10-07T21:36:56
+2026-10-07 21:36:56,209 | 08_download_qwi | INFO | cache hit: label_flags.csv
+2026-10-07 21:36:56,210 | 08_download_qwi | INFO | cache hit: variables_qwi.csv
+2026-10-07 21:36:57,445 | 08_download_qwi | INFO | QWI al: cached rows kept
+2026-10-07 21:36:57,448 | 08_download_qwi | INFO | QWI ar: cached rows kept
+2026-10-07 21:36:57,448 | 08_download_qwi | INFO | QWI az: cached rows kept
+2026-10-07 21:36:57,451 | 08_download_qwi | INFO | QWI ca: cached rows kept
+2026-10-07 21:36:57,451 | 08_download_qwi | INFO | QWI co: cached rows kept
+2026-10-07 21:36:57,452 | 08_download_qwi | INFO | QWI ct: cached rows kept
+2026-10-07 21:36:57,452 | 08_download_qwi | INFO | QWI dc: cached rows kept
+2026-10-07 21:36:57,454 | 08_download_qwi | INFO | QWI de: cached rows kept
+2026-10-07 21:36:57,454 | 08_download_qwi | INFO | QWI fl: cached rows kept
+2026-10-07 21:36:57,454 | 08_download_qwi | INFO | QWI ga: cached rows kept
+2026-10-07 21:36:57,455 | 08_download_qwi | INFO | QWI ia: cached rows kept
+2026-10-07 21:36:57,455 | 08_download_qwi | INFO | QWI id: cached rows kept
+2026-10-07 21:36:57,456 | 08_download_qwi | INFO | QWI il: cached rows kept
+2026-10-07 21:36:57,456 | 08_download_qwi | INFO | QWI in: cached rows kept
+2026-10-07 21:36:57,457 | 08_download_qwi | INFO | QWI ks: cached rows kept
+2026-10-07 21:36:57,457 | 08_download_qwi | INFO | QWI ky: cached rows kept
+2026-10-07 21:36:57,457 | 08_download_qwi | INFO | QWI la: cached rows kept
+2026-10-07 21:36:57,458 | 08_download_qwi | INFO | QWI ma: cached rows kept
+2026-10-07 21:36:57,458 | 08_download_qwi | INFO | QWI md: cached rows kept
+2026-10-07 21:36:57,458 | 08_download_qwi | INFO | QWI me: cached rows kept
+2026-10-07 21:36:57,458 | 08_download_qwi | INFO | QWI mi: cached rows kept
+2026-10-07 21:36:57,467 | 08_download_qwi | INFO | QWI mn: cached rows kept
+2026-10-07 21:36:57,467 | 08_download_qwi | INFO | QWI mo: cached rows kept
+2026-10-07 21:36:57,468 | 08_download_qwi | INFO | QWI ms: cached rows kept
+2026-10-07 21:36:57,468 | 08_download_qwi | INFO | QWI mt: cached rows kept
+2026-10-07 21:36:57,469 | 08_download_qwi | INFO | QWI nc: cached rows kept
+2026-10-07 21:36:57,471 | 08_download_qwi | INFO | QWI nd: cached rows kept
+2026-10-07 21:36:57,476 | 08_download_qwi | INFO | QWI ne: cached rows kept
+2026-10-07 21:36:57,476 | 08_download_qwi | INFO | QWI nh: cached rows kept
+2026-10-07 21:36:57,477 | 08_download_qwi | INFO | QWI nj: cached rows kept
+2026-10-07 21:36:57,477 | 08_download_qwi | INFO | QWI nm: cached rows kept
+2026-10-07 21:36:57,477 | 08_download_qwi | INFO | QWI nv: cached rows kept
+2026-10-07 21:36:57,477 | 08_download_qwi | INFO | QWI ny: cached rows kept
+2026-10-07 21:36:57,477 | 08_download_qwi | INFO | QWI oh: cached rows kept
+2026-10-07 21:36:57,477 | 08_download_qwi | INFO | QWI ok: cached rows kept
+2026-10-07 21:36:57,478 | 08_download_qwi | INFO | QWI or: cached rows kept
+2026-10-07 21:36:57,478 | 08_download_qwi | INFO | QWI pa: cached rows kept
+2026-10-07 21:36:57,478 | 08_download_qwi | INFO | QWI ri: cached rows kept
+2026-10-07 21:36:57,478 | 08_download_qwi | INFO | QWI sc: cached rows kept
+2026-10-07 21:36:57,478 | 08_download_qwi | INFO | QWI sd: cached rows kept
+2026-10-07 21:36:57,478 | 08_download_qwi | INFO | QWI tn: cached rows kept

@@ -1,0 +1,27 @@
+\begin{table}[!htbp]
+\centering
+\footnotesize
+\begin{threeparttable}
+\caption{Where the gap arises: applications versus decisions}
+\label{tab:pipeline}
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}lccccccc@{}}
+\toprule
+ & \multicolumn{3}{c}{Application margin} & \multicolumn{3}{c}{Share of decided subapplications} & Award \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-8}
+ & Applied & \shortstack{Log(1+\\number)} & \shortstack{County gov.\\applied} & Approved & Withdrawn & Denied & \shortstack{County gov.\\funded} \\
+ & (1) & (2) & (3) & (4) & (5) & (6) & (7) \\
+\midrule
+Small county & $-5.37^{***}$ & $-4.68^{***}$ & $-2.35^{***}$ & $-0.52$ & $-0.87$ & $1.40^{**}$ & $-2.38^{***}$ \\
+ & $(0.98)$ & $(1.02)$ & $(0.73)$ & $(1.90)$ & $(1.82)$ & $(0.65)$ & $(0.74)$ \\
+Mean, larger counties & 26.1 & 25.9 & 11.1 & 86.6 & 11.7 & 1.7 & 11.4 \\
+Observations & 12,038 & 12,038 & 12,038 & 2,515 & 2,515 & 2,515 & 12,038 \\
+Counties (clusters) & 2,762 & 2,762 & 2,762 & 1,459 & 1,459 & 1,459 & 2,762 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Notes:} All columns use the column (5) specification of Table~\ref{tab:baseline} (declaration fixed effects; hazard, demographic, and local-government-count controls). Coefficients multiplied by 100. Columns (1)--(3) and (7) use all county--declarations; ``county gov.'' restricts to subapplications or projects whose applicant is the county government itself, of which every county has exactly one. Columns (4)--(6) restrict to county--declarations with at least one decided subapplication and measure the share approved, withdrawn, or denied. Standard errors clustered by county. At the subapplication level (same controls), small-county subapplications request 0.102 log points less funding (SE 0.094) and report benefit--cost ratios 0.069 log points lower (SE 0.063). $^{*}p<0.1$; $^{**}p<0.05$; $^{***}p<0.01$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

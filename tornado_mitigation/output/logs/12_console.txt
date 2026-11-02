@@ -1,0 +1,4 @@
+﻿2026-10-07 14:12:24,455 | 12_download_qcew | INFO | ======================================================================
+2026-10-07 14:12:24,457 | 12_download_qcew | INFO | START 12_download_qcew at 2026-10-07T14:12:24
+2026-10-07 14:12:28,352 | 12_download_qcew | INFO | slices retrieved: 576 of 576
+2026-10-07 14:12:33,408 | 12_download_qcew | INFO | QCEW rows 1999372, years 2014-2025

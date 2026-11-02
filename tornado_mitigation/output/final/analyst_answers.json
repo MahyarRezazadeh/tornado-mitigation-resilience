@@ -1,0 +1,7 @@
+{
+  "A": "None. No outcome shows a protective effect that is both statistically distinguishable after multiple testing and robust; the strongest *credible* causal statement is the informative null for worker separations (95% CI rules out effects larger than 0.05 within-county SD; pretrend, placebo, RI and leave-one-state-out all pass).",
+  "B": "Worker separations as a null (sign consistency 0.89, LOSO 1.00, placebo p = 0.93, RI p = 0.50). Among non-null signs, small-firm establishment deaths are the most consistently signed (98% of credible specs), but in the adverse direction and with BH q = 0.22.",
+  "C": "None that is credible. The only large effect is the reported-damage reduction (about -42% per EF step), which fails the pre-treatment placebo; all labor and business point estimates are below 1.3% of the mean.",
+  "E": "No outcome reaches 60 on the heuristic in its current form (max 57.5: separations and QWI job destruction). The redesigned damage-loss paper has the highest potential (see Section 25).",
+  "Q": "No. M1 damage reduction is large and specification-robust (-42% per EF step; -58% within-treated after dropping 5 pre-treatment years) but fails the pre-treatment placebo (+39% to +50%, p < 1e-4) and relies on damage-based EF ratings; fatalities and injuries are not reduced. M2 business continuity goes the wrong way (physical-premise industries have higher separations, p = 0.01); M3 match preservation and M4 small-business protection are not supported."
+}

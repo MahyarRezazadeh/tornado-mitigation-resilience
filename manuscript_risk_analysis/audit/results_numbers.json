@@ -1,0 +1,1103 @@
+{
+ "sample": {
+  "county_declarations": 12081,
+  "counties": 2767,
+  "disasters": 736,
+  "states": 49,
+  "years": [
+   1999,
+   2021
+  ],
+  "share_small": 0.347,
+  "share_hit": 0.111,
+  "small_pop_cutoff": 15136.0
+ },
+ "T2_applied_1": {
+  "b": -11.27,
+  "se": 0.885,
+  "p": 0.0,
+  "lo": -13.005,
+  "hi": -9.535,
+  "N": 12057,
+  "clusters": 2763,
+  "ref_mean": 26.22
+ },
+ "T2_applied_2": {
+  "b": -11.192,
+  "se": 0.875,
+  "p": 0.0,
+  "lo": -12.908,
+  "hi": -9.475,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 26.136
+ },
+ "T2_applied_3": {
+  "b": -10.428,
+  "se": 0.876,
+  "p": 0.0,
+  "lo": -12.146,
+  "hi": -8.709,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 26.136
+ },
+ "T2_applied_4": {
+  "b": -8.85,
+  "se": 0.926,
+  "p": 0.0,
+  "lo": -10.666,
+  "hi": -7.034,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 26.136
+ },
+ "T2_applied_5": {
+  "b": -5.373,
+  "se": 0.978,
+  "p": 0.0,
+  "lo": -7.29,
+  "hi": -3.457,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 26.136
+ },
+ "T2_dis_any_1": {
+  "b": -11.427,
+  "se": 0.9,
+  "p": 0.0,
+  "lo": -13.191,
+  "hi": -9.662,
+  "N": 12057,
+  "clusters": 2763,
+  "ref_mean": 27.147
+ },
+ "T2_dis_any_2": {
+  "b": -11.25,
+  "se": 0.89,
+  "p": 0.0,
+  "lo": -12.995,
+  "hi": -9.506,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 27.066
+ },
+ "T2_dis_any_3": {
+  "b": -10.505,
+  "se": 0.891,
+  "p": 0.0,
+  "lo": -12.253,
+  "hi": -8.758,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 27.066
+ },
+ "T2_dis_any_4": {
+  "b": -8.791,
+  "se": 0.946,
+  "p": 0.0,
+  "lo": -10.645,
+  "hi": -6.936,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 27.066
+ },
+ "T2_dis_any_5": {
+  "b": -4.99,
+  "se": 0.993,
+  "p": 0.0,
+  "lo": -6.938,
+  "hi": -3.042,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 27.066
+ },
+ "T2_dis_strict_1": {
+  "b": -3.972,
+  "se": 0.533,
+  "p": 0.0,
+  "lo": -5.017,
+  "hi": -2.927,
+  "N": 12057,
+  "clusters": 2763,
+  "ref_mean": 6.364
+ },
+ "T2_dis_strict_2": {
+  "b": -3.845,
+  "se": 0.529,
+  "p": 0.0,
+  "lo": -4.883,
+  "hi": -2.808,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 6.314
+ },
+ "T2_dis_strict_3": {
+  "b": -3.447,
+  "se": 0.521,
+  "p": 0.0,
+  "lo": -4.468,
+  "hi": -2.425,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 6.314
+ },
+ "T2_dis_strict_4": {
+  "b": -3.144,
+  "se": 0.532,
+  "p": 0.0,
+  "lo": -4.187,
+  "hi": -2.102,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 6.314
+ },
+ "T2_dis_strict_5": {
+  "b": -2.384,
+  "se": 0.542,
+  "p": 0.0,
+  "lo": -3.447,
+  "hi": -1.32,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 6.314
+ },
+ "T3_applied": {
+  "b": -5.373,
+  "se": 0.978,
+  "p": 0.0,
+  "lo": -7.29,
+  "hi": -3.457,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 26.136
+ },
+ "T3_l_napp": {
+  "b": -4.675,
+  "se": 1.017,
+  "p": 0.0,
+  "lo": -6.669,
+  "hi": -2.682,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 25.916
+ },
+ "T3_applied_cgov": {
+  "b": -2.353,
+  "se": 0.727,
+  "p": 0.001,
+  "lo": -3.778,
+  "hi": -0.928,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 11.088
+ },
+ "T3_succ_rate": {
+  "b": -0.524,
+  "se": 1.899,
+  "p": 0.783,
+  "lo": -4.249,
+  "hi": 3.201,
+  "N": 2515,
+  "clusters": 1459,
+  "ref_mean": 86.608
+ },
+ "T3_wd_rate": {
+  "b": -0.875,
+  "se": 1.816,
+  "p": 0.63,
+  "lo": -4.437,
+  "hi": 2.687,
+  "N": 2515,
+  "clusters": 1459,
+  "ref_mean": 11.719
+ },
+ "T3_den_rate": {
+  "b": 1.399,
+  "se": 0.654,
+  "p": 0.033,
+  "lo": 0.115,
+  "hi": 2.682,
+  "N": 2515,
+  "clusters": 1459,
+  "ref_mean": 1.674
+ },
+ "T3_f_county_gov": {
+  "b": -2.382,
+  "se": 0.74,
+  "p": 0.001,
+  "lo": -3.832,
+  "hi": -0.931,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 11.432
+ },
+ "T3sub_lamt": {
+  "b": -10.193,
+  "se": 9.357,
+  "p": 0.276,
+  "lo": -28.547,
+  "hi": 8.162,
+  "N": 5377,
+  "clusters": 1460,
+  "ref_mean": 1178.07
+ },
+ "T3sub_lbcr": {
+  "b": -6.929,
+  "se": 6.262,
+  "p": 0.269,
+  "lo": -19.22,
+  "hi": 5.361,
+  "N": 3154,
+  "clusters": 889,
+  "ref_mean": 81.002
+ },
+ "subapps": {
+  "linked_rows": 32607,
+  "decided": 28320,
+  "status_counts": {
+   "Approved": 23567,
+   "Pending": 4267,
+   "Withdrawn": 4199,
+   "Not Approved": 330,
+   "Subaward Accepted": 224,
+   "Submitted to FEMA": 20
+  }
+ },
+ "T4_E_applied": {
+  "b": 2.402,
+  "se": 1.636,
+  "p": 0.142,
+  "lo": -0.805,
+  "hi": 5.61,
+  "N": 11491,
+  "clusters": 2222,
+  "ref_mean": 22.104
+ },
+ "T4_E_l_napp": {
+  "b": 4.323,
+  "se": 1.799,
+  "p": 0.016,
+  "lo": 0.795,
+  "hi": 7.851,
+  "N": 11491,
+  "clusters": 2222,
+  "ref_mean": 21.228
+ },
+ "T4_E_applied_cgov": {
+  "b": 2.414,
+  "se": 1.202,
+  "p": 0.045,
+  "lo": 0.058,
+  "hi": 4.771,
+  "N": 11491,
+  "clusters": 2222,
+  "ref_mean": 9.686
+ },
+ "T4_E_dis_any": {
+  "b": 2.351,
+  "se": 1.613,
+  "p": 0.145,
+  "lo": -0.813,
+  "hi": 5.514,
+  "N": 11491,
+  "clusters": 2222,
+  "ref_mean": 22.861
+ },
+ "T4_E_small_applied": {
+  "b": -4.084,
+  "se": 3.379,
+  "p": 0.227,
+  "lo": -10.711,
+  "hi": 2.543,
+  "N": 11491,
+  "clusters": 2222,
+  "ref_mean": 22.104
+ },
+ "T4_E_small_l_napp": {
+  "b": -7.233,
+  "se": 3.628,
+  "p": 0.046,
+  "lo": -14.348,
+  "hi": -0.117,
+  "N": 11491,
+  "clusters": 2222,
+  "ref_mean": 21.228
+ },
+ "T4_E_small_applied_cgov": {
+  "b": -4.192,
+  "se": 2.22,
+  "p": 0.059,
+  "lo": -8.545,
+  "hi": 0.162,
+  "N": 11491,
+  "clusters": 2222,
+  "ref_mean": 9.686
+ },
+ "T4_E_small_dis_any": {
+  "b": -4.751,
+  "se": 3.346,
+  "p": 0.156,
+  "lo": -11.313,
+  "hi": 1.811,
+  "N": 11491,
+  "clusters": 2222,
+  "ref_mean": 22.861
+ },
+ "T4_lpe_applied": {
+  "b": 0.332,
+  "se": 0.212,
+  "p": 0.118,
+  "lo": -0.084,
+  "hi": 0.749,
+  "N": 11491,
+  "clusters": 2222,
+  "ref_mean": 22.104
+ },
+ "T4_lpe_l_napp": {
+  "b": 0.6,
+  "se": 0.24,
+  "p": 0.013,
+  "lo": 0.129,
+  "hi": 1.072,
+  "N": 11491,
+  "clusters": 2222,
+  "ref_mean": 21.228
+ },
+ "T4_lpe_applied_cgov": {
+  "b": 0.348,
+  "se": 0.153,
+  "p": 0.023,
+  "lo": 0.047,
+  "hi": 0.648,
+  "N": 11491,
+  "clusters": 2222,
+  "ref_mean": 9.686
+ },
+ "T4_lpe_dis_any": {
+  "b": 0.328,
+  "se": 0.209,
+  "p": 0.117,
+  "lo": -0.082,
+  "hi": 0.739,
+  "N": 11491,
+  "clusters": 2222,
+  "ref_mean": 22.861
+ },
+ "T4_lpe_small_applied": {
+  "b": -0.618,
+  "se": 0.469,
+  "p": 0.188,
+  "lo": -1.538,
+  "hi": 0.302,
+  "N": 11491,
+  "clusters": 2222,
+  "ref_mean": 22.104
+ },
+ "T4_lpe_small_l_napp": {
+  "b": -1.041,
+  "se": 0.502,
+  "p": 0.038,
+  "lo": -2.026,
+  "hi": -0.056,
+  "N": 11491,
+  "clusters": 2222,
+  "ref_mean": 21.228
+ },
+ "T4_lpe_small_applied_cgov": {
+  "b": -0.604,
+  "se": 0.307,
+  "p": 0.05,
+  "lo": -1.207,
+  "hi": -0.001,
+  "N": 11491,
+  "clusters": 2222,
+  "ref_mean": 9.686
+ },
+ "T4_lpe_small_dis_any": {
+  "b": -0.717,
+  "se": 0.464,
+  "p": 0.122,
+  "lo": -1.626,
+  "hi": 0.192,
+  "N": 11491,
+  "clusters": 2222,
+  "ref_mean": 22.861
+ },
+ "T4_small_applied": {
+  "b": -5.378,
+  "se": 0.978,
+  "p": 0.0,
+  "lo": -7.296,
+  "hi": -3.459,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 26.136
+ },
+ "T4_small_l_napp": {
+  "b": -4.714,
+  "se": 1.019,
+  "p": 0.0,
+  "lo": -6.713,
+  "hi": -2.716,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 25.916
+ },
+ "T4_small_applied_cgov": {
+  "b": -2.516,
+  "se": 0.733,
+  "p": 0.001,
+  "lo": -3.954,
+  "hi": -1.078,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 11.088
+ },
+ "T4_small_dis_any": {
+  "b": -4.976,
+  "se": 0.992,
+  "p": 0.0,
+  "lo": -6.923,
+  "hi": -3.03,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 27.066
+ },
+ "T4_sm_lowadmin_applied": {
+  "b": -0.473,
+  "se": 1.622,
+  "p": 0.771,
+  "lo": -3.654,
+  "hi": 2.708,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 22.113
+ },
+ "T4_sm_lowadmin_l_napp": {
+  "b": 0.029,
+  "se": 1.577,
+  "p": 0.985,
+  "lo": -3.064,
+  "hi": 3.122,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 21.204
+ },
+ "T4_sm_lowadmin_applied_cgov": {
+  "b": 1.404,
+  "se": 1.205,
+  "p": 0.244,
+  "lo": -0.959,
+  "hi": 3.767,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 9.811
+ },
+ "T4_sm_lowadmin_dis_any": {
+  "b": -0.308,
+  "se": 1.657,
+  "p": 0.853,
+  "lo": -3.557,
+  "hi": 2.942,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 22.911
+ },
+ "T4_sm_z_sh_state_applied": {
+  "b": 2.632,
+  "se": 1.277,
+  "p": 0.039,
+  "lo": 0.128,
+  "hi": 5.136,
+  "N": 5805,
+  "clusters": 2213,
+  "ref_mean": 23.359
+ },
+ "T4_sm_z_sh_state_l_napp": {
+  "b": 1.732,
+  "se": 1.274,
+  "p": 0.174,
+  "lo": -0.766,
+  "hi": 4.229,
+  "N": 5805,
+  "clusters": 2213,
+  "ref_mean": 22.913
+ },
+ "T4_sm_z_sh_state_applied_cgov": {
+  "b": 0.812,
+  "se": 0.931,
+  "p": 0.383,
+  "lo": -1.013,
+  "hi": 2.637,
+  "N": 5805,
+  "clusters": 2213,
+  "ref_mean": 10.784
+ },
+ "T4_sm_z_sh_state_dis_any": {
+  "b": 3.028,
+  "se": 1.283,
+  "p": 0.018,
+  "lo": 0.513,
+  "hi": 5.544,
+  "N": 5805,
+  "clusters": 2213,
+  "ref_mean": 24.238
+ },
+ "T4_sm_z_sh_regional_applied": {
+  "b": -0.946,
+  "se": 1.018,
+  "p": 0.353,
+  "lo": -2.943,
+  "hi": 1.051,
+  "N": 5805,
+  "clusters": 2213,
+  "ref_mean": 23.359
+ },
+ "T4_sm_z_sh_regional_l_napp": {
+  "b": -0.564,
+  "se": 0.911,
+  "p": 0.536,
+  "lo": -2.35,
+  "hi": 1.222,
+  "N": 5805,
+  "clusters": 2213,
+  "ref_mean": 22.913
+ },
+ "T4_sm_z_sh_regional_applied_cgov": {
+  "b": -0.435,
+  "se": 0.742,
+  "p": 0.558,
+  "lo": -1.891,
+  "hi": 1.021,
+  "N": 5805,
+  "clusters": 2213,
+  "ref_mean": 10.784
+ },
+ "T4_sm_z_sh_regional_dis_any": {
+  "b": -1.227,
+  "se": 1.042,
+  "p": 0.239,
+  "lo": -3.271,
+  "hi": 0.816,
+  "N": 5805,
+  "clusters": 2213,
+  "ref_mean": 24.238
+ },
+ "T4_sm_post_applied": {
+  "b": -1.922,
+  "se": 3.613,
+  "p": 0.595,
+  "lo": -9.009,
+  "hi": 5.165,
+  "N": 4125,
+  "clusters": 1261,
+  "ref_mean": 23.127
+ },
+ "T4_sm_post_l_napp": {
+  "b": 1.392,
+  "se": 3.613,
+  "p": 0.7,
+  "lo": -5.695,
+  "hi": 8.48,
+  "N": 4125,
+  "clusters": 1261,
+  "ref_mean": 23.303
+ },
+ "T4_sm_post_applied_cgov": {
+  "b": -0.802,
+  "se": 2.479,
+  "p": 0.746,
+  "lo": -5.667,
+  "hi": 4.062,
+  "N": 4125,
+  "clusters": 1261,
+  "ref_mean": 10.085
+ },
+ "T4_sm_post_dis_any": {
+  "b": -1.738,
+  "se": 3.624,
+  "p": 0.632,
+  "lo": -8.848,
+  "hi": 5.372,
+  "N": 4125,
+  "clusters": 1261,
+  "ref_mean": 24.024
+ },
+ "T4_sm_fake_applied": {
+  "b": -4.143,
+  "se": 3.922,
+  "p": 0.291,
+  "lo": -11.838,
+  "hi": 3.553,
+  "N": 2898,
+  "clusters": 1032,
+  "ref_mean": 23.154
+ },
+ "T4_sm_fake_l_napp": {
+  "b": -0.497,
+  "se": 3.683,
+  "p": 0.893,
+  "lo": -7.725,
+  "hi": 6.731,
+  "N": 2898,
+  "clusters": 1032,
+  "ref_mean": 23.645
+ },
+ "T4_sm_fake_applied_cgov": {
+  "b": -1.458,
+  "se": 2.826,
+  "p": 0.606,
+  "lo": -7.003,
+  "hi": 4.088,
+  "N": 2898,
+  "clusters": 1032,
+  "ref_mean": 9.524
+ },
+ "T4_sm_fake_dis_any": {
+  "b": -4.431,
+  "se": 3.955,
+  "p": 0.263,
+  "lo": -12.192,
+  "hi": 3.33,
+  "N": 2898,
+  "clusters": 1032,
+  "ref_mean": 24.327
+ },
+ "T5_Baseline (Table 2, colum_dis_any": {
+  "b": -8.791,
+  "se": 0.946,
+  "p": 0.0,
+  "lo": -10.645,
+  "hi": -6.936,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 27.066
+ },
+ "T5_Baseline (Table 2, colum_dis_strict": {
+  "b": -3.144,
+  "se": 0.532,
+  "p": 0.0,
+  "lo": -4.187,
+  "hi": -2.102,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 6.314
+ },
+ "T5_Baseline (Table 2, colum_win3_strict": {
+  "b": -8.076,
+  "se": 1.115,
+  "p": 0.0,
+  "lo": -10.263,
+  "hi": -5.89,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 14.615
+ },
+ "T5_Standard errors clustere_dis_any": {
+  "b": -8.791,
+  "se": 0.98,
+  "p": 0.0,
+  "lo": -10.764,
+  "hi": -6.818,
+  "N": 12038,
+  "clusters": 47,
+  "ref_mean": 27.066
+ },
+ "T5_Standard errors clustere_dis_strict": {
+  "b": -3.144,
+  "se": 0.817,
+  "p": 0.0,
+  "lo": -4.789,
+  "hi": -1.499,
+  "N": 12038,
+  "clusters": 47,
+  "ref_mean": 6.314
+ },
+ "T5_Standard errors clustere_win3_strict": {
+  "b": -8.076,
+  "se": 2.47,
+  "p": 0.002,
+  "lo": -13.048,
+  "hi": -3.105,
+  "N": 12038,
+  "clusters": 47,
+  "ref_mean": 14.615
+ },
+ "T5_Hit-only sample (populat_dis_any": {
+  "b": -14.253,
+  "se": 3.767,
+  "p": 0.0,
+  "lo": -21.649,
+  "hi": -6.857,
+  "N": 1203,
+  "clusters": 743,
+  "ref_mean": 33.785
+ },
+ "T5_Hit-only sample (populat_dis_strict": {
+  "b": -9.185,
+  "se": 2.596,
+  "p": 0.0,
+  "lo": -14.281,
+  "hi": -4.089,
+  "N": 1203,
+  "clusters": 743,
+  "ref_mean": 14.521
+ },
+ "T5_Hit-only sample (populat_win3_strict": {
+  "b": -13.382,
+  "se": 4.598,
+  "p": 0.004,
+  "lo": -22.408,
+  "hi": -4.356,
+  "N": 1203,
+  "clusters": 743,
+  "ref_mean": 28.461
+ },
+ "T5_Declarations with incide_dis_any": {
+  "b": -1.457,
+  "se": 4.049,
+  "p": 0.719,
+  "lo": -9.424,
+  "hi": 6.509,
+  "N": 361,
+  "clusters": 322,
+  "ref_mean": 19.923
+ },
+ "T5_Declarations with incide_dis_strict": {
+  "b": -2.885,
+  "se": 2.156,
+  "p": 0.182,
+  "lo": -7.127,
+  "hi": 1.357,
+  "N": 361,
+  "clusters": 322,
+  "ref_mean": 6.513
+ },
+ "T5_Declarations with incide_win3_strict": {
+  "b": -2.709,
+  "se": 3.378,
+  "p": 0.423,
+  "lo": -9.355,
+  "hi": 3.937,
+  "N": 361,
+  "clusters": 322,
+  "ref_mean": 12.644
+ },
+ "T5_Declarations with Indivi_dis_any": {
+  "b": -8.807,
+  "se": 1.573,
+  "p": 0.0,
+  "lo": -11.892,
+  "hi": -5.723,
+  "N": 3647,
+  "clusters": 1739,
+  "ref_mean": 31.775
+ },
+ "T5_Declarations with Indivi_dis_strict": {
+  "b": -4.339,
+  "se": 0.895,
+  "p": 0.0,
+  "lo": -6.095,
+  "hi": -2.583,
+  "N": 3647,
+  "clusters": 1739,
+  "ref_mean": 7.944
+ },
+ "T5_Declarations with Indivi_win3_strict": {
+  "b": -8.923,
+  "se": 1.644,
+  "p": 0.0,
+  "lo": -12.147,
+  "hi": -5.698,
+  "N": 3647,
+  "clusters": 1739,
+  "ref_mean": 17.012
+ },
+ "T5_Adding counts of local g_dis_any": {
+  "b": -4.99,
+  "se": 0.993,
+  "p": 0.0,
+  "lo": -6.938,
+  "hi": -3.042,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 27.066
+ },
+ "T5_Adding counts of local g_dis_strict": {
+  "b": -2.384,
+  "se": 0.542,
+  "p": 0.0,
+  "lo": -3.447,
+  "hi": -1.32,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 6.314
+ },
+ "T5_Adding counts of local g_win3_strict": {
+  "b": -5.93,
+  "se": 1.142,
+  "p": 0.0,
+  "lo": -8.169,
+  "hi": -3.69,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 14.615
+ },
+ "T5_Continuous log populatio_dis_any": {
+  "b": 7.778,
+  "se": 0.51,
+  "p": 0.0,
+  "lo": 6.778,
+  "hi": 8.778,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 22.911
+ },
+ "T5_Continuous log populatio_dis_strict": {
+  "b": 1.871,
+  "se": 0.27,
+  "p": 0.0,
+  "lo": 1.342,
+  "hi": 2.4,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 5.001
+ },
+ "T5_Continuous log populatio_win3_strict": {
+  "b": 5.06,
+  "se": 0.52,
+  "p": 0.0,
+  "lo": 4.04,
+  "hi": 6.08,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 12.137
+ },
+ "T5_Credit statewide project_dis_any_sw": {
+  "b": -0.934,
+  "se": 0.269,
+  "p": 0.001,
+  "lo": -1.462,
+  "hi": -0.406,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 88.619
+ },
+ "T5_Credit statewide project_dis_strict_sw": {
+  "b": -2.789,
+  "se": 0.499,
+  "p": 0.0,
+  "lo": -3.769,
+  "hi": -1.81,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 9.93
+ },
+ "T5_Five-year window_win5_strict": {
+  "b": -10.462,
+  "se": 1.417,
+  "p": 0.0,
+  "lo": -13.24,
+  "hi": -7.685,
+  "N": 12038,
+  "clusters": 2762,
+  "ref_mean": 19.707
+ },
+ "T5_loso": {
+  "dis_any": [
+   -9.37,
+   -8.43
+  ],
+  "dis_strict": [
+   -3.53,
+   -2.7
+  ],
+  "win3_strict": [
+   -8.95,
+   -6.58
+  ]
+ },
+ "deciles": {
+  "applied": {
+   "1": -34.01,
+   "2": -30.75,
+   "3": -28.06,
+   "4": -25.04,
+   "5": -21.4,
+   "6": -19.92,
+   "7": -18.45,
+   "8": -14.75,
+   "9": -10.43
+  },
+  "dis_any": {
+   "1": -35.54,
+   "2": -32.36,
+   "3": -29.64,
+   "4": -26.89,
+   "5": -23.09,
+   "6": -21.13,
+   "7": -19.86,
+   "8": -15.86,
+   "9": -11.5
+  }
+ },
+ "drra_event_min_p": {
+  "applied": 0.288,
+  "dis_any": 0.141
+ },
+ "controls_col4": {
+  "applied": {
+   "small": -8.85,
+   "E": -20.204,
+   "lpe": 2.978,
+   "track_km": -0.011,
+   "mag": -0.225,
+   "cas": 1.529,
+   "ldmg": 0.055,
+   "ldmg_pc": 0.215,
+   "linc": 6.592,
+   "pov_rate": -1.194,
+   "nonwhite": 9.804,
+   "nonmetro": -3.238
+  },
+  "dis_any": {
+   "small": -8.791,
+   "E": -23.011,
+   "lpe": 3.375,
+   "track_km": -0.022,
+   "mag": 0.052,
+   "cas": 1.356,
+   "ldmg": -0.045,
+   "ldmg_pc": 0.373,
+   "linc": 6.988,
+   "pov_rate": -3.909,
+   "nonwhite": 10.591,
+   "nonmetro": -3.474
+  }
+ },
+ "fig2_raw": {
+  "1": {
+   "applied": 14.3,
+   "funded": 14.9,
+   "pop_median": 3426
+  },
+  "2": {
+   "applied": 12.7,
+   "funded": 13.2,
+   "pop_median": 7294
+  },
+  "3": {
+   "applied": 14.9,
+   "funded": 15.4,
+   "pop_median": 11405
+  },
+  "4": {
+   "applied": 17.4,
+   "funded": 17.7,
+   "pop_median": 16034
+  },
+  "5": {
+   "applied": 21.7,
+   "funded": 22.1,
+   "pop_median": 21665
+  },
+  "6": {
+   "applied": 20.4,
+   "funded": 21.3,
+   "pop_median": 29259
+  },
+  "7": {
+   "applied": 22.2,
+   "funded": 23.0,
+   "pop_median": 40472
+  },
+  "8": {
+   "applied": 29.9,
+   "funded": 31.3,
+   "pop_median": 62911
+  },
+  "9": {
+   "applied": 32.9,
+   "funded": 34.0,
+   "pop_median": 112643
+  },
+  "10": {
+   "applied": 43.2,
+   "funded": 45.1,
+   "pop_median": 413325
+  }
+ },
+ "fig4_l_napp": {
+  "larger_b": 4.32,
+  "larger_se": 1.8,
+  "small_b": -2.91,
+  "small_se": 3.14
+ },
+ "fig4_applied_cgov": {
+  "larger_b": 2.41,
+  "larger_se": 1.2,
+  "small_b": -1.78,
+  "small_se": 1.9
+ },
+ "fig4_applied": {
+  "larger_b": 2.4,
+  "larger_se": 1.64,
+  "small_b": -1.68,
+  "small_se": 3.02
+ },
+ "raw_rates": {
+  "applied_small": 14.6,
+  "applied_larger": 26.3,
+  "funded_small": 15.1,
+  "funded_larger": 27.2,
+  "succ_small": 87.0,
+  "succ_larger": 86.4,
+  "strict_larger": 6.4,
+  "strict_small": 2.5
+ },
+ "govcounts": {
+  "n_gp": {
+   "0": 14.01,
+   "1": 8.42
+  },
+  "n_sd": {
+   "0": 15.14,
+   "1": 6.89
+  },
+  "n_sch": {
+   "0": 5.95,
+   "1": 2.21
+  },
+  "county_web": {
+   "0": 0.79,
+   "1": 0.52
+  }
+ },
+ "fiscal_means": {
+  "ladmin_cgov_pc": {
+   "0": 4.0,
+   "1": 4.465
+  },
+  "ltax_cgov_pc": {
+   "0": 5.824,
+   "1": 6.093
+  }
+ },
+ "state_shares": {
+  "sh_state_mean": 0.185,
+  "sh_state_sd": 0.1,
+  "sh_regional_max": 0.09
+ },
+ "drra_raw": {
+  "0": {
+   "0": 31.0,
+   "1": 26.3
+  },
+  "1": {
+   "0": 14.8,
+   "1": 13.9
+  }
+ },
+ "drra_N": 4994
+}

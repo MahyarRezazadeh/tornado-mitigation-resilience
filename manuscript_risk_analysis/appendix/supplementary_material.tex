@@ -1,0 +1,36 @@
+% Supporting information (input at the end of risk_analysis_manuscript.tex; also compiles via supplementary_standalone.tex)
+\setcounter{table}{0}
+\setcounter{figure}{0}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\section*{SUPPORTING INFORMATION}
+
+\subsection*{Appendix S1. Coefficients on all regressors}
+
+Table~\ref{tab:controls} reports every coefficient in the baseline specifications of Table~\ref{tab:baseline}. Conditional on population size and hazard exposure, log median household income is weakly and positively associated with participation, the poverty rate is not associated with it, the non-White population share is positively associated with it, and nonmetropolitan counties are about three percentage points less likely to participate. Among the local-government counts, the number of school districts has the largest coefficient.
+
+\input{appendix/table_A1_controls.tex}
+
+\subsection*{Appendix S2. Population-decile gradient}
+
+Table~\ref{tab:deciles} reports the coefficients plotted in Figure~\ref{fig:gradient}b.
+
+\input{appendix/table_A2_deciles.tex}
+
+\subsection*{Appendix S3. Exploratory test: pre-calculated benefits for residential safe rooms}
+
+FEMA's job aid for safe-room applications using pre-calculated benefits is dated February 19, 2015 \parencite{fema2015saferoomprecalc}; we were unable to establish the exact date from which the option was first available. As an exploratory check, we stacked two outcomes for each county--declaration of 2009--2021, an indicator for any safe-room or wind-retrofit subapplication and an indicator for any other subapplication, and estimated a triple-difference model with county-by-outcome and declaration-by-outcome fixed effects. The coefficient on small $\times$ declared after February 19, 2015 $\times$ safe-room outcome is 0.73 percentage points (county-clustered standard error 2.95; $p = 0.81$; 9,856 stacked observations). Because the treatment date is uncertain and the test has limited power, we do not interpret this estimate further.
+
+\subsection*{Appendix S4. Data construction}
+
+\textit{Declarations.} County designations are taken from FEMA's Disaster Declarations Summaries for declarations of type DR with incident type ``Tornado'' or ``Severe Storm'' and incident begin dates from 1999 to 2021. Statewide designations (county code 000) are excluded. The incident year is used to align hazard measures.
+
+\textit{HMGP projects and subapplications.} Funded HMGP projects are linked to county--declarations through the disaster number and the project's county; projects listing several counties are credited to each listed county, and projects with no county (statewide) are used only in the statewide-credit robustness check. Safe rooms and wind retrofits are identified from FEMA project-type codes for community and individual safe rooms and for wind retrofits of structures. Subapplications are linked through the disaster number and the benefiting-county field, matched to county names within the subapplicant's state; void records are excluded. Of 32,607 linked county--subapplication records, 23,567 are approved, 4,199 withdrawn, 330 not approved, 224 subaward accepted, and 4,287 pending or submitted. Few closed or ``not approved/denied'' records carry benefiting counties, so decision rates rest mainly on the categories listed.
+
+\textit{Applicant type.} Applicant names were classified by text rules into county government, municipality or township, school district, special district or other, and state agency. A county-government applicant is one whose name identifies the county or parish government.
+
+\textit{Tornado exposure.} Each SPC tornado is represented by a straight segment from its start to end coordinates, buffered by half the reported path width (minimum 10 yards); tracks without an end point are represented by a disc with the reported swept area. Paths are intersected with 2020 county boundaries. A county--declaration is classified as hit if, in the incident year, a path buffered by an additional 500 meters contains the population centroid of at least one 2020 block group in the county. Residents in paths sum the 2020 population of such block groups.
+
+\textit{Local governments and finances.} Counts of municipalities and townships, special districts, and school districts (independent and dependent) come from the 2017 Census of Governments Government Units Listing. County-government taxes (item codes beginning with T) and spending on financial administration and central staff (codes E23 and E29) come from the 2017 Individual Unit File.
+
+\textit{State delivery measures.} For each state, the share of HMGP subapplications for fiscal years up to 2008 filed by state agencies (names indicating a state department, division, or emergency management agency, or statewide benefit) and by regional planning or development bodies (names containing planning, regional, council of governments, or development district). These shares are measured before the 2009--2021 outcome period.
