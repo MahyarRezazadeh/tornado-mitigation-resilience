@@ -1,0 +1,34 @@
+\begin{table}[!htbp]
+\centering
+\caption{Coefficients on all regressors in the baseline specifications}
+\label{tab:controls}
+\scriptsize
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+ & \multicolumn{2}{c}{Any subapplication} & \multicolumn{2}{c}{Any funded project} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & (4) & (5) & (4) & (5) \\
+\midrule
+Small county & $-8.85^{***}$ $(0.93)$ & $-5.37^{***}$ $(0.98)$ & $-8.79^{***}$ $(0.95)$ & $-4.99^{***}$ $(0.99)$ \\
+Tornado path crossed a populated place & $-20.20^{**}$ $(9.60)$ & $-18.11^{*}$ $(9.40)$ & $-23.01^{**}$ $(9.50)$ & $-20.75^{**}$ $(9.21)$ \\
+Log residents in tornado paths & $2.98^{**}$ $(1.25)$ & $2.61^{**}$ $(1.23)$ & $3.37^{***}$ $(1.24)$ & $2.98^{**}$ $(1.20)$ \\
+Track length in county (km) & $-0.01$ $(0.04)$ & $-0.02$ $(0.04)$ & $-0.02$ $(0.04)$ & $-0.03$ $(0.04)$ \\
+Maximum EF rating (+1) & $-0.23$ $(0.54)$ & $-0.24$ $(0.53)$ & $0.05$ $(0.55)$ & $0.03$ $(0.54)$ \\
+Log casualties & $1.53^{**}$ $(0.60)$ & $1.45^{**}$ $(0.59)$ & $1.36^{**}$ $(0.60)$ & $1.27^{**}$ $(0.59)$ \\
+Log reported damage & $0.06$ $(0.16)$ & $-0.07$ $(0.16)$ & $-0.04$ $(0.16)$ & $-0.18$ $(0.16)$ \\
+Log damage per resident & $0.22$ $(0.55)$ & $0.73$ $(0.55)$ & $0.37$ $(0.55)$ & $0.93^{*}$ $(0.55)$ \\
+Log median household income & $6.59^{*}$ $(3.92)$ & $4.21$ $(3.85)$ & $6.99^{*}$ $(3.98)$ & $4.38$ $(3.89)$ \\
+Poverty rate & $-1.19$ $(13.63)$ & $-3.73$ $(13.26)$ & $-3.91$ $(13.72)$ & $-6.70$ $(13.29)$ \\
+Non-White share & $9.80^{**}$ $(4.19)$ & $7.85^{*}$ $(4.15)$ & $10.59^{**}$ $(4.23)$ & $8.51^{**}$ $(4.15)$ \\
+Nonmetropolitan & $-3.24^{***}$ $(1.05)$ & $-2.40^{**}$ $(1.05)$ & $-3.47^{***}$ $(1.08)$ & $-2.57^{**}$ $(1.07)$ \\
+Log municipalities and townships &  & $2.98^{***}$ $(0.91)$ &  & $3.36^{***}$ $(0.92)$ \\
+Log special districts &  & $1.38^{*}$ $(0.81)$ &  & $1.38^{*}$ $(0.83)$ \\
+Log school districts &  & $4.66^{***}$ $(1.15)$ &  & $5.13^{***}$ $(1.16)$ \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\begin{minipage}{0.9\linewidth}\vspace{4pt}\scriptsize
+\textit{Note:} Columns correspond to columns (4) and (5) of Table~\ref{tab:baseline}, with declaration fixed effects. Coefficients multiplied by 100; county-clustered standard errors in parentheses. $^{*}p<0.1$; $^{**}p<0.05$; $^{***}p<0.01$.
+\end{minipage}
+\end{table}

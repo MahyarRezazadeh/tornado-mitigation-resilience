@@ -1,0 +1,54 @@
+﻿2026-10-07 14:07:33,418 | 14_download_cbp | INFO | ======================================================================
+2026-10-07 14:07:33,419 | 14_download_cbp | INFO | START 14_download_cbp at 2026-10-07T14:07:33
+2026-10-07 14:07:33,421 | 14_download_cbp | INFO | cache hit: cbp98co.zip
+2026-10-07 14:07:41,005 | 14_download_cbp | INFO | CBP 1998: 63704 rows
+2026-10-07 14:07:41,007 | 14_download_cbp | INFO | cache hit: cbp99co.zip
+2026-10-07 14:07:51,492 | 14_download_cbp | INFO | CBP 1999: 63982 rows
+2026-10-07 14:07:51,499 | 14_download_cbp | INFO | cache hit: cbp00co.zip
+2026-10-07 14:08:04,264 | 14_download_cbp | INFO | CBP 2000: 64032 rows
+2026-10-07 14:08:04,272 | 14_download_cbp | INFO | cache hit: cbp01co.zip
+2026-10-07 14:08:17,440 | 14_download_cbp | INFO | CBP 2001: 64049 rows
+2026-10-07 14:08:17,442 | 14_download_cbp | INFO | cache hit: cbp02co.zip
+2026-10-07 14:08:28,311 | 14_download_cbp | INFO | CBP 2002: 63671 rows
+2026-10-07 14:08:28,312 | 14_download_cbp | INFO | cache hit: cbp03co.zip
+2026-10-07 14:08:41,950 | 14_download_cbp | INFO | CBP 2003: 62025 rows
+2026-10-07 14:08:41,952 | 14_download_cbp | INFO | cache hit: cbp04co.zip
+2026-10-07 14:08:54,377 | 14_download_cbp | INFO | CBP 2004: 62345 rows
+2026-10-07 14:08:54,379 | 14_download_cbp | INFO | cache hit: cbp05co.zip
+2026-10-07 14:09:05,899 | 14_download_cbp | INFO | CBP 2005: 61924 rows
+2026-10-07 14:09:05,901 | 14_download_cbp | INFO | cache hit: cbp06co.zip
+2026-10-07 14:09:16,604 | 14_download_cbp | INFO | CBP 2006: 62204 rows
+2026-10-07 14:09:16,617 | 14_download_cbp | INFO | cache hit: cbp07co.zip
+2026-10-07 14:09:27,742 | 14_download_cbp | INFO | CBP 2007: 61390 rows
+2026-10-07 14:09:27,744 | 14_download_cbp | INFO | cache hit: cbp08co.zip
+2026-10-07 14:09:46,653 | 14_download_cbp | INFO | CBP 2008: 61564 rows
+2026-10-07 14:09:46,655 | 14_download_cbp | INFO | cache hit: cbp09co.zip
+2026-10-07 14:09:55,413 | 14_download_cbp | INFO | CBP 2009: 61499 rows
+2026-10-07 14:09:55,417 | 14_download_cbp | INFO | cache hit: cbp10co.zip
+2026-10-07 14:10:04,451 | 14_download_cbp | INFO | CBP 2010: 61833 rows
+2026-10-07 14:10:04,459 | 14_download_cbp | INFO | cache hit: cbp11co.zip
+2026-10-07 14:10:13,914 | 14_download_cbp | INFO | CBP 2011: 61832 rows
+2026-10-07 14:10:13,919 | 14_download_cbp | INFO | cache hit: cbp12co.zip
+2026-10-07 14:10:23,654 | 14_download_cbp | INFO | CBP 2012: 61331 rows
+2026-10-07 14:10:23,656 | 14_download_cbp | INFO | cache hit: cbp13co.zip
+2026-10-07 14:10:34,870 | 14_download_cbp | INFO | CBP 2013: 61749 rows
+2026-10-07 14:10:34,873 | 14_download_cbp | INFO | cache hit: cbp14co.zip
+2026-10-07 14:10:45,001 | 14_download_cbp | INFO | CBP 2014: 61980 rows
+2026-10-07 14:10:45,004 | 14_download_cbp | INFO | cache hit: cbp15co.zip
+2026-10-07 14:10:53,355 | 14_download_cbp | INFO | CBP 2015: 62093 rows
+2026-10-07 14:10:53,412 | 14_download_cbp | INFO | cache hit: cbp16co.zip
+2026-10-07 14:11:02,592 | 14_download_cbp | INFO | CBP 2016: 61991 rows
+2026-10-07 14:11:02,593 | 14_download_cbp | INFO | cache hit: cbp17co.zip
+2026-10-07 14:11:09,657 | 14_download_cbp | INFO | CBP 2017: 53535 rows
+2026-10-07 14:11:09,660 | 14_download_cbp | INFO | cache hit: cbp18co.zip
+2026-10-07 14:11:32,092 | 14_download_cbp | INFO | CBP 2018: 53732 rows
+2026-10-07 14:11:32,093 | 14_download_cbp | INFO | cache hit: cbp19co.zip
+2026-10-07 14:11:37,573 | 14_download_cbp | INFO | CBP 2019: 53637 rows
+2026-10-07 14:11:37,574 | 14_download_cbp | INFO | cache hit: cbp20co.zip
+2026-10-07 14:11:42,280 | 14_download_cbp | INFO | CBP 2020: 53720 rows
+2026-10-07 14:11:42,282 | 14_download_cbp | INFO | cache hit: cbp21co.zip
+2026-10-07 14:11:46,380 | 14_download_cbp | INFO | CBP 2021: 53615 rows
+2026-10-07 14:11:46,394 | 14_download_cbp | INFO | cache hit: cbp22co.zip
+2026-10-07 14:11:52,864 | 14_download_cbp | INFO | CBP 2022: 53623 rows
+2026-10-07 14:11:52,936 | 14_download_cbp | INFO | cache hit: cbp23co.zip
+2026-10-07 14:12:03,003 | 14_download_cbp | INFO | CBP 2023: 53692 rows

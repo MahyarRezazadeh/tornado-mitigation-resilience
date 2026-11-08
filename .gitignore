@@ -1,0 +1,69 @@
+# ---- Data: never commit data files ----
+data/
+raw/
+*.dta
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.fst
+*.rds
+*.RData
+*.rda
+*.sav
+*.gpkg
+*.zip
+*.gz
+
+# ---- Secrets ----
+.env
+*.key
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.egg-info/
+.mypy_cache/
+
+# ---- R ----
+.Rhistory
+.Rapp.history
+.RDataTmp
+.Rproj.user/
+*.Rproj
+
+# ---- Stata ----
+*.smcl
+*.log
+*.stswp
+*.gph
+
+# ---- LaTeX ----
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.nav
+*.snm
+*.vrb
+*.xdv
+
+# ---- OS / editors ----
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

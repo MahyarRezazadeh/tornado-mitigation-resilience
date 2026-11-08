@@ -1,0 +1,55 @@
+\section{Data and Empirical Approach}
+\label{sec:data}
+
+\subsection{Unit of Analysis and Sample}
+
+The unit of observation is a county designated in a major disaster declaration (declaration type DR) whose incident type is a tornado or severe storm and whose incident began between 1999 and 2021, taken from FEMA's Disaster Declarations Summaries \parencite{openfema2026}. The end date leaves at least three years to observe applications and obligations through 2024. The sample contains 12,081 county--declarations covering 2,767 counties and 736 declarations in 49 states (Figure~\ref{fig:map}a). Tornado and severe-storm declarations are frequent across the central and eastern United States, so most counties in those regions appear several times.
+
+\subsection{Outcomes}
+
+Outcomes come from two OpenFEMA files \parencite{openfema2026}. The Hazard Mitigation Assistance Projects file records funded and unfunded projects with their program, disaster number, project type, subrecipient, and federal share. The HMA Subapplications file records HMGP subapplications with their disaster number, benefiting counties, applicant name and type, requested amount, benefit--cost ratio, and status, including approved, withdrawn, denied, and pending requests. Projects that list several counties are credited to every listed county; statewide projects are kept separate and used in a robustness check.
+
+The primary outcomes are binary indicators, for each county--declaration, of (i) any HMGP subapplication benefiting the county under that declaration, (ii) any funded HMGP project under that declaration, and (iii) a funded tornado safe room or wind retrofit under that declaration, identified from FEMA project-type codes. We also use the number of subapplications; a safe room or retrofit obligated within three or five years of the incident, regardless of disaster number; and, among county--declarations with at least one decided subapplication, the shares approved, withdrawn, and denied. Applicant names identify subapplications and projects filed by the county government itself. Across county--declarations, the indicator for any approved subapplication and the indicator for any funded project have a correlation of 0.92.
+
+These outcomes measure access to funding. They do not measure whether projects were completed or what losses they avoided.
+
+\subsection{County Size, Local Government Structure, Hazard Exposure, and Controls}
+
+Small counties are the bottom third of U.S. counties by baseline population, which corresponds to at most 15,136 residents; 34.7 percent of county--declarations fall in this group (Figure~\ref{fig:map}b). Because a binary cutoff is arbitrary, we also estimate the gap across population deciles and with continuous log population. Population is a summary measure: it bundles the number of potential applicants, staff, tax base, rurality, and exposure. The analysis therefore treats population as the dimension along which the gap is described and uses separate measures to examine which of these attributes are associated with it.
+
+Hazard exposure is measured from the SPC tornado database \parencite{spc2025database}. Each track is represented as a straight path from its start to its end point with the reported path width, extended by 500 meters on each side and intersected with 2020 county boundaries and block-group population centroids (Appendix~S4). A county--declaration is classified as hit if, in the calendar year in which the incident began, a tornado path crossed the population centroid of at least one block group in the county; 11.1 percent of county--declarations meet this definition. We also record the number of residents in tornado paths, track length within the county, the maximum EF rating, and casualties. Because EF ratings are assigned from observed damage \parencite{doswell2009ef}, exposure is defined from geometry and population rather than from ratings or damage reports. Reported property damage from NOAA's Storm Events database enters as a separate control, in levels and per resident.
+
+County characteristics are median household income, the poverty rate, and the non-White population share from the 2009 American Community Survey, and nonmetropolitan status. The 2017 Census of Governments provides the number of municipalities and townships, special districts, and school districts in each county, an indicator for whether the county government lists a website, and county-government tax revenue and spending on financial administration and central staff per resident \parencite{census2017cog}. The counts of local governments describe the institutional structure of each county, that is, how many entities could submit a subapplication. The finance variables are coarse proxies for fiscal and administrative resources; none of the available measures captures technical expertise directly.
+
+Table~\ref{tab:summary} summarizes the sample. Small counties filed HMGP subapplications in 14.6 percent of their county--declarations, compared with 26.3 percent for larger counties, and obtained funded projects in 15.1 and 27.2 percent of cases, respectively. Averaged across counties, small counties contain fewer municipalities and townships (8.4 versus 14.0), special districts (6.9 versus 15.1), and school districts (2.2 versus 6.0); Table~\ref{tab:summary} reports the corresponding means across county--declarations. Small counties were also less often hit by a tornado crossing a populated place.
+
+\subsection{Empirical Specification}
+
+The baseline model compares counties designated in the same declaration:
+\begin{equation}
+Y_{cd} = \beta\, \mathit{Small}_c + \mathbf{X}_{cd}'\boldsymbol{\gamma} + \mathbf{Z}_c'\boldsymbol{\delta} + \alpha_d + \varepsilon_{cd},
+\label{eq:baseline}
+\end{equation}
+where $Y_{cd}$ is an outcome for county $c$ under declaration $d$, $\mathit{Small}_c$ indicates the bottom population third, $\mathbf{X}_{cd}$ contains the hazard measures for the incident year (populated-place hit, log residents in paths, track length, maximum EF rating, log casualties, log damage, and log damage per resident), $\mathbf{Z}_c$ contains county characteristics, and $\alpha_d$ is a declaration fixed effect.
+
+The declaration fixed effect is the core of the design. Counties designated in the same declaration share the incident, the size of the HMGP allocation, the state's administrative plan and priorities, the year, and any political considerations behind the declaration itself \parencite{garrett2003political,reeves2011political}. Comparing counties within a declaration therefore removes the differences in disaster severity, state administration, and available funding that confound comparisons across disasters. We estimate Equation~(\ref{eq:baseline}) as a linear probability model, add controls in steps, and finally add the log counts of local governments to separate the part of the gap associated with the number of potential applicants. The coefficient $\beta$ measures how much less likely a small county is to obtain an outcome than a larger county in the same declaration with similar hazard exposure and characteristics.
+
+To ask whether small counties respond differently to hazard events, we use the fact that most counties appear in several declarations, some of which brought a tornado through populated places and some of which did not:
+\begin{equation}
+Y_{cd} = \theta\, H_{cd} + \lambda\, (H_{cd} \times \mathit{Small}_c) + \mu_c + \alpha_d + \varepsilon_{cd},
+\label{eq:shock}
+\end{equation}
+where $H_{cd}$ is the populated-place hit indicator (or log residents in tornado paths), $\mu_c$ is a county fixed effect, and $\alpha_d$ a declaration fixed effect. The county effect absorbs persistent differences in need, capacity, and political orientation, so $\theta$ is the response of larger counties to a hit and $\theta + \lambda$ the response of small counties. Damage controls are omitted from Equation~(\ref{eq:shock}) because damage is the channel through which a hit would raise demand for mitigation.
+
+Finally, we use the management-cost provision of the DRRA to ask whether lowering the cost of administering a subaward narrowed the gap:
+\begin{equation}
+Y_{cd} = \pi\, (\mathit{Small}_c \times \mathit{Post}_d) + \mathbf{X}_{cd}'\boldsymbol{\gamma} + \mu_c + \alpha_d + \varepsilon_{cd},
+\label{eq:drra}
+\end{equation}
+for declarations made between 2010 and 2021, where $\mathit{Post}_d$ indicates declarations made on or after August 1, 2017. Because the provision applies from a single date to all declarations, the design does not involve staggered adoption, and a two-way fixed-effects estimator does not suffer from the weighting problems discussed for staggered designs \parencite{roth2023trending}. We report an event-study version with small-county interactions by declaration year and a placebo cutoff in the pre-reform period.
+
+\subsection{What the Design Identifies}
+
+Equation~(\ref{eq:baseline}) describes how participation varies with county size; it does not estimate a causal effect of population or of administrative capacity. Three features make the comparison informative nonetheless. The declaration fixed effect removes differences in incident severity, state administration, and HMGP allocations. The hazard controls use track geometry and population rather than damage-based ratings, so a small county is compared with a larger county facing a similar physical hazard. And the application records separate the decision to apply from the state's and FEMA's decisions on submitted requests. The decomposition that adds counts of local governments is also descriptive: it shows how much of the size gap is statistically accounted for by the number of potential applicants, not how participation would change if that number changed. Equation~(\ref{eq:shock}) adds variation within counties, but hit status within a declaration is not randomly assigned, and the reform in Equation~(\ref{eq:drra}) coincided with other changes in federal mitigation policy. We therefore interpret these estimates as checks on whether the patterns are consistent with a capacity explanation, not as causal effects of capacity.
+
+Standard errors are clustered by county, the level at which the population classification is assigned \parencite{abadie2023cluster,cameron2015practitioner}; we also report state-clustered errors (47 clusters). Declarations with a single designated county drop out as singletons, leaving 12,038 observations in the declaration fixed-effects models. Estimation uses PyFixest \parencite{pyfixest}.

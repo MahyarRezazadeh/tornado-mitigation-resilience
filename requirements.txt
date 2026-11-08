@@ -1,0 +1,39 @@
+# Third-party Python packages used by the scripts in tornado_mitigation/ and the manuscript folders.
+# Versions not pinned. Minimum versions for most of these are stated in tornado_mitigation/requirements.txt.
+
+# imported directly
+pandas
+numpy
+pyarrow
+geopandas
+shapely
+statsmodels
+linearmodels
+pyfixest
+scipy
+scikit-learn
+matplotlib
+requests
+python-dotenv
+pyyaml
+joblib
+
+# used through pandas (Excel and Markdown input/output)
+openpyxl
+xlsxwriter
+xlrd
+tabulate
+
+# tests
+pytest
+
+# listed in tornado_mitigation/requirements.txt or checked by src/00_check_environment.py,
+# but not imported directly by any script
+polars
+duckdb
+beautifulsoup4
+lxml
+pyproj
+jinja2
+tqdm
+urllib3

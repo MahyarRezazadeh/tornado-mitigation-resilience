@@ -1,0 +1,36 @@
+﻿2026-10-07 14:06:55,567 | 16_download_irs | INFO | ======================================================================
+2026-10-07 14:06:55,570 | 16_download_irs | INFO | START 16_download_irs at 2026-10-07T14:06:55
+2026-10-07 14:06:55,572 | 16_download_irs | INFO | cache hit: countyinflow1112.csv
+2026-10-07 14:06:55,573 | 16_download_irs | INFO | cache hit: countyoutflow1112.csv
+2026-10-07 14:06:55,574 | 16_download_irs | INFO | cache hit: countyinflow1213.csv
+2026-10-07 14:06:55,577 | 16_download_irs | INFO | cache hit: countyoutflow1213.csv
+2026-10-07 14:06:55,578 | 16_download_irs | INFO | cache hit: countyinflow1314.csv
+2026-10-07 14:06:55,579 | 16_download_irs | INFO | cache hit: countyoutflow1314.csv
+2026-10-07 14:06:55,580 | 16_download_irs | INFO | cache hit: countyinflow1415.csv
+2026-10-07 14:06:55,581 | 16_download_irs | INFO | cache hit: countyoutflow1415.csv
+2026-10-07 14:06:55,583 | 16_download_irs | INFO | cache hit: countyinflow1516.csv
+2026-10-07 14:06:55,584 | 16_download_irs | INFO | cache hit: countyoutflow1516.csv
+2026-10-07 14:06:55,585 | 16_download_irs | INFO | cache hit: countyinflow1617.csv
+2026-10-07 14:06:55,586 | 16_download_irs | INFO | cache hit: countyoutflow1617.csv
+2026-10-07 14:06:55,587 | 16_download_irs | INFO | cache hit: countyinflow1718.csv
+2026-10-07 14:06:55,588 | 16_download_irs | INFO | cache hit: countyoutflow1718.csv
+2026-10-07 14:06:55,590 | 16_download_irs | INFO | cache hit: countyinflow1819.csv
+2026-10-07 14:06:55,591 | 16_download_irs | INFO | cache hit: countyoutflow1819.csv
+2026-10-07 14:06:55,592 | 16_download_irs | INFO | cache hit: countyinflow1920.csv
+2026-10-07 14:06:55,593 | 16_download_irs | INFO | cache hit: countyoutflow1920.csv
+2026-10-07 14:06:55,594 | 16_download_irs | INFO | cache hit: countyinflow2021.csv
+2026-10-07 14:06:55,595 | 16_download_irs | INFO | cache hit: countyoutflow2021.csv
+2026-10-07 14:06:55,596 | 16_download_irs | INFO | cache hit: countyinflow2122.csv
+2026-10-07 14:06:55,597 | 16_download_irs | INFO | cache hit: countyoutflow2122.csv
+2026-10-07 14:06:55,598 | 16_download_irs | INFO | cache hit: countyinflow2223.csv
+2026-10-07 14:06:55,599 | 16_download_irs | INFO | cache hit: countyoutflow2223.csv
+2026-10-07 14:06:56,374 | 16_download_irs | WARNING | attempt 1 failed for https://www.irs.gov/pub/irs-soi/countyinflow2324.csv: 404 Client Error: Not Found for url: https://www.irs.gov/pub/irs-soi/countyinflow2324.csv
+2026-10-07 14:06:57,992 | 16_download_irs | WARNING | attempt 2 failed for https://www.irs.gov/pub/irs-soi/countyinflow2324.csv: 404 Client Error: Not Found for url: https://www.irs.gov/pub/irs-soi/countyinflow2324.csv
+2026-10-07 14:07:00,661 | 16_download_irs | WARNING | attempt 3 failed for https://www.irs.gov/pub/irs-soi/countyinflow2324.csv: 404 Client Error: Not Found for url: https://www.irs.gov/pub/irs-soi/countyinflow2324.csv
+2026-10-07 14:07:05,188 | 16_download_irs | WARNING | attempt 4 failed for https://www.irs.gov/pub/irs-soi/countyinflow2324.csv: 404 Client Error: Not Found for url: https://www.irs.gov/pub/irs-soi/countyinflow2324.csv
+2026-10-07 14:07:13,189 | 16_download_irs | WARNING | IRS inflow 2324 unavailable: download failed: https://www.irs.gov/pub/irs-soi/countyinflow2324.csv: 404 Client Error: Not Found for url: https://www.irs.gov/pub/irs-soi/countyinflow2324.csv
+2026-10-07 14:07:14,441 | 16_download_irs | WARNING | attempt 1 failed for https://www.irs.gov/pub/irs-soi/countyoutflow2324.csv: 404 Client Error: Not Found for url: https://www.irs.gov/pub/irs-soi/countyoutflow2324.csv
+2026-10-07 14:07:16,045 | 16_download_irs | WARNING | attempt 2 failed for https://www.irs.gov/pub/irs-soi/countyoutflow2324.csv: 404 Client Error: Not Found for url: https://www.irs.gov/pub/irs-soi/countyoutflow2324.csv
+2026-10-07 14:07:18,558 | 16_download_irs | WARNING | attempt 3 failed for https://www.irs.gov/pub/irs-soi/countyoutflow2324.csv: 404 Client Error: Not Found for url: https://www.irs.gov/pub/irs-soi/countyoutflow2324.csv
+2026-10-07 14:07:23,035 | 16_download_irs | WARNING | attempt 4 failed for https://www.irs.gov/pub/irs-soi/countyoutflow2324.csv: 404 Client Error: Not Found for url: https://www.irs.gov/pub/irs-soi/countyoutflow2324.csv
+2026-10-07 14:07:31,036 | 16_download_irs | WARNING | IRS outflow 2324 unavailable: download failed: https://www.irs.gov/pub/irs-soi/countyoutflow2324.csv: 404 Client Error: Not Found for url: https://www.irs.gov/pub/irs-soi/countyoutflow2324.csv

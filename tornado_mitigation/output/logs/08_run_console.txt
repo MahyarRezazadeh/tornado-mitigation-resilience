@@ -1,0 +1,52 @@
+﻿2026-10-07 13:00:50,747 | 08_download_qwi | INFO | ======================================================================
+2026-10-07 13:00:50,748 | 08_download_qwi | INFO | START 08_download_qwi at 2026-10-07T13:00:50
+2026-10-07 13:00:51,884 | 08_download_qwi | INFO | downloaded label_flags.csv (673 bytes) from https://lehd.ces.census.gov/data/schema/latest/label_flags.csv
+2026-10-07 13:00:52,709 | 08_download_qwi | INFO | downloaded variables_qwi.csv (4962 bytes) from https://lehd.ces.census.gov/data/schema/latest/variables_qwi.csv
+2026-10-07 13:02:00,806 | 08_download_qwi | INFO | QWI az: 39176 rows kept
+2026-10-07 13:05:14,509 | 08_download_qwi | INFO | QWI ar: 205128 rows kept
+2026-10-07 13:05:31,520 | 08_download_qwi | INFO | QWI al: 197148 rows kept
+2026-10-07 13:05:40,405 | 08_download_qwi | INFO | QWI dc: 2388 rows kept
+2026-10-07 13:06:03,232 | 08_download_qwi | INFO | QWI de: 9799 rows kept
+2026-10-07 13:06:17,947 | 08_download_qwi | INFO | QWI ct: 32489 rows kept
+2026-10-07 13:06:43,605 | 08_download_qwi | INFO | QWI co: 239590 rows kept
+2026-10-07 13:07:42,276 | 08_download_qwi | INFO | QWI ca: 239041 rows kept
+2026-10-07 13:11:08,479 | 08_download_qwi | INFO | QWI id: 178004 rows kept
+2026-10-07 13:11:42,520 | 08_download_qwi | INFO | QWI fl: 223336 rows kept
+2026-10-07 13:13:26,795 | 08_download_qwi | INFO | QWI ia: 317086 rows kept
+2026-10-07 13:16:19,853 | 08_download_qwi | INFO | QWI ga: 505122 rows kept
+2026-10-07 13:20:16,249 | 08_download_qwi | INFO | QWI il: 389228 rows kept
+2026-10-07 13:22:01,914 | 08_download_qwi | INFO | QWI in: 303927 rows kept
+2026-10-07 13:23:42,632 | 08_download_qwi | INFO | QWI ks: 390304 rows kept
+2026-10-07 13:23:50,911 | 08_download_qwi | INFO | QWI ma: 26769 rows kept
+2026-10-07 13:25:42,509 | 08_download_qwi | INFO | QWI ky: 340790 rows kept
+2026-10-07 13:26:54,481 | 08_download_qwi | INFO | QWI me: 56507 rows kept
+2026-10-07 13:28:23,420 | 08_download_qwi | INFO | QWI la: 234616 rows kept
+2026-10-07 13:29:37,073 | 08_download_qwi | INFO | QWI md: 103079 rows kept
+2026-10-07 13:33:39,572 | 08_download_qwi | INFO | QWI mi: 208909 rows kept
+2026-10-07 13:35:09,949 | 08_download_qwi | INFO | QWI ms: 214015 rows kept
+2026-10-07 13:36:09,020 | 08_download_qwi | INFO | QWI mn: 319891 rows kept
+2026-10-07 13:41:31,387 | 08_download_qwi | INFO | QWI mt: 206861 rows kept
+2026-10-07 13:42:54,488 | 08_download_qwi | INFO | QWI nd: 163222 rows kept
+2026-10-07 13:43:29,247 | 08_download_qwi | INFO | QWI mo: 413929 rows kept
+2026-10-07 13:44:05,517 | 08_download_qwi | INFO | QWI nh: 27614 rows kept
+2026-10-07 13:47:19,925 | 08_download_qwi | INFO | QWI nj: 75759 rows kept
+2026-10-07 13:47:50,390 | 08_download_qwi | INFO | QWI nm: 116660 rows kept
+2026-10-07 13:50:41,077 | 08_download_qwi | INFO | QWI ne: 269787 rows kept
+2026-10-07 13:51:09,039 | 08_download_qwi | INFO | QWI nv: 54663 rows kept
+2026-10-07 13:55:52,544 | 08_download_qwi | ERROR | QWI oh FAILED: ("Connection broken: ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)", ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-10-07 13:55:54,639 | 08_download_qwi | ERROR | QWI ok FAILED: ("Connection broken: ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)", ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-10-07 13:55:58,214 | 08_download_qwi | ERROR | QWI ny FAILED: ("Connection broken: ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)", ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-10-07 13:56:23,881 | 08_download_qwi | ERROR | QWI or FAILED: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-10-07 13:56:24,095 | 08_download_qwi | ERROR | QWI ri FAILED: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-10-07 13:56:24,098 | 08_download_qwi | ERROR | QWI pa FAILED: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-10-07 13:56:41,901 | 08_download_qwi | ERROR | QWI tn FAILED: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-10-07 13:56:42,310 | 08_download_qwi | ERROR | QWI sd FAILED: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-10-07 13:56:44,773 | 08_download_qwi | ERROR | QWI sc FAILED: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-10-07 13:56:58,015 | 08_download_qwi | INFO | QWI nc: 389992 rows kept
+2026-10-07 14:00:28,305 | 08_download_qwi | ERROR | QWI va FAILED: ("Connection broken: ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)", ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-10-07 14:00:53,149 | 08_download_qwi | ERROR | QWI wa FAILED: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-10-07 14:01:43,010 | 08_download_qwi | INFO | QWI vt: 42992 rows kept
+2026-10-07 14:02:28,522 | 08_download_qwi | INFO | QWI ut: 88682 rows kept
+2026-10-07 14:04:37,618 | 08_download_qwi | INFO | QWI wy: 68215 rows kept
+2026-10-07 14:07:08,458 | 08_download_qwi | INFO | QWI wv: 186226 rows kept
+2026-10-07 14:09:18,866 | 08_download_qwi | INFO | QWI wi: 304596 rows kept

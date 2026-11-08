@@ -1,0 +1,96 @@
+project:
+  name: "Local Tornado Mitigation and Economic Resilience"
+  country: "United States"
+  primary_geography: "county"
+  preferred_frequency: "quarterly"
+
+treatment:
+  primary_definition: "strict"
+  alternatives:
+    - strict
+    - moderate
+    - broad
+
+  treatment_dates:
+    - completion
+    - obligation
+    - approval
+
+  implementation_lags:
+    - 0
+    - 1
+    - 2
+    - 3
+
+tornado:
+  primary_definition: "EF1_plus"
+
+  alternatives:
+    - any_tornado
+    - EF1_plus
+    - EF2_plus
+    - EF3_plus
+    - tornado_count
+    - maximum_intensity
+
+event_study:
+  quarterly_pre: 8
+  quarterly_post: 12
+  annual_pre: 5
+  annual_post: 8
+  reference_period: -1
+
+inference:
+  alpha: 0.05
+  primary_cluster: "county"
+
+  alternative_clusters:
+    - state
+    - county_time_two_way
+
+primary_outcomes:
+  - employment
+  - separations
+  - earnings
+  - establishment_deaths
+  - job_destruction
+
+secondary_outcomes:
+  - hires
+  - new_hire_earnings
+  - business_births
+  - small_business_resilience
+  - industry_reallocation
+  - migration
+  - building_permits
+  - establishments
+  - payroll
+  - local_government_finance
+
+robustness:
+  robust_sign_share: 0.80
+  moderate_sign_share: 0.65
+  pretrend_threshold: 0.10
+  placebo_threshold: 0.10
+  leave_state_out_share: 0.80
+
+power:
+  alpha: 0.05
+  target_power:
+    - 0.80
+    - 0.90
+
+multiple_testing:
+  methods:
+    - benjamini_hochberg
+    - holm
+
+# Data window. NOAA Storm Events tornado records go back to 1950;
+# OpenFEMA HMA projects start ~1989. Historical-risk window is fixed and
+# precedes the analysis window so baseline risk never uses future tornadoes.
+data:
+  noaa_start_year: 1950
+  noaa_end_year: 2025
+  analysis_start_year: 1990
+  historical_risk_window: [1950, 1989]
+  contiguous_us_only: true

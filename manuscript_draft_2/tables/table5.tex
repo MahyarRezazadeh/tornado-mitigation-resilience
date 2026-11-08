@@ -1,0 +1,29 @@
+\begin{table}[!htbp]
+\centering
+\footnotesize
+\begin{threeparttable}
+\caption{Robustness of the small-county gap in funded projects}
+\label{tab:robust}
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.27\linewidth}cccr@{}}
+\toprule
+ & \shortstack{Funded\\HMGP project} & \shortstack{Funded safe\\room/retrofit} & \shortstack{Safe room/\\retrofit, 3 yrs} & $N$ \\
+\midrule
+Baseline (Table 2, column 4) & $-8.79^{***}$ $(0.95)$ & $-3.14^{***}$ $(0.53)$ & $-8.08^{***}$ $(1.11)$ & 12,038 \\
+Standard errors clustered by state & $-8.79^{***}$ $(0.98)$ & $-3.14^{***}$ $(0.82)$ & $-8.08^{***}$ $(2.47)$ & 12,038 \\
+Hit-only sample (populated-place tornado hit) & $-14.25^{***}$ $(3.77)$ & $-9.18^{***}$ $(2.60)$ & $-13.38^{***}$ $(4.60)$ & 1,203 \\
+Declarations with incident type ``Tornado'' only & $-1.46$ $(4.05)$ & $-2.88$ $(2.16)$ & $-2.71$ $(3.38)$ & 361 \\
+Declarations with Individual Assistance & $-8.81^{***}$ $(1.57)$ & $-4.34^{***}$ $(0.90)$ & $-8.92^{***}$ $(1.64)$ & 3,647 \\
+Adding counts of local governments & $-4.99^{***}$ $(0.99)$ & $-2.38^{***}$ $(0.54)$ & $-5.93^{***}$ $(1.14)$ & 12,038 \\
+Continuous log population (per log point) & $7.78^{***}$ $(0.51)$ & $1.87^{***}$ $(0.27)$ & $5.06^{***}$ $(0.52)$ & 12,038 \\
+Credit statewide projects of the same declaration & $-0.93^{***}$ $(0.27)$ [88.6] & $-2.79^{***}$ $(0.50)$ [9.9] & -- & 12,038 \\
+Five-year window & -- & -- & $-10.46^{***}$ $(1.42)$ [19.7] & 12,038 \\
+Leave one state out: range of estimates & [$-9.37$, $-8.43$] & [$-3.53$, $-2.70$] & [$-8.95$, $-6.58$] & -- \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Notes:} Each cell reports the small-county coefficient (multiplied by 100) with its county-clustered standard error in parentheses, from the column (4) specification of Table~\ref{tab:baseline} unless stated. Means for larger counties of the two alternative outcomes are in brackets. ``Credit statewide projects'' counts a county as served when the state ran any HMGP project under the same declaration on a statewide basis. The leave-one-state-out row reports the minimum and maximum of the estimates obtained by dropping each state in turn. $^{*}p<0.1$; $^{**}p<0.05$; $^{***}p<0.01$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
